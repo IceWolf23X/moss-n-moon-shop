@@ -1,18 +1,18 @@
-# ELENCO DEI NEGOZI DA CARICARE
-# Tutte le informazioni di ogni shop sono nel relativo file .yml.
-# Per aggiungerne uno:
-# 1. Copia docs/shop-template.yml in shops/nome-negozio.yml.
-# 2. Compila il file (cambia anche id e tutti i dati di esempio).
-# 3. Aggiungi qui sotto: - nome-negozio.yml
-# 4. Pubblica le modifiche. Non devi modificare alcun file JavaScript.
+# LIST OF SHOPS TO LOAD
+# Each shop's information is stored in its own .yml file.
+# To add a shop:
+# 1. Copy docs/shop-template.yml to shops/shop-name.yml.
+# 2. Fill in the file (also change id and all sample data).
+# 3. Add below: - shop-name.yml
+# 4. Publish your changes. No JavaScript files need editing.
 #
-# I nomi sono relativi a shops/: NON scrivere shops/nome-negozio.yml.
-# Usa minuscole, numeri, trattini o underscore; l’estensione è .yml oppure .yaml.
-# Conta anche la differenza tra maiuscole e minuscole sui server.
-# I file non elencati NON vengono caricati, ma se pubblicati restano accessibili via URL.
-# Per una directory vuota usa: shops: []
-# L’ordine è quello iniziale; "Featured first" porta in cima gli shop featured: true.
-# Cinque esempi inclusi: non esiste un limite software di cinque negozi.
+# Filenames are relative to shops/: do NOT write shops/shop-name.yml.
+# Use lowercase letters, numbers, hyphens or underscores; the extension is .yml or .yaml.
+# Filenames are case-sensitive on servers.
+# Unlisted files are NOT loaded, but remain accessible by URL if published.
+# For an empty directory, use: shops: []
+# This is the initial order; "Featured first" moves shops with featured: true to the top.
+# Five examples included: the software does not limit the directory to five shops.
 
 shops:
   - woolery.yml

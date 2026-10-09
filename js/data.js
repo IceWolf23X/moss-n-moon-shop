@@ -134,15 +134,15 @@
   /** A reviewable .yml file, never an automatic upload or publication. */
   function serializeShop(shop) {
     const header = [
-      '# Moss & Moon — scheda negozio / shop listing',
-      '# Verifica tutti i dati prima di pubblicare; i commenti non vengono mostrati sul sito.',
-      '# Salva in shops/<id>.yml e aggiungi il nome del file a shops/index.yml.',
-      '# Usa spazi, non TAB. Mantieni id univoco e stabile.',
-      '# currency: diamond = diamanti; diamond_block = blocchi di diamante.',
-      '# Ogni prodotto puo sovrascrivere currency. Il prezzo NON viene convertito.',
-      '# price: null = chiedere al proprietario; quantity = quantita venduta a quel prezzo.',
+      '# Moss & Moon — shop listing',
+      '# Check all data before publishing; comments are not displayed on the site.',
+      '# Save to shops/<id>.yml and add the filename to shops/index.yml.',
+      '# Use spaces, not TAB. Keep id unique and stable.',
+      '# currency: diamond = diamonds; diamond_block = diamond blocks.',
+      '# Each item can override currency. The price is NOT converted.',
+      '# price: null = ask the owner; quantity = amount sold at that price.',
       '# stock: in | low | out | unknown. status: open | paused | unverified.',
-      '# Non aggiungere bozze private al catalogo pubblicato: i file sono pubblici.',
+      '# Do not add private drafts to the published catalog: files are public.',
       ''
     ].join('\n');
     return header + root.jsyaml.dump(shop, {schema: root.jsyaml.CORE_SCHEMA, indent: 2, lineWidth: 100, noRefs: true, sortKeys: false});

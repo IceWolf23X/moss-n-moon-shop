@@ -1,37 +1,37 @@
-# Verifiche della versione YAML
+# YAML version verification
 
-Verifiche effettuate il 9 ottobre 2026. Dati inclusi: **5 shop e 36 voci di inventario**. Questi numeri descrivono il pacchetto dimostrativo, non un catalogo verificato sul server.
+Checks performed on October 9, 2026. Included data: **5 shops and 36 inventory listings**. These numbers describe the demonstration package, not a catalog verified on the server.
 
-## Test Node: 36 test superati
+## Node tests: 36 tests passed
 
-14 test del motore, 18 test YAML/valute e 4 test HTTP. Coprono ricerca, alias e servizi, filtri combinati, preferiti, ordinamento, escaping, coordinate, date, ID, tipi di dato, commenti YAML, stringhe multilinea, valute e predefiniti, export e reimportazione di una proposta.
+14 engine tests, 18 YAML/currency tests and 4 HTTP tests. They cover search, aliases and services, combined filters, favorites, sorting, escaping, coordinates, dates, IDs, data types, YAML comments, multiline strings, currencies and defaults, proposal export and reimport.
 
-I casi negativi includono sintassi errata e chiavi duplicate, TAB, file assenti, path/URL non ammessi nel manifest, ID duplicati tra shop, prezzi come stringhe, prezzi negativi o NaN, quantità errate, categorie sconosciute, valori booleani tra virgolette, refusi, immagini/tag di tipo errato, tag JavaScript, chiavi riservate e alias ciclici. È incluso un test di regressione per la chiave `__proto__` nelle mappe di merge della libreria modificata.
+Negative cases include invalid syntax and duplicate keys, TAB characters, missing files, disallowed manifest paths/URLs, duplicate IDs across shops, string prices, negative or NaN prices, invalid quantities, unknown categories, quoted booleans, typos, invalid image/tag types, JavaScript tags, reserved keys and cyclic aliases. A regression test covers the `__proto__` key in the modified library's merge maps.
 
-**HTTP reale, eseguito in Node:** il loader di produzione carica i file YAML dal filesystem tramite un server HTTP locale, sotto un prefisso `/directory-repo/`. Verifica percorsi relativi, ordine del manifest, numero delle richieste, 404, timeout e rifiuto del protocollo `file:`. Questo prova il percorso fetch/lettura/parse/validazione in Node; non è una prova di deploy GitHub Pages né una prova delle politiche di rete di tutti i browser.
+**Real HTTP, executed in Node:** the production loader loads YAML files from the filesystem through a local HTTP server under a `/directory-repo/` prefix. It checks relative paths, manifest order, request counts, 404 responses, timeouts and rejection of the `file:` protocol. This tests the fetch/read/parse/validation path in Node; it does not prove GitHub Pages deployment or every browser's network policies.
 
-## Browser Chromium: 73 controlli superati
+## Chromium browser: 73 checks passed
 
-Rendering con cinque schede, due file di catalogo più cinque shop, ricerca e suggerimenti da tastiera, filtri, vuoti, griglia/elenco, preferiti, ordinamento, finestre, inventario, etichette e icone per entrambe le valute, override sul prodotto, copia preparata, link, Esc e focus, tema, modulo YAML con valuta e commenti, nome del download, riapertura del modulo e link non configurati.
+Rendering with five cards, two catalog files plus five shops, search and keyboard suggestions, filters, empty states, grid/list views, favorites, sorting, dialogs, inventory, labels and icons for both currencies, per-item overrides, prepared clipboard copies, links, Esc and focus, themes, the YAML form with currency and comments, download filenames, reopening the form and unconfigured links.
 
-Verificati percorsi di errore con file/riga/colonna e catalogo vuoto. Nessun errore JavaScript runtime nella suite. Controllata assenza di overflow orizzontale a 320, 390, 540, 768, 1024, 1440, 1920 e 3440 pixel. Ispezionate immagini desktop, mobile e dettaglio con prezzi in entrambe le valute. Non viene dichiarata una certificazione di accessibilità o una verifica con tutti i browser.
+Error paths with file/line/column details and an empty catalog were checked. The suite reported no JavaScript runtime errors. No horizontal overflow was found at 320, 390, 540, 768, 1024, 1440, 1920 or 3440 pixels. Desktop, mobile and detail images with prices in both currencies were inspected. This does not claim accessibility certification or verification in all browsers.
 
-## Limite importante delle prove browser
+## Important limitation of browser checks
 
-La navigazione Chromium verso un server locale è stata tentata e ha restituito `net::ERR_BLOCKED_BY_ADMINISTRATOR`. La suite è stata quindi eseguita con **`--inline-fixture`**: incorpora gli stessi script e gli stessi YAML del prodotto, ma sostituisce esplicitamente le risposte fetch con i testi dei file, insieme a storage, clipboard e avvio download.
+Chromium navigation to a local server was attempted and returned `net::ERR_BLOCKED_BY_ADMINISTRATOR`. The suite was therefore run with **`--inline-fixture`**: it embeds the same production scripts and YAML files, but explicitly substitutes fetch responses with file text, along with storage, clipboard and download initiation.
 
-Il loader e il parser reali continuano a leggere il testo YAML nella fixture. Non viene fornito un catalogo JSON già trasformato al posto della lettura YAML. Il logo è adattato solo nella fixture a un data URI dopo la validazione.
+The real loader and parser still read YAML text in the fixture. A pre-transformed JSON catalog is not substituted for YAML loading. The logo is adapted to a data URI only in the fixture, after validation.
 
-Questa modalità **non dimostra** navigazione browser HTTP(S) end-to-end, comportamento CORS del sito ospitato, persistenza reale dopo riavvio, accesso agli appunti del sistema o salvataggio reale del download. La prova HTTP Node sopra descritta è separata e non rimuove questi limiti. Nessun deploy o test sul repository dell’utente è stato eseguito.
+This mode **does not demonstrate** end-to-end HTTP(S) browser navigation, hosted-site CORS behavior, real persistence after a restart, system clipboard access or actual download saving. The Node HTTP check above is separate and does not remove these limitations. No deployment or tests on the user's repository were performed.
 
-## Ripetere i test
+## Rerunning the tests
 
 ```sh
 node --test tests/*.test.cjs
 node tests/validate-data.cjs
 ```
 
-Prove browser facoltative, con dipendenze solo di sviluppo:
+Optional browser checks, with development-only dependencies:
 
 ```sh
 python -m pip install playwright
@@ -39,16 +39,16 @@ python -m playwright install chromium
 python tests/browser_smoke.py
 ```
 
-Per un ambiente che blocca la navigazione:
+For an environment that blocks navigation:
 
 ```sh
 python tests/browser_smoke.py --inline-fixture --screenshots ./test-previews
 ```
 
-`CHROMIUM_EXECUTABLE` può indicare un eseguibile Chromium esistente. La suite browser fotografa i cinque esempi e richiede l’adeguamento dei nomi/conteggi se cambi il catalogo. I test del motore usano una fixture indipendente; il validatore legge sempre il catalogo reale.
+`CHROMIUM_EXECUTABLE` can point to an existing Chromium executable. The browser suite captures the five examples and requires names/counts to be adjusted if you change the catalog. Engine tests use an independent fixture; the validator always reads the actual catalog.
 
-## Prima del deploy reale
+## Before a real deployment
 
-Controlla i dati approvati e i file immagine, esegui il validatore, verifica che `config.yml`, `shops/` e `js/vendor/` siano pubblicati e che Pages sia configurato. Sul sito ospitato prova apertura, ricerca, link a un negozio, reload, copia delle coordinate, download YAML, preferiti e tema. Conferma i link Discord/store con i gestori.
+Check approved data and image files, run the validator, and verify that `config.yml`, `shops/` and `js/vendor/` are published and Pages is configured. On the hosted site, test opening, search, shop links, reload, coordinate copying, YAML downloads, favorites and themes. Confirm Discord/store links with the maintainers.
 
-Non sono stati eseguiti un audit di sicurezza indipendente, una verifica con screen reader o test di sincronizzazione Minecraft. Non è prevista alcuna sincronizzazione automatica.
+No independent security audit, screen reader verification or Minecraft synchronization tests were performed. Automatic synchronization is not provided.

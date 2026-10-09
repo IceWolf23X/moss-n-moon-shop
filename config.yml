@@ -1,45 +1,45 @@
-# Moss & Moon — configurazione modificabile a mano
-# UTF-8, 2 spazi per livello, mai TAB. Salvare i numeri senza virgolette.
-# I file pubblicati e tutti i commenti sono visibili a chi visita il sito.
+# Moss & Moon — manually editable configuration
+# UTF-8, 2 spaces per level, never TAB. Save numbers without quotes.
+# Published files and all comments are visible to site visitors.
 
-# CONFIGURAZIONE GENERALE — non contiene i negozi.
-# Le etichette dell’interfaccia rimangono in inglese; i commenti sono solo per chi modifica.
+# GENERAL CONFIGURATION — does not contain the shops.
+# Interface labels are in English; comments are only for editors.
 config:
   name: Moss & Moon
   title: The community directory
-  # Lingua del documento; non traduce automaticamente i testi dell’interfaccia.
+  # Document language; does not automatically translate interface text.
   language: en
-  # Indirizzo mostrato e copiato. Il sito NON interroga lo stato del server.
+  # Address displayed and copied. The site does NOT query server status.
   serverAddress: play.moss-n-moon.me
-  # Percorso relativo a index.html, non a questo file.
+  # Path relative to index.html, not to this file.
   logo: assets/logo.png
-  # true = banner di anteprima. Passa a false SOLO dopo aver sostituito gli esempi.
+  # true = preview banner. Set to false ONLY after replacing the examples.
   demoMode: true
-  # Valuta predefinita se non indicata nel singolo shop.
-  # Valori: diamond (diamanti) | diamond_block (blocchi di diamante).
-  # Priorità: prodotto > negozio > questa impostazione. Nessuna conversione del prezzo.
+  # Default currency when not specified in an individual shop.
+  # Values: diamond (diamonds) | diamond_block (diamond blocks).
+  # Priority: item > shop > this setting. No price conversion.
   currency: diamond
-  # Identificatore dei preferiti locali. Mantienilo stabile per non perderli.
+  # Local favorites identifier. Keep it stable to avoid losing them.
   storageKey: moss-moon-directory-v1
-  # Inserisci URL reali https://... oppure lascia '' (vuoto). Niente token o password.
+  # Enter real https://... URLs or leave '' (empty). No tokens or passwords.
   links:
     discord: ''
     store: ''
     repository: ''
-  # Testi del riquadro introduttivo. Racchiudi tra virgolette i testi con : o #.
+  # Introductory panel text. Quote text containing : or #.
   hero:
     eyebrow: A WORLD OF PLAYER-MADE POSSIBILITIES
     title: Small shops.
     accent: Great discoveries.
     description: Find the blocks, little treasures, and helping hands for your next adventure. All
       in one corner of Moss & Moon.
-  # Ricerche suggerite sotto la barra. Non aggiungono nuovi prodotti al catalogo.
+  # Suggested searches below the search bar. They do not add items to the catalog.
   popular:
     - Wool
     - Mending
     - Pale oak
     - Building services
-  # Schede della sezione "How it works".
+  # Cards in the "How it works" section.
   guide:
     - icon: search
       title: Find your thing
@@ -52,7 +52,7 @@ config:
       title: Keep the good ones
       text: Save your favourite shops on this device. Purchases and trades happen in Minecraft,
         not here.
-  # Domande frequenti. Aggiorna i riferimenti ai dati demo prima della pubblicazione.
+  # Frequently asked questions. Update references to demo data before publishing.
   faq:
     - question: Can I buy items on this website?
       answer: No. This is a community directory, not an online checkout. Visit a shop in Minecraft
@@ -69,8 +69,8 @@ config:
         or cross-device sync. Your browser may clear this data; private browsing and local-file
         storage can behave differently.
 
-# CATEGORIE — gli id sono i valori da usare in categories: dentro ogni shop.
-# Aggiungi una categoria qui prima di usarla nei negozi.
+# CATEGORIES — use these IDs in each shop's categories: field.
+# Add a category here before using it in shops.
 categories:
   - id: building
     name: Building blocks
@@ -101,8 +101,8 @@ categories:
     icon: tools
     description: A helping hand from the community.
 
-# ZONE — gli id sono i valori da usare in location: dentro ogni shop.
-# La dimensione è descrittiva: non teletrasporta e non converte le coordinate.
+# LOCATIONS — use these IDs in each shop's location: field.
+# The dimension is descriptive: it does not teleport or convert coordinates.
 locations:
   - id: district
     name: Shopping District

@@ -1,44 +1,44 @@
-# Moss & Moon — directory con catalogo YAML
+# Moss & Moon — directory with a YAML catalog
 
-Versione aggiornata: **5 negozi dimostrativi, 36 voci di inventario, un file `.yml` per negozio**. Commenti e istruzioni per la compilazione sono in italiano; l’interfaccia resta in inglese. Il design originale, la ricerca, i filtri, i preferiti, i temi e le schede sono mantenuti.
+Updated version: **5 demonstration shops, 36 inventory listings, one `.yml` file per shop**. Comments and editing instructions are in English, as is the interface. The original design, search, filters, favorites, themes and cards are preserved.
 
-**Sostituisci l’intero pacchetto precedente**, non soltanto `js/data.js`: sono cambiati il caricamento iniziale, la validazione, la visualizzazione dei prezzi, il modulo proposte e il workflow. L’unico HTML resta `index.html` e tutti i contenuti dell’interfaccia vengono creati da JavaScript.
+**Replace the entire previous package**, not just `js/data.js`: initial loading, validation, price display, the proposal form and the workflow have changed. `index.html` remains the only HTML file, and all interface content is created with JavaScript.
 
-## Dove modificare i dati
+## Where to edit data
 
 ```text
-index.html                         Unica pagina, struttura minimale
-config.yml                         Testi, link, categorie, zone e valuta generale
+index.html                         Single page, minimal structure
+config.yml                         Text, links, categories, locations and global currency
 shops/
-  index.yml                        Elenco dei file da caricare
+  index.yml                        List of files to load
   woolery.yml                      The Woolery
   pale-found.yml                   Pale & Found
   moonbound.yml                    Moonbound Books
   circuit.yml                      Circuit & Co.
   builders-bench.yml                The Builder’s Bench
 docs/
-  shop-template.yml                Modello commentato da duplicare; NON attivo
-  TESTING.md                       Verifiche effettuate e limiti
+  shop-template.yml                Commented template to copy; NOT active
+  TESTING.md                       Checks performed and limitations
 js/
-  data.js                          Lettura e validazione dei YAML, non dati da editare
-  core.js                          Ricerca, filtri, valute e validazione
-  app.js                           Rendering e interazioni
-  art.js                           Icone e illustrazioni
-  theme.js                         Ripristino del tema
-  vendor/                          Parser YAML locale e licenza
-assets/logo.png                    Logo fornito
-css/style.css                      Stile e responsive
-.github/workflows/pages.yml        Validazione e pubblicazione facoltativa
-tests/                             Test; non necessari per visitare il sito
+  data.js                          YAML loading and validation, not editable catalog data
+  core.js                          Search, filters, currencies and validation
+  app.js                           Rendering and interactions
+  art.js                           Icons and illustrations
+  theme.js                         Theme restoration
+  vendor/                          Local YAML parser and license
+assets/logo.png                    Supplied logo
+css/style.css                      Styles and responsive layout
+.github/workflows/pages.yml        Optional validation and deployment
+tests/                             Tests; not required to visit the site
 ```
 
-Non devi modificare JavaScript per aggiungere, rimuovere o aggiornare negozi. `js/data.js` non contiene più il catalogo. Non esiste una copia JSON del catalogo da mantenere sincronizzata.
+You do not need to edit JavaScript to add, remove or update shops. `js/data.js` no longer contains the catalog. There is no JSON copy of the catalog to keep synchronized.
 
-## Aggiungere un negozio
+## Adding a shop
 
-Copia `docs/shop-template.yml` in `shops/nome-negozio.yml`. Compila nome, proprietario, descrizione, categorie, posizione, coordinate, immagini facoltative e inventario. **Cambia anche `id`**, che deve essere univoco nell’intera directory. I commenti del modello spiegano ogni campo e i valori disponibili.
+Copy `docs/shop-template.yml` to `shops/shop-name.yml`. Fill in the name, owner, description, categories, location, coordinates, optional images and inventory. **Also change `id`**, which must be unique throughout the directory. The template comments explain every field and its available values.
 
-Aggiungi il nome del file a `shops/index.yml`:
+Add the filename to `shops/index.yml`:
 
 ```yaml
 shops:
@@ -47,43 +47,43 @@ shops:
   - moonbound.yml
   - circuit.yml
   - builders-bench.yml
-  - nome-negozio.yml  # Il nuovo file è relativo alla cartella shops/
+  - shop-name.yml  # The new file is relative to the shops/ directory
 ```
 
-Pubblica entrambi i file. Il sito legge il manifest e quindi i singoli negozi. Non cerca file attraverso l’API di GitHub e non prova a enumerare la directory del server.
+Publish both files. The site reads the manifest and then the individual shops. It does not look for files through the GitHub API or try to enumerate the server directory.
 
-Per **aggiornare** uno shop, modifica soltanto il suo YAML e pubblicalo. Per **rimuoverlo** dal catalogo, togli la riga dal manifest. Elimina anche il file dal sito pubblicato se non deve più essere accessibile direttamente.
+To **update** a shop, edit only its YAML file and publish it. To **remove** it from the catalog, remove its line from the manifest. Also delete the file from the published site if it should no longer be directly accessible.
 
-I cinque negozi sono solo la quantità di esempi inclusi, **non un limite del software**. L’ordine del manifest è mantenuto come ordine base; l’ordinamento “Featured first” porta in cima quelli con `featured: true`. Puoi creare una directory vuota con `shops: []`.
+The five shops are simply the number of included examples, **not a software limit**. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
 
-## Prezzi: diamanti oppure blocchi di diamante
+## Prices: diamonds or diamond blocks
 
-Le due valute accettate sono:
+The two accepted currencies are:
 
-| Valore YAML | Visualizzazione |
+| YAML value | Display |
 |---|---|
-| `diamond` | diamond / diamonds, con icona del diamante |
-| `diamond_block` | diamond block / diamond blocks, con icona del blocco |
+| `diamond` | diamond / diamonds, with a diamond icon |
+| `diamond_block` | diamond block / diamond blocks, with a block icon |
 
-La valuta si può impostare a tre livelli: **prodotto → negozio → `config.currency` in `config.yml`**. Vince sempre l’impostazione più specifica. Se il prodotto non ha `currency`, usa quella del negozio; se manca anche quella, usa il valore generale, predefinito `diamond`.
+Currency can be set at three levels: **item → shop → `config.currency` in `config.yml`**. The most specific setting wins. If an item has no `currency`, it uses the shop's currency; if that is also missing, it uses the global setting, which defaults to `diamond`.
 
-Esempio di parte di un file negozio:
+Example excerpt from a shop file:
 
 ```yaml
-# Valuta predefinita del negozio
+# Default currency for the shop
 currency: diamond
 
 items:
   - id: stone
     name: Stone
-    price: 1             # 1 diamante per l’intero lotto di 64 oggetti
+    price: 1             # 1 diamond for the entire batch of 64 items
     quantity: 64
     stock: in
     icon: cube
 
   - id: black_wool_bulk
     name: Black Wool — bulk
-    price: 3             # 3 blocchi di diamante per l’intero lotto
+    price: 3             # 3 diamond blocks for the entire batch
     currency: diamond_block
     quantity: 1728
     unit: items
@@ -93,32 +93,32 @@ items:
 
   - id: custom_order
     name: Custom order
-    price: null          # Mostra “Ask owner”, non un prezzo pari a zero
+    price: null          # Displays “Ask owner”, not a zero price
     quantity: 1
     unit: project
     stock: unknown
     icon: tools
 ```
 
-**Il prezzo non viene convertito automaticamente.** `price: 3` con `currency: diamond_block` viene mostrato come **3 diamond blocks**, non come 3 diamanti. Cambiando solo la valuta cambi il significato della cifra. Non è presente un selettore visitatore per convertire tutti i prezzi: ogni voce espone la valuta scelta dal proprietario.
+**Prices are not automatically converted.** `price: 3` with `currency: diamond_block` is displayed as **3 diamond blocks**, not 3 diamonds. Changing only the currency changes the meaning of the number. There is no visitor control to convert all prices: each listing shows the currency chosen by its owner.
 
-`price` è il costo dell’intera quantità `quantity`, non il prezzo per singolo oggetto. Usa un numero senza virgolette: `1`, `2`, `1.5`; usa il punto per i decimali. `0` indica un prezzo gratuito; `null` indica un prezzo da concordare. Non scrivere `"1 diamond"`, `"1"` o `1,5`.
+`price` is the cost of the entire `quantity`, not the price of a single item. Use an unquoted number: `1`, `2`, `1.5`; use a decimal point. `0` means free; `null` means the price must be agreed with the owner. Do not write `"1 diamond"`, `"1"` or `1,5`.
 
-`quantity` è un intero positivo. Il testo `unit` è facoltativo: se omesso viene usato `item` per quantità 1 oppure `items`. Per servizi puoi scrivere `unit: project`. Non esiste un calcolo automatico del contenuto di stack, shulker o contenitori: scrivi la quantità effettivamente venduta e specifica nelle note se il contenitore è incluso.
+`quantity` is a positive integer. The `unit` text is optional: if omitted, `item` is used for quantity 1, otherwise `items`. For services, you can write `unit: project`. Stack, shulker or container contents are not calculated automatically: enter the actual amount sold and specify in the notes whether the container is included.
 
-## Regole YAML e campi
+## YAML rules and fields
 
-Usa **2 spazi per ogni livello**, mai TAB. Il trattino `-` introduce una nuova voce di un elenco. `true`, `false`, numeri e `null` non vanno tra virgolette. I commenti iniziano con `#`: non sono mostrati nell’interfaccia ma restano nel file pubblico.
+Use **2 spaces per level**, never TAB. A hyphen `-` introduces a new list entry. Do not quote `true`, `false`, numbers or `null`. Comments start with `#`: they are not shown in the interface but remain in the public file.
 
-Per testi con due punti, cancelletto o caratteri particolari usa virgolette:
+Quote text containing colons, hash signs or special characters:
 
 ```yaml
 name: "Pale & Found: shop #1"
 notes: "Ask the owner before taking an empty shulker."
-color: "#e7e5df"  # Senza virgolette, # inizierebbe un commento
+color: "#e7e5df"  # Without quotes, # would start a comment
 ```
 
-Puoi scrivere descrizioni lunghe su più righe:
+You can write long descriptions across multiple lines:
 
 ```yaml
 description: >-
@@ -130,17 +130,17 @@ notes: |
   Second line, with its line break preserved.
 ```
 
-Per gli elenchi vuoti usa `images: []`, `tags: []` o `aliases: []`. Una chiave lasciata senza valore diventa `null`, non una lista vuota, e viene segnalata se il campo richiede una lista.
+For empty lists, use `images: []`, `tags: []` or `aliases: []`. A key left without a value becomes `null`, not an empty list, and is flagged if the field requires a list.
 
-**Campi essenziali di uno shop:** `id`, `name`, `owner`, `description`, `categories`, `location`, `coords`, `updated`, `items`. `categories` è una lista di ID presenti in `config.yml`; `location` è un ID di zona presente nello stesso file. Ogni coordinata deve essere un intero. `updated` deve essere una vera data `YYYY-MM-DD`.
+**Required shop fields:** `id`, `name`, `owner`, `description`, `categories`, `location`, `coords`, `updated`, `items`. `categories` is a list of IDs defined in `config.yml`; `location` is a location ID defined in the same file. Each coordinate must be an integer. `updated` must be a real `YYYY-MM-DD` date.
 
-**Valori predefiniti per i campi facoltativi:** `kind: shop`, `status: unverified`, `demo: false`, `featured: false`, `theme: welcome`, `tags: []`, `images: []`, testi aggiuntivi vuoti e valuta ereditata dalla configurazione.
+**Defaults for optional fields:** `kind: shop`, `status: unverified`, `demo: false`, `featured: false`, `theme: welcome`, `tags: []`, `images: []`, empty additional text and currency inherited from the configuration.
 
-**Campi essenziali di un prodotto:** `id`, `name`, `price`, `quantity`. Gli ID dei prodotti devono essere univoci all’interno dello stesso inventario. Gli altri campi hanno predefiniti: valuta ereditata dal negozio, `stock: unknown`, `icon: cube`, `aliases: []` e unità in base alla quantità.
+**Required item fields:** `id`, `name`, `price`, `quantity`. Item IDs must be unique within the same inventory. Other fields have defaults: currency inherited from the shop, `stock: unknown`, `icon: cube`, `aliases: []` and a unit based on quantity.
 
-**Tipo:** `shop`, `stall` o `service`. **Stato:** `open`, `paused` o `unverified`. Tutti questi stati restano pubblici se il file è nel manifest; il filtro “Listed as in stock” considera solo i negozi `open` con prodotti `in` o `low`.
+**Type:** `shop`, `stall` or `service`. **Status:** `open`, `paused` or `unverified`. All these statuses remain public if the file is in the manifest; the “Listed as in stock” filter considers only `open` shops with items marked `in` or `low`.
 
-Per le immagini inserisci i file sotto `assets/shops/` e usa percorsi **relativi a `index.html`**, non al YAML:
+For images, place files under `assets/shops/` and use paths **relative to `index.html`**, not to the YAML file:
 
 ```yaml
 images:
@@ -150,67 +150,67 @@ images:
     alt: Inside the shop
 ```
 
-La prima immagine è la copertina. Senza foto viene usata l’illustrazione di `theme`. Le immagini mancanti hanno un ripiego visivo; il validatore della pubblicazione segnala risorse locali mancanti. Sono accettati anche URL HTTP(S), che introducono però richieste a siti esterni.
+The first image is the cover. Without photos, the `theme` illustration is used. Missing images have a visual fallback; the deployment validator flags missing local assets. HTTP(S) URLs are also accepted, but introduce requests to external sites.
 
-Il parser usa YAML con schema Core: date mantenute come testo, niente tag JavaScript o chiavi di merge. Non usare `<<`, `__proto__`, `constructor`, `prototype` o riferimenti ciclici. Un file troppo grande o annidato viene rifiutato. Chiavi sconosciute negli shop e nei prodotti vengono segnalate per intercettare refusi.
+The parser uses YAML with the Core schema: dates remain text, and JavaScript tags and merge keys are not supported. Do not use `<<`, `__proto__`, `constructor`, `prototype` or cyclic references. Files that are too large or deeply nested are rejected. Unknown shop and item keys are flagged to catch typos.
 
-## Cosa succede in caso di errore
+## What happens when an error occurs
 
-Il sito mostra un messaggio con **nome del file** e problema rilevato. Per errori di sintassi YAML sono incluse anche riga e colonna. File mancanti indicano l’errore HTTP. Le richieste scadono dopo 15 secondi.
+The site displays a message with the **filename** and detected problem. YAML syntax errors also include the line and column. Missing files show the HTTP error. Requests time out after 15 seconds.
 
-La directory non presenta in silenzio un catalogo parziale: se un file richiesto è errato, mostra la schermata di errore e consente di riprovare. Correggi il file, ripubblica e ricarica. L’uso del workflow incluso blocca il nuovo deploy quando validazione o test falliscono.
+The directory does not silently display a partial catalog: if a required file is invalid, it shows the error screen and allows retrying. Correct the file, publish it again and reload. The included workflow blocks a new deployment when validation or tests fail.
 
-## Proposte dal sito
+## Proposals from the site
 
-“List your shop” esporta ora **un file `.yml` commentato**, non JSON. Il modulo permette di scegliere la valuta predefinita. Prezzi e stock vengono completati durante la revisione (`price: null`, `stock: unknown`). Il file esportato può essere letto dallo stesso loader dopo la verifica e l’aggiunta al manifest.
+“List your shop” now exports **a commented `.yml` file**, not JSON. The form lets you choose the default currency. Prices and stock are completed during review (`price: null`, `stock: unknown`). The exported file can be read by the same loader after review and addition to the manifest.
 
-Il modulo non invia, salva nel repository, approva o pubblica nulla. I gestori devono verificare manualmente la proposta prima di metterla nel catalogo. `status: unverified` è un’etichetta, non una coda di moderazione privata.
+The form does not submit, save to the repository, approve or publish anything. Maintainers must manually review the proposal before adding it to the catalog. `status: unverified` is a label, not a private moderation queue.
 
-## Anteprima locale
+## Local preview
 
-Questa versione legge file separati tramite `fetch()`: **il doppio clic su `index.html` non è il metodo di avvio previsto**. Utilizza GitHub Pages oppure un server locale. Per esempio, con Python installato, dal terminale nella cartella del progetto:
+This version reads separate files through `fetch()`: **double-clicking `index.html` is not the intended startup method**. Use GitHub Pages or a local server. For example, with Python installed, run this from a terminal in the project directory:
 
 ```sh
 python -m http.server 8080
 ```
 
-Su Windows puoi usare anche `py -m http.server 8080` se Python è configurato con il launcher. Apri `http://localhost:8080`. Il parser è incluso nel pacchetto: il sito non scarica librerie o font da CDN. Non servono Node.js, npm o una compilazione per visualizzare il sito; Node.js serve soltanto per i test facoltativi.
+On Windows, you can also use `py -m http.server 8080` if Python is configured with the launcher. Open `http://localhost:8080`. The parser is included in the package: the site does not download libraries or fonts from CDNs. Node.js, npm and a build are not required to view the site; Node.js is only needed for optional tests.
 
-## Pubblicazione su GitHub Pages
+## Publishing on GitHub Pages
 
-Il sito non è stato pubblicato sul tuo account. Il pacchetto include un workflow facoltativo per il branch `main`.
+The site has not been published to your account. The package includes an optional workflow for the `main` branch.
 
-1. Carica **il contenuto** della cartella `moss-moon-directory` alla radice del repository. Includi `config.yml`, `shops/`, `js/vendor/`, `tests/`, `.github/` e `.nojekyll`, oltre agli altri file. Non creare una cartella radice aggiuntiva per errore.
-2. In **Settings → Pages → Source** seleziona **GitHub Actions**.
-3. Pubblica su `main` oppure avvia il workflow **Validate and deploy directory**. Con un altro branch, aggiorna `branches: [main]` nel workflow.
+1. Upload **the contents** of the `moss-moon-directory` folder to the repository root. Include `config.yml`, `shops/`, `js/vendor/`, `tests/`, `.github/` and `.nojekyll`, as well as the other files. Do not accidentally add an extra root folder.
+2. In **Settings → Pages → Source**, select **GitHub Actions**.
+3. Publish to `main` or run the **Validate and deploy directory** workflow. For another branch, update `branches: [main]` in the workflow.
 
-Il workflow esegue test e validazione e copia `index.html`, `config.yml`, `assets/`, `css/`, `js/` e **l’intera cartella `shops/`** nella pubblicazione. Non genera HTML e non trasforma gli YAML in JS. I YAML vengono serviti e letti come file statici. I percorsi relativi funzionano anche sotto il percorso del repository, senza modificare il codice.
+The workflow runs tests and validation and copies `index.html`, `config.yml`, `assets/`, `css/`, `js/` and **the entire `shops/` directory** into the deployment. It does not generate HTML or transform YAML into JS. YAML files are served and read as static files. Relative paths also work under the repository path without code changes.
 
-In alternativa puoi pubblicare i file statici con una configurazione Pages già esistente: assicurati che `.nojekyll` sia nella radice pubblicata e che i file `.yml` non siano esclusi dalla pipeline. Il workflow incluso è la configurazione di riferimento del pacchetto.
+Alternatively, you can publish the static files with an existing Pages configuration: make sure `.nojekyll` is at the published root and `.yml` files are not excluded by the pipeline. The included workflow is the package's reference configuration.
 
-Le istruzioni di configurazione si basano sulla documentazione ufficiale GitHub Pages e sul template Static HTML; l’esecuzione reale dipende dai permessi del repository e non è stata provata sul tuo account.
+The setup instructions are based on the official GitHub Pages documentation and Static HTML template; actual execution depends on repository permissions and has not been tested on your account.
 
-Fonti tecniche:
+Technical sources:
 - https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 - https://github.com/actions/starter-workflows/blob/main/pages/static.yml
 
-## Test
+## Tests
 
-Dalla cartella principale, con Node.js 22:
+From the root directory, with Node.js 22:
 
 ```sh
 node --test tests/*.test.cjs
 node tests/validate-data.cjs
 ```
 
-Le fixture dei test di ricerca sono separate dai dati pubblicati. Il validatore e il test HTTP leggono invece il catalogo corrente. Per le prove browser e i limiti dell’ambiente usato vedi `docs/TESTING.md`.
+Search test fixtures are separate from the published data. The validator and HTTP test read the current catalog. For browser checks and limitations of the environment used, see `docs/TESTING.md`.
 
-## Dati di esempio e informazioni pubbliche
+## Sample data and public information
 
-I cinque negozi, i proprietari, le 36 voci, i prezzi, le coordinate, le date e le disponibilità sono **dimostrativi**. Prima di una directory ufficiale sostituiscili con informazioni approvate; imposta `demo: false` su ciascuna scheda reale e `config.demoMode: false` quando l’intero catalogo è pronto. Aggiorna anche i testi che parlano della demo.
+The five shops, owners, 36 listings, prices, coordinates, dates and availability are **demonstration data**. Before launching an official directory, replace them with approved information; set `demo: false` on each real listing and `config.demoMode: false` when the entire catalog is ready. Also update text referring to the demo.
 
-Stock e prezzi non sono sincronizzati con Minecraft. Il logo è quello fornito; le vignette sono illustrazioni, non screenshot di negozi reali. Indirizzo e link non implicano una verifica dello stato del server.
+Stock and prices are not synchronized with Minecraft. The logo is the supplied one; thumbnails are illustrations, not screenshots of real shops. The address and links do not imply that server status has been verified.
 
-**Ogni file pubblicato, anche non elencato nel manifest, e tutti i commenti sono leggibili pubblicamente.** Non inserire password, token, bozze riservate o dati privati negli YAML o nel codice. Un file non elencato non appare nella ricerca, ma non è protetto da accessi diretti.
+**Every published file, even if not listed in the manifest, and all comments can be read publicly.** Do not put passwords, tokens, confidential drafts or private data in YAML or code. An unlisted file does not appear in search, but is not protected from direct access.
 
-Tema e preferiti sono locali al browser; nessun account, checkout, analytics o collegamento automatico a Discord è incluso. Le informazioni sulla libreria YAML locale, la modifica applicata e la licenza sono in `js/vendor/README.md` e `js/vendor/js-yaml.LICENSE.txt`.
+Themes and favorites are local to the browser; no accounts, checkout, analytics or automatic Discord integration are included. Information about the local YAML library, the applied modification and the license is in `js/vendor/README.md` and `js/vendor/js-yaml.LICENSE.txt`.

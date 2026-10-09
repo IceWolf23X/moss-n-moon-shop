@@ -16,7 +16,7 @@ vm.runInContext(fs.readFileSync(path.join(base, 'tests/fixtures/example-data.js'
 const config = JSON.parse(JSON.stringify(fixture.MMData));
 delete config.shops;
 config.config.currency = 'diamond';
-const shopYaml = `# Un negozio dimostrativo, compilabile a mano.
+const shopYaml = `# A demonstration shop that can be filled in manually.
 id: sample-shop
 name: "Sample: Shop #1"
 owner: Player_1
