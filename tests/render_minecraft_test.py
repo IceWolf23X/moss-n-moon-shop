@@ -11,6 +11,15 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 
 class RenderTests(unittest.TestCase):
+    def test_enchanted_book_has_glint_without_changing_its_silhouette(self):
+        with Image.open(ROOT/'tests/fixtures/enchanted_book_base.png') as original, Image.open(ROOT/'assets/minecraft/rendered/enchanted_book.png') as rendered:
+            base=original.convert('RGBA'); actual=rendered.convert('RGBA')
+            self.assertEqual(actual.size,base.size)
+            self.assertEqual(actual.getchannel('A').tobytes(),base.getchannel('A').tobytes())
+            changed=sum(1 for before,after in zip(base.get_flattened_data(),actual.get_flattened_data()) if before != after)
+            self.assertGreater(changed,1000,'Enchanted books must include the CoreChatX glint overlay')
+            self.assertTrue(all(before==after for before,after in zip(base.get_flattened_data(),actual.get_flattened_data()) if before[3]==0),'Glint must not extend outside the book')
+
     def test_rendered_catalog_images_are_nonempty_256px_and_not_generated_fallbacks(self):
         manifest=ROOT/'assets/minecraft/rendered/manifest.json'
         self.assertTrue(manifest.exists(),'CoreChatX render manifest must exist')

@@ -12,7 +12,7 @@
 # Unlisted files are NOT loaded, but remain accessible by URL if published.
 # For an empty directory, use: shops: []
 # This is the initial order; "Featured first" moves shops with featured: true to the top.
-# Five examples included: the software does not limit the directory to five shops.
+# Includes five example shops and a complete Minecraft preview test catalog.
 
 shops:
   - woolery.yml
@@ -20,3 +20,4 @@ shops:
   - moonbound.yml
   - circuit.yml
   - builders-bench.yml
+  - preview-test.yml

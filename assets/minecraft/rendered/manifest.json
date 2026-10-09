@@ -17,7 +17,7 @@
   "compatibility": "Legacy single-part bed definitions adapted to a head/foot composite; renderer source unchanged.",
   "adapter_sha256": {
     "render_minecraft_previews.py": "db10e4947c0a9652e70c8d019d66ca7c28b9f266bcc207db9ad8932bec414c23",
-    "CoreChatXPreviewBatch.java": "2d49ced61de090f1f3507cc120c155f6c3e3f9b2d6edcf67eb3bab1d6a502f90"
+    "CoreChatXPreviewBatch.java": "96697e850675f8d762faeba6256c2d409afb70bc2496b2f19ebacb8488153a4a"
   },
   "dependency_sha256": {
     "ecj-3.40.0.jar": "05cc22a24e7982970f63a405fc6c820bc80b806f27f3c5a6236fc475f8f7152b",
@@ -2842,7 +2842,8 @@
       "path": "assets/minecraft/rendered/enchanted_book.png",
       "source": "item-definition",
       "used_fallback": false,
-      "sha256": "9a14e85deda584d326e203b332d7da952480c0cded1dccef61946ecb8e1bf8b8"
+      "glint": true,
+      "sha256": "1741b762fff6f64d120fccc63068f5eadbbf3ef89a7b96297805d9e6cc56d6bf"
     },
     "enchanted_golden_apple": {
       "path": "assets/minecraft/rendered/enchanted_golden_apple.png",

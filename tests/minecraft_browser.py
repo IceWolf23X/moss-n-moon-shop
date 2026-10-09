@@ -45,6 +45,16 @@ try:
                 page.screenshot(path=os.environ['MINECRAFT_SCREENSHOT'])
             assert all(size == [256,256] for size in images.evaluate_all('(images)=>images.map(i=>[i.naturalWidth,i.naturalHeight])'))
             total += count
+        page.goto(origin + '#shop=preview-test', wait_until='networkidle')
+        expected=len(json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())['items'])
+        page.wait_for_function("count=>document.querySelectorAll('#inventory-rows tr').length===count", arg=expected)
+        assert page.locator('#inventory-rows img.minecraft-item').count()==expected
+        for item in ['enchanted_book','observer','white_wool']:
+            page.locator('#inventory-query').fill('minecraft:'+item)
+            assert page.locator('#inventory-rows img.minecraft-item').count()==1
+            page.wait_for_function("document.querySelector('#inventory-rows img').naturalWidth===256")
+        page.set_viewport_size({'width':390,'height':900})
+        assert page.locator('#modal').evaluate('d=>d.scrollWidth<=d.clientWidth+1')
         page.goto(origin + '#shop=builders-bench', wait_until='networkidle')
         assert page.locator('#inventory-rows img').count() == 0
         page.route('**/rendered/white_wool.png', lambda route: route.abort())
@@ -52,7 +62,7 @@ try:
         fallback = page.locator('.item-preview.asset-missing .item-fallback').first
         fallback.wait_for(state='visible')
         assert not errors, errors
-        print(json.dumps({'loaded_previews': total, 'repository_subpath': 'passed', 'service_icons': 'passed', 'broken_image_fallback': 'passed', 'runtime_errors': errors}))
+        print(json.dumps({'loaded_previews': total, 'repository_subpath': 'passed', 'service_icons': 'passed', 'test_shop_items': expected, 'test_shop_search': 'passed', 'broken_image_fallback': 'passed', 'runtime_errors': errors}))
         browser.close()
 finally:
     server.shutdown()

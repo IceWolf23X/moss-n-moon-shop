@@ -54,7 +54,7 @@ Publish both files. The site reads the manifest and then the individual shops. I
 
 To **update** a shop, edit only its YAML file and publish it. To **remove** it from the catalog, remove its line from the manifest. Also delete the file from the published site if it should no longer be directly accessible.
 
-The five shops are simply the number of included examples, **not a software limit**. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
+The catalog includes five example shops and a Minecraft preview test shop; this is **not a software limit**. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
 
 ## Minecraft item and block previews
 
@@ -112,7 +112,7 @@ The default vanilla model base is Java 1.21.11, matching the base pack. Vanilla 
 
 The offline adapter supplies fixed Overworld, clock and compass state and translates legacy single-part bed definitions into head/foot composites supported by the renderer. It leaves the original renderer unchanged. Amounts, tooltips and durability bars are not baked into the icon; catalog prices and quantities remain HTML.
 
-The current output contains **1,503 successful rendered previews**. The render manifest lists three excluded candidates: `air` (no useful icon), `snow_golem_spawn_egg` and the legacy ID `zombie_pigman_spawn_egg`. Generated placeholder/text fallbacks are not published as successful renders. All 33 item/block listings in the sample catalog resolve to rendered PNGs; services use illustrations.
+The current output contains **1,503 successful rendered previews**. The render manifest lists three excluded candidates: `air` (no useful icon), `snow_golem_spawn_egg` and the legacy ID `zombie_pigman_spawn_egg`. Generated placeholder/text fallbacks are not published as successful renders. All 33 item/block listings in the five example shops resolve to rendered PNGs; services use illustrations. Enchanted books include the static glint produced by CoreChatX’s complete item renderer. The `Minecraft Preview Test` shop (`#shop=preview-test`) lists all 1,503 available previews with searchable names and Minecraft IDs, unspecified prices and unknown stock. It is a visual test gallery, not a real trading shop; remove `preview-test.yml` from `shops/index.yml` to hide it.
 
 `assets/minecraft/rendered/manifest.json` records the renderer revision, scale, vanilla version/checksums, source-pack manifest checksum, PNG checksums, render source and unsuccessful candidates. `js/minecraft-rendered.js` is the generated runtime registry. The lookup order is rendered PNG → flat pack texture → original illustration; a failed image request also displays the original illustration. Files removed from a subsequent render may remain on disk, but are not included in its new registry. The `--only` option is for diagnostics and replaces the registry with that subset; do not use it for publication.
 
@@ -267,7 +267,7 @@ Search test fixtures are separate from the published data. The validator and HTT
 
 ## Sample data and public information
 
-The five shops, owners, 36 listings, prices, coordinates, dates and availability are **demonstration data**. Before launching an official directory, replace them with approved information; set `demo: false` on each real listing and `config.demoMode: false` when the entire catalog is ready. Also update text referring to the demo.
+The five example shops with 36 listings, their owners, prices, coordinates, dates and availability are **demonstration data**. The additional Minecraft preview test shop is also sample content. Before launching an official directory, replace them with approved information; set `demo: false` on each real listing and `config.demoMode: false` when the entire catalog is ready. Also update text referring to the demo.
 
 Stock and prices are not synchronized with Minecraft. The logo is the supplied one; thumbnails are illustrations, not screenshots of real shops. The address and links do not imply that server status has been verified.
 

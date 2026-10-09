@@ -1,0 +1,7548 @@
+# Visual preview test listing. Generated from assets/minecraft/rendered/manifest.json.
+# Prices and stock are unspecified; this is not a real trading shop.
+id: preview-test
+name: Minecraft Preview Test
+owner: PreviewTest
+tagline: Every rendered Minecraft item and block in one place.
+description: >-
+  A visual test catalog containing all 1,503 available Minecraft item and block previews. Use the
+  inventory search to find any item by name or Minecraft ID. This is a preview gallery, not a
+  trading shop.
+kind: shop
+categories:
+  - building
+location: spawn
+coords:
+  x: 0
+  'y': 64
+  z: 0
+directions: Test listing only; these coordinates do not point to a real shop.
+status: unverified
+demo: true
+featured: false
+updated: '2026-10-09'
+currency: diamond
+theme: stone
+tags:
+  - Preview test
+  - All items & blocks
+notes: >-
+  Generated from the CoreChatX rendered catalog at scale 16. No real prices or stock. Air and
+  unsupported item definitions are excluded.
+images: []
+items:
+  - id: acacia_boat
+    name: Acacia Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_button
+    name: Acacia Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_chest_boat
+    name: Acacia Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_door
+    name: Acacia Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_fence
+    name: Acacia Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_fence_gate
+    name: Acacia Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_hanging_sign
+    name: Acacia Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_leaves
+    name: Acacia Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_log
+    name: Acacia Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_planks
+    name: Acacia Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_pressure_plate
+    name: Acacia Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_sapling
+    name: Acacia Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_shelf
+    name: Acacia Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_sign
+    name: Acacia Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_slab
+    name: Acacia Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_stairs
+    name: Acacia Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_trapdoor
+    name: Acacia Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: acacia_wood
+    name: Acacia Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: activator_rail
+    name: Activator Rail
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: allay_spawn_egg
+    name: Allay Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: allium
+    name: Allium
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: amethyst_block
+    name: Amethyst Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: amethyst_cluster
+    name: Amethyst Cluster
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: amethyst_shard
+    name: Amethyst Shard
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ancient_debris
+    name: Ancient Debris
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: andesite
+    name: Andesite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: andesite_slab
+    name: Andesite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: andesite_stairs
+    name: Andesite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: andesite_wall
+    name: Andesite Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: angler_pottery_sherd
+    name: Angler Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: anvil
+    name: Anvil
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: apple
+    name: Apple
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: archer_pottery_sherd
+    name: Archer Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: armadillo_scute
+    name: Armadillo Scute
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: armadillo_spawn_egg
+    name: Armadillo Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: armor_stand
+    name: Armor Stand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: arms_up_pottery_sherd
+    name: Arms Up Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: arrow
+    name: Arrow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: axolotl_bucket
+    name: Axolotl Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: axolotl_spawn_egg
+    name: Axolotl Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: azalea
+    name: Azalea
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: azalea_leaves
+    name: Azalea Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: azure_bluet
+    name: Azure Bluet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: baked_potato
+    name: Baked Potato
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo
+    name: Bamboo
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_block
+    name: Bamboo Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_button
+    name: Bamboo Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_chest_raft
+    name: Bamboo Chest Raft
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_door
+    name: Bamboo Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_fence
+    name: Bamboo Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_fence_gate
+    name: Bamboo Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_hanging_sign
+    name: Bamboo Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_mosaic
+    name: Bamboo Mosaic
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_mosaic_slab
+    name: Bamboo Mosaic Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_mosaic_stairs
+    name: Bamboo Mosaic Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_planks
+    name: Bamboo Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_pressure_plate
+    name: Bamboo Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_raft
+    name: Bamboo Raft
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_shelf
+    name: Bamboo Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_sign
+    name: Bamboo Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_slab
+    name: Bamboo Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_stairs
+    name: Bamboo Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bamboo_trapdoor
+    name: Bamboo Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: barrel
+    name: Barrel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: barrier
+    name: Barrier
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: basalt
+    name: Basalt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bat_spawn_egg
+    name: Bat Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beacon
+    name: Beacon
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bedrock
+    name: Bedrock
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bee_nest
+    name: Bee Nest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bee_spawn_egg
+    name: Bee Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beef
+    name: Beef
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beehive
+    name: Beehive
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beetroot
+    name: Beetroot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beetroot_seeds
+    name: Beetroot Seeds
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: beetroot_soup
+    name: Beetroot Soup
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bell
+    name: Bell
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: big_dripleaf
+    name: Big Dripleaf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_boat
+    name: Birch Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_button
+    name: Birch Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_chest_boat
+    name: Birch Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_door
+    name: Birch Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_fence
+    name: Birch Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_fence_gate
+    name: Birch Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_hanging_sign
+    name: Birch Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_leaves
+    name: Birch Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_log
+    name: Birch Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_planks
+    name: Birch Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_pressure_plate
+    name: Birch Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_sapling
+    name: Birch Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_shelf
+    name: Birch Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_sign
+    name: Birch Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_slab
+    name: Birch Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_stairs
+    name: Birch Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_trapdoor
+    name: Birch Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: birch_wood
+    name: Birch Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_banner
+    name: Black Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_bed
+    name: Black Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_bundle
+    name: Black Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_candle
+    name: Black Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_carpet
+    name: Black Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_concrete
+    name: Black Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_concrete_powder
+    name: Black Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_dye
+    name: Black Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_glazed_terracotta
+    name: Black Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_harness
+    name: Black Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_shulker_box
+    name: Black Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_stained_glass
+    name: Black Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_stained_glass_pane
+    name: Black Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_terracotta
+    name: Black Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: black_wool
+    name: Black Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blackstone
+    name: Blackstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blackstone_slab
+    name: Blackstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blackstone_stairs
+    name: Blackstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blackstone_wall
+    name: Blackstone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blade_pottery_sherd
+    name: Blade Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blast_furnace
+    name: Blast Furnace
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blaze_powder
+    name: Blaze Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blaze_rod
+    name: Blaze Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blaze_spawn_egg
+    name: Blaze Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_banner
+    name: Blue Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_bed
+    name: Blue Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_bundle
+    name: Blue Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_candle
+    name: Blue Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_carpet
+    name: Blue Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_concrete
+    name: Blue Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_concrete_powder
+    name: Blue Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_dye
+    name: Blue Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_egg
+    name: Blue Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_glazed_terracotta
+    name: Blue Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_harness
+    name: Blue Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_ice
+    name: Blue Ice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_orchid
+    name: Blue Orchid
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_shulker_box
+    name: Blue Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_stained_glass
+    name: Blue Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_stained_glass_pane
+    name: Blue Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_terracotta
+    name: Blue Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: blue_wool
+    name: Blue Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bogged_spawn_egg
+    name: Bogged Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bolt_armor_trim_smithing_template
+    name: Bolt Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bone
+    name: Bone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bone_block
+    name: Bone Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bone_meal
+    name: Bone Meal
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: book
+    name: Book
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bookshelf
+    name: Bookshelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bordure_indented_banner_pattern
+    name: Bordure Indented Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bow
+    name: Bow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bowl
+    name: Bowl
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brain_coral
+    name: Brain Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brain_coral_block
+    name: Brain Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brain_coral_fan
+    name: Brain Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bread
+    name: Bread
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: breeze_rod
+    name: Breeze Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: breeze_spawn_egg
+    name: Breeze Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brewer_pottery_sherd
+    name: Brewer Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brewing_stand
+    name: Brewing Stand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brick
+    name: Brick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brick_slab
+    name: Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brick_stairs
+    name: Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brick_wall
+    name: Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bricks
+    name: Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_banner
+    name: Brown Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_bed
+    name: Brown Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_bundle
+    name: Brown Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_candle
+    name: Brown Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_carpet
+    name: Brown Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_concrete
+    name: Brown Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_concrete_powder
+    name: Brown Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_dye
+    name: Brown Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_egg
+    name: Brown Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_glazed_terracotta
+    name: Brown Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_harness
+    name: Brown Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_mushroom
+    name: Brown Mushroom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_mushroom_block
+    name: Brown Mushroom Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_shulker_box
+    name: Brown Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_stained_glass
+    name: Brown Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_stained_glass_pane
+    name: Brown Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_terracotta
+    name: Brown Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brown_wool
+    name: Brown Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: brush
+    name: Brush
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bubble_coral
+    name: Bubble Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bubble_coral_block
+    name: Bubble Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bubble_coral_fan
+    name: Bubble Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bucket
+    name: Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: budding_amethyst
+    name: Budding Amethyst
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bundle
+    name: Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: burn_pottery_sherd
+    name: Burn Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: bush
+    name: Bush
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cactus
+    name: Cactus
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cactus_flower
+    name: Cactus Flower
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cake
+    name: Cake
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: calcite
+    name: Calcite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: calibrated_sculk_sensor
+    name: Calibrated Sculk Sensor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: camel_husk_spawn_egg
+    name: Camel Husk Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: camel_spawn_egg
+    name: Camel Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: campfire
+    name: Campfire
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: candle
+    name: Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: carrot
+    name: Carrot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: carrot_on_a_stick
+    name: Carrot On A Stick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cartography_table
+    name: Cartography Table
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: carved_pumpkin
+    name: Carved Pumpkin
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cat_spawn_egg
+    name: Cat Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cauldron
+    name: Cauldron
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cave_spider_spawn_egg
+    name: Cave Spider Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chain_command_block
+    name: Chain Command Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chainmail_boots
+    name: Chainmail Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chainmail_chestplate
+    name: Chainmail Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chainmail_helmet
+    name: Chainmail Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chainmail_leggings
+    name: Chainmail Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: charcoal
+    name: Charcoal
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_boat
+    name: Cherry Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_button
+    name: Cherry Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_chest_boat
+    name: Cherry Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_door
+    name: Cherry Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_fence
+    name: Cherry Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_fence_gate
+    name: Cherry Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_hanging_sign
+    name: Cherry Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_leaves
+    name: Cherry Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_log
+    name: Cherry Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_planks
+    name: Cherry Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_pressure_plate
+    name: Cherry Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_sapling
+    name: Cherry Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_shelf
+    name: Cherry Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_sign
+    name: Cherry Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_slab
+    name: Cherry Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_stairs
+    name: Cherry Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_trapdoor
+    name: Cherry Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cherry_wood
+    name: Cherry Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chest
+    name: Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chest_minecart
+    name: Chest Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chicken
+    name: Chicken
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chicken_spawn_egg
+    name: Chicken Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chipped_anvil
+    name: Chipped Anvil
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_bookshelf
+    name: Chiseled Bookshelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_copper
+    name: Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_deepslate
+    name: Chiseled Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_nether_bricks
+    name: Chiseled Nether Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_polished_blackstone
+    name: Chiseled Polished Blackstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_quartz_block
+    name: Chiseled Quartz Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_red_sandstone
+    name: Chiseled Red Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_resin_bricks
+    name: Chiseled Resin Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_sandstone
+    name: Chiseled Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_stone_bricks
+    name: Chiseled Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_tuff
+    name: Chiseled Tuff
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chiseled_tuff_bricks
+    name: Chiseled Tuff Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chorus_flower
+    name: Chorus Flower
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chorus_fruit
+    name: Chorus Fruit
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: chorus_plant
+    name: Chorus Plant
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: clay
+    name: Clay
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: clay_ball
+    name: Clay Ball
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: clock
+    name: Clock
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: closed_eyeblossom
+    name: Closed Eyeblossom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: coal
+    name: Coal
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: coal_block
+    name: Coal Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: coal_ore
+    name: Coal Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: coarse_dirt
+    name: Coarse Dirt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: coast_armor_trim_smithing_template
+    name: Coast Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobbled_deepslate
+    name: Cobbled Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobbled_deepslate_slab
+    name: Cobbled Deepslate Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobbled_deepslate_stairs
+    name: Cobbled Deepslate Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobbled_deepslate_wall
+    name: Cobbled Deepslate Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobblestone
+    name: Cobblestone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobblestone_slab
+    name: Cobblestone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobblestone_stairs
+    name: Cobblestone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobblestone_wall
+    name: Cobblestone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cobweb
+    name: Cobweb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cocoa_beans
+    name: Cocoa Beans
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cod
+    name: Cod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cod_bucket
+    name: Cod Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cod_spawn_egg
+    name: Cod Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: command_block
+    name: Command Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: command_block_minecart
+    name: Command Block Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: comparator
+    name: Comparator
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: compass
+    name: Compass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: composter
+    name: Composter
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: conduit
+    name: Conduit
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_beef
+    name: Cooked Beef
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_chicken
+    name: Cooked Chicken
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_cod
+    name: Cooked Cod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_mutton
+    name: Cooked Mutton
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_porkchop
+    name: Cooked Porkchop
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_rabbit
+    name: Cooked Rabbit
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cooked_salmon
+    name: Cooked Salmon
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cookie
+    name: Cookie
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_axe
+    name: Copper Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_bars
+    name: Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_block
+    name: Copper Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_boots
+    name: Copper Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_bulb
+    name: Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_chain
+    name: Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_chest
+    name: Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_chestplate
+    name: Copper Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_door
+    name: Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_golem_spawn_egg
+    name: Copper Golem Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_golem_statue
+    name: Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_grate
+    name: Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_helmet
+    name: Copper Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_hoe
+    name: Copper Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_horse_armor
+    name: Copper Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_ingot
+    name: Copper Ingot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_lantern
+    name: Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_leggings
+    name: Copper Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_nautilus_armor
+    name: Copper Nautilus Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_nugget
+    name: Copper Nugget
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_ore
+    name: Copper Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_pickaxe
+    name: Copper Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_shovel
+    name: Copper Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_spear
+    name: Copper Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_sword
+    name: Copper Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_torch
+    name: Copper Torch
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: copper_trapdoor
+    name: Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cornflower
+    name: Cornflower
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cow_spawn_egg
+    name: Cow Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cracked_deepslate_bricks
+    name: Cracked Deepslate Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cracked_deepslate_tiles
+    name: Cracked Deepslate Tiles
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cracked_nether_bricks
+    name: Cracked Nether Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cracked_polished_blackstone_bricks
+    name: Cracked Polished Blackstone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cracked_stone_bricks
+    name: Cracked Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crafter
+    name: Crafter
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crafting_table
+    name: Crafting Table
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: creaking_heart
+    name: Creaking Heart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: creaking_spawn_egg
+    name: Creaking Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: creeper_banner_pattern
+    name: Creeper Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: creeper_head
+    name: Creeper Head
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: creeper_spawn_egg
+    name: Creeper Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_button
+    name: Crimson Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_door
+    name: Crimson Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_fence
+    name: Crimson Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_fence_gate
+    name: Crimson Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_fungus
+    name: Crimson Fungus
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_hanging_sign
+    name: Crimson Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_hyphae
+    name: Crimson Hyphae
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_nylium
+    name: Crimson Nylium
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_planks
+    name: Crimson Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_pressure_plate
+    name: Crimson Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_roots
+    name: Crimson Roots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_shelf
+    name: Crimson Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_sign
+    name: Crimson Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_slab
+    name: Crimson Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_stairs
+    name: Crimson Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_stem
+    name: Crimson Stem
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crimson_trapdoor
+    name: Crimson Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crossbow
+    name: Crossbow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: crying_obsidian
+    name: Crying Obsidian
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_copper
+    name: Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_copper_slab
+    name: Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_copper_stairs
+    name: Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_red_sandstone
+    name: Cut Red Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_red_sandstone_slab
+    name: Cut Red Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_sandstone
+    name: Cut Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cut_sandstone_slab
+    name: Cut Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_banner
+    name: Cyan Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_bed
+    name: Cyan Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_bundle
+    name: Cyan Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_candle
+    name: Cyan Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_carpet
+    name: Cyan Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_concrete
+    name: Cyan Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_concrete_powder
+    name: Cyan Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_dye
+    name: Cyan Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_glazed_terracotta
+    name: Cyan Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_harness
+    name: Cyan Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_shulker_box
+    name: Cyan Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_stained_glass
+    name: Cyan Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_stained_glass_pane
+    name: Cyan Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_terracotta
+    name: Cyan Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: cyan_wool
+    name: Cyan Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: damaged_anvil
+    name: Damaged Anvil
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dandelion
+    name: Dandelion
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: danger_pottery_sherd
+    name: Danger Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_boat
+    name: Dark Oak Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_button
+    name: Dark Oak Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_chest_boat
+    name: Dark Oak Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_door
+    name: Dark Oak Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_fence
+    name: Dark Oak Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_fence_gate
+    name: Dark Oak Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_hanging_sign
+    name: Dark Oak Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_leaves
+    name: Dark Oak Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_log
+    name: Dark Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_planks
+    name: Dark Oak Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_pressure_plate
+    name: Dark Oak Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_sapling
+    name: Dark Oak Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_shelf
+    name: Dark Oak Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_sign
+    name: Dark Oak Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_slab
+    name: Dark Oak Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_stairs
+    name: Dark Oak Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_trapdoor
+    name: Dark Oak Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_oak_wood
+    name: Dark Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_prismarine
+    name: Dark Prismarine
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_prismarine_slab
+    name: Dark Prismarine Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dark_prismarine_stairs
+    name: Dark Prismarine Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: daylight_detector
+    name: Daylight Detector
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_brain_coral
+    name: Dead Brain Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_brain_coral_block
+    name: Dead Brain Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_brain_coral_fan
+    name: Dead Brain Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_bubble_coral
+    name: Dead Bubble Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_bubble_coral_block
+    name: Dead Bubble Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_bubble_coral_fan
+    name: Dead Bubble Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_bush
+    name: Dead Bush
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_fire_coral
+    name: Dead Fire Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_fire_coral_block
+    name: Dead Fire Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_fire_coral_fan
+    name: Dead Fire Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_horn_coral
+    name: Dead Horn Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_horn_coral_block
+    name: Dead Horn Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_horn_coral_fan
+    name: Dead Horn Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_tube_coral
+    name: Dead Tube Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_tube_coral_block
+    name: Dead Tube Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dead_tube_coral_fan
+    name: Dead Tube Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: debug_stick
+    name: Debug Stick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: decorated_pot
+    name: Decorated Pot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate
+    name: Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_brick_slab
+    name: Deepslate Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_brick_stairs
+    name: Deepslate Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_brick_wall
+    name: Deepslate Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_bricks
+    name: Deepslate Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_coal_ore
+    name: Deepslate Coal Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_copper_ore
+    name: Deepslate Copper Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_diamond_ore
+    name: Deepslate Diamond Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_emerald_ore
+    name: Deepslate Emerald Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_gold_ore
+    name: Deepslate Gold Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_iron_ore
+    name: Deepslate Iron Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_lapis_ore
+    name: Deepslate Lapis Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_redstone_ore
+    name: Deepslate Redstone Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_tile_slab
+    name: Deepslate Tile Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_tile_stairs
+    name: Deepslate Tile Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_tile_wall
+    name: Deepslate Tile Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: deepslate_tiles
+    name: Deepslate Tiles
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: detector_rail
+    name: Detector Rail
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond
+    name: Diamond
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_axe
+    name: Diamond Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_block
+    name: Diamond Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_boots
+    name: Diamond Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_chestplate
+    name: Diamond Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_helmet
+    name: Diamond Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_hoe
+    name: Diamond Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_horse_armor
+    name: Diamond Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_leggings
+    name: Diamond Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_nautilus_armor
+    name: Diamond Nautilus Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_ore
+    name: Diamond Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_pickaxe
+    name: Diamond Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_shovel
+    name: Diamond Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_spear
+    name: Diamond Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diamond_sword
+    name: Diamond Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diorite
+    name: Diorite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diorite_slab
+    name: Diorite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diorite_stairs
+    name: Diorite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: diorite_wall
+    name: Diorite Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dirt
+    name: Dirt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dirt_path
+    name: Dirt Path
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: disc_fragment_5
+    name: Disc Fragment 5
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dispenser
+    name: Dispenser
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dolphin_spawn_egg
+    name: Dolphin Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: donkey_spawn_egg
+    name: Donkey Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dragon_breath
+    name: Dragon Breath
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dragon_egg
+    name: Dragon Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dragon_head
+    name: Dragon Head
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dried_ghast
+    name: Dried Ghast
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dried_kelp
+    name: Dried Kelp
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dried_kelp_block
+    name: Dried Kelp Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dripstone_block
+    name: Dripstone Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dropper
+    name: Dropper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: drowned_spawn_egg
+    name: Drowned Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: dune_armor_trim_smithing_template
+    name: Dune Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: echo_shard
+    name: Echo Shard
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: egg
+    name: Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: elder_guardian_spawn_egg
+    name: Elder Guardian Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: elytra
+    name: Elytra
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: emerald
+    name: Emerald
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: emerald_block
+    name: Emerald Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: emerald_ore
+    name: Emerald Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: enchanted_book
+    name: Enchanted Book
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: enchanted_golden_apple
+    name: Enchanted Golden Apple
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: enchanting_table
+    name: Enchanting Table
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_crystal
+    name: End Crystal
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_portal_frame
+    name: End Portal Frame
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_rod
+    name: End Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_stone
+    name: End Stone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_stone_brick_slab
+    name: End Stone Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_stone_brick_stairs
+    name: End Stone Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_stone_brick_wall
+    name: End Stone Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: end_stone_bricks
+    name: End Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ender_chest
+    name: Ender Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ender_dragon_spawn_egg
+    name: Ender Dragon Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ender_eye
+    name: Ender Eye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ender_pearl
+    name: Ender Pearl
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: enderman_spawn_egg
+    name: Enderman Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: endermite_spawn_egg
+    name: Endermite Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: evoker_spawn_egg
+    name: Evoker Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: experience_bottle
+    name: Experience Bottle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: explorer_pottery_sherd
+    name: Explorer Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_chiseled_copper
+    name: Exposed Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper
+    name: Exposed Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_bars
+    name: Exposed Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_bulb
+    name: Exposed Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_chain
+    name: Exposed Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_chest
+    name: Exposed Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_door
+    name: Exposed Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_golem_statue
+    name: Exposed Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_grate
+    name: Exposed Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_lantern
+    name: Exposed Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_copper_trapdoor
+    name: Exposed Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_cut_copper
+    name: Exposed Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_cut_copper_slab
+    name: Exposed Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_cut_copper_stairs
+    name: Exposed Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: exposed_lightning_rod
+    name: Exposed Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: eye_armor_trim_smithing_template
+    name: Eye Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: farmland
+    name: Farmland
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: feather
+    name: Feather
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fermented_spider_eye
+    name: Fermented Spider Eye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fern
+    name: Fern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: field_masoned_banner_pattern
+    name: Field Masoned Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: filled_map
+    name: Filled Map
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fire_charge
+    name: Fire Charge
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fire_coral
+    name: Fire Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fire_coral_block
+    name: Fire Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fire_coral_fan
+    name: Fire Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: firefly_bush
+    name: Firefly Bush
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: firework_rocket
+    name: Firework Rocket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: firework_star
+    name: Firework Star
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fishing_rod
+    name: Fishing Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fletching_table
+    name: Fletching Table
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flint
+    name: Flint
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flint_and_steel
+    name: Flint And Steel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flow_armor_trim_smithing_template
+    name: Flow Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flow_banner_pattern
+    name: Flow Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flow_pottery_sherd
+    name: Flow Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flower_banner_pattern
+    name: Flower Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flower_pot
+    name: Flower Pot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flowering_azalea
+    name: Flowering Azalea
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: flowering_azalea_leaves
+    name: Flowering Azalea Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: fox_spawn_egg
+    name: Fox Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: friend_pottery_sherd
+    name: Friend Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: frog_spawn_egg
+    name: Frog Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: frogspawn
+    name: Frogspawn
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: furnace
+    name: Furnace
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: furnace_minecart
+    name: Furnace Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ghast_spawn_egg
+    name: Ghast Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ghast_tear
+    name: Ghast Tear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gilded_blackstone
+    name: Gilded Blackstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glass
+    name: Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glass_bottle
+    name: Glass Bottle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glass_pane
+    name: Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glistering_melon_slice
+    name: Glistering Melon Slice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: globe_banner_pattern
+    name: Globe Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glow_berries
+    name: Glow Berries
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glow_ink_sac
+    name: Glow Ink Sac
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glow_item_frame
+    name: Glow Item Frame
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glow_lichen
+    name: Glow Lichen
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glow_squid_spawn_egg
+    name: Glow Squid Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glowstone
+    name: Glowstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: glowstone_dust
+    name: Glowstone Dust
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: goat_horn
+    name: Goat Horn
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: goat_spawn_egg
+    name: Goat Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gold_block
+    name: Gold Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gold_ingot
+    name: Gold Ingot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gold_nugget
+    name: Gold Nugget
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gold_ore
+    name: Gold Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_apple
+    name: Golden Apple
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_axe
+    name: Golden Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_boots
+    name: Golden Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_carrot
+    name: Golden Carrot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_chestplate
+    name: Golden Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_helmet
+    name: Golden Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_hoe
+    name: Golden Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_horse_armor
+    name: Golden Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_leggings
+    name: Golden Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_nautilus_armor
+    name: Golden Nautilus Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_pickaxe
+    name: Golden Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_shovel
+    name: Golden Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_spear
+    name: Golden Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: golden_sword
+    name: Golden Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: granite
+    name: Granite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: granite_slab
+    name: Granite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: granite_stairs
+    name: Granite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: granite_wall
+    name: Granite Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: grass_block
+    name: Grass Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gravel
+    name: Gravel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_banner
+    name: Gray Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_bed
+    name: Gray Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_bundle
+    name: Gray Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_candle
+    name: Gray Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_carpet
+    name: Gray Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_concrete
+    name: Gray Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_concrete_powder
+    name: Gray Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_dye
+    name: Gray Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_glazed_terracotta
+    name: Gray Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_harness
+    name: Gray Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_shulker_box
+    name: Gray Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_stained_glass
+    name: Gray Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_stained_glass_pane
+    name: Gray Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_terracotta
+    name: Gray Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gray_wool
+    name: Gray Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_banner
+    name: Green Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_bed
+    name: Green Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_bundle
+    name: Green Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_candle
+    name: Green Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_carpet
+    name: Green Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_concrete
+    name: Green Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_concrete_powder
+    name: Green Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_dye
+    name: Green Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_glazed_terracotta
+    name: Green Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_harness
+    name: Green Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_shulker_box
+    name: Green Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_stained_glass
+    name: Green Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_stained_glass_pane
+    name: Green Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_terracotta
+    name: Green Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: green_wool
+    name: Green Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: grindstone
+    name: Grindstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: guardian_spawn_egg
+    name: Guardian Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: gunpowder
+    name: Gunpowder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: guster_banner_pattern
+    name: Guster Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: guster_pottery_sherd
+    name: Guster Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: hanging_roots
+    name: Hanging Roots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: happy_ghast_spawn_egg
+    name: Happy Ghast Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: hay_block
+    name: Hay Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: heart_of_the_sea
+    name: Heart Of The Sea
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: heart_pottery_sherd
+    name: Heart Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: heartbreak_pottery_sherd
+    name: Heartbreak Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: heavy_core
+    name: Heavy Core
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: heavy_weighted_pressure_plate
+    name: Heavy Weighted Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: hoglin_spawn_egg
+    name: Hoglin Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: honey_block
+    name: Honey Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: honey_bottle
+    name: Honey Bottle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: honeycomb
+    name: Honeycomb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: honeycomb_block
+    name: Honeycomb Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: hopper
+    name: Hopper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: hopper_minecart
+    name: Hopper Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: horn_coral
+    name: Horn Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: horn_coral_block
+    name: Horn Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: horn_coral_fan
+    name: Horn Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: horse_spawn_egg
+    name: Horse Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: host_armor_trim_smithing_template
+    name: Host Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: howl_pottery_sherd
+    name: Howl Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: husk_spawn_egg
+    name: Husk Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ice
+    name: Ice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_chiseled_stone_bricks
+    name: Infested Chiseled Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_cobblestone
+    name: Infested Cobblestone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_cracked_stone_bricks
+    name: Infested Cracked Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_deepslate
+    name: Infested Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_mossy_stone_bricks
+    name: Infested Mossy Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_stone
+    name: Infested Stone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: infested_stone_bricks
+    name: Infested Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ink_sac
+    name: Ink Sac
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_axe
+    name: Iron Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_bars
+    name: Iron Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_block
+    name: Iron Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_boots
+    name: Iron Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_chain
+    name: Iron Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_chestplate
+    name: Iron Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_door
+    name: Iron Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_golem_spawn_egg
+    name: Iron Golem Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_helmet
+    name: Iron Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_hoe
+    name: Iron Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_horse_armor
+    name: Iron Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_ingot
+    name: Iron Ingot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_leggings
+    name: Iron Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_nautilus_armor
+    name: Iron Nautilus Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_nugget
+    name: Iron Nugget
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_ore
+    name: Iron Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_pickaxe
+    name: Iron Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_shovel
+    name: Iron Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_spear
+    name: Iron Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_sword
+    name: Iron Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: iron_trapdoor
+    name: Iron Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: item_frame
+    name: Item Frame
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jack_o_lantern
+    name: Jack O Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jigsaw
+    name: Jigsaw
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jukebox
+    name: Jukebox
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_boat
+    name: Jungle Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_button
+    name: Jungle Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_chest_boat
+    name: Jungle Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_door
+    name: Jungle Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_fence
+    name: Jungle Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_fence_gate
+    name: Jungle Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_hanging_sign
+    name: Jungle Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_leaves
+    name: Jungle Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_log
+    name: Jungle Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_planks
+    name: Jungle Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_pressure_plate
+    name: Jungle Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_sapling
+    name: Jungle Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_shelf
+    name: Jungle Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_sign
+    name: Jungle Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_slab
+    name: Jungle Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_stairs
+    name: Jungle Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_trapdoor
+    name: Jungle Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: jungle_wood
+    name: Jungle Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: kelp
+    name: Kelp
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: knowledge_book
+    name: Knowledge Book
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ladder
+    name: Ladder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lantern
+    name: Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lapis_block
+    name: Lapis Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lapis_lazuli
+    name: Lapis Lazuli
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lapis_ore
+    name: Lapis Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: large_amethyst_bud
+    name: Large Amethyst Bud
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: large_fern
+    name: Large Fern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lava_bucket
+    name: Lava Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lead
+    name: Lead
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leaf_litter
+    name: Leaf Litter
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather
+    name: Leather
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather_boots
+    name: Leather Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather_chestplate
+    name: Leather Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather_helmet
+    name: Leather Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather_horse_armor
+    name: Leather Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: leather_leggings
+    name: Leather Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lectern
+    name: Lectern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lever
+    name: Lever
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light
+    name: Light
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_banner
+    name: Light Blue Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_bed
+    name: Light Blue Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_bundle
+    name: Light Blue Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_candle
+    name: Light Blue Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_carpet
+    name: Light Blue Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_concrete
+    name: Light Blue Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_concrete_powder
+    name: Light Blue Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_dye
+    name: Light Blue Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_glazed_terracotta
+    name: Light Blue Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_harness
+    name: Light Blue Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_shulker_box
+    name: Light Blue Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_stained_glass
+    name: Light Blue Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_stained_glass_pane
+    name: Light Blue Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_terracotta
+    name: Light Blue Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_blue_wool
+    name: Light Blue Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_banner
+    name: Light Gray Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_bed
+    name: Light Gray Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_bundle
+    name: Light Gray Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_candle
+    name: Light Gray Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_carpet
+    name: Light Gray Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_concrete
+    name: Light Gray Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_concrete_powder
+    name: Light Gray Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_dye
+    name: Light Gray Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_glazed_terracotta
+    name: Light Gray Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_harness
+    name: Light Gray Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_shulker_box
+    name: Light Gray Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_stained_glass
+    name: Light Gray Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_stained_glass_pane
+    name: Light Gray Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_terracotta
+    name: Light Gray Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_gray_wool
+    name: Light Gray Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: light_weighted_pressure_plate
+    name: Light Weighted Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lightning_rod
+    name: Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lilac
+    name: Lilac
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lily_of_the_valley
+    name: Lily Of The Valley
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lily_pad
+    name: Lily Pad
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_banner
+    name: Lime Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_bed
+    name: Lime Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_bundle
+    name: Lime Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_candle
+    name: Lime Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_carpet
+    name: Lime Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_concrete
+    name: Lime Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_concrete_powder
+    name: Lime Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_dye
+    name: Lime Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_glazed_terracotta
+    name: Lime Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_harness
+    name: Lime Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_shulker_box
+    name: Lime Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_stained_glass
+    name: Lime Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_stained_glass_pane
+    name: Lime Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_terracotta
+    name: Lime Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lime_wool
+    name: Lime Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lingering_potion
+    name: Lingering Potion
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: llama_spawn_egg
+    name: Llama Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: lodestone
+    name: Lodestone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: loom
+    name: Loom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mace
+    name: Mace
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_banner
+    name: Magenta Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_bed
+    name: Magenta Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_bundle
+    name: Magenta Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_candle
+    name: Magenta Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_carpet
+    name: Magenta Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_concrete
+    name: Magenta Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_concrete_powder
+    name: Magenta Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_dye
+    name: Magenta Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_glazed_terracotta
+    name: Magenta Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_harness
+    name: Magenta Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_shulker_box
+    name: Magenta Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_stained_glass
+    name: Magenta Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_stained_glass_pane
+    name: Magenta Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_terracotta
+    name: Magenta Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magenta_wool
+    name: Magenta Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magma_block
+    name: Magma Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magma_cream
+    name: Magma Cream
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: magma_cube_spawn_egg
+    name: Magma Cube Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_boat
+    name: Mangrove Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_button
+    name: Mangrove Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_chest_boat
+    name: Mangrove Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_door
+    name: Mangrove Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_fence
+    name: Mangrove Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_fence_gate
+    name: Mangrove Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_hanging_sign
+    name: Mangrove Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_leaves
+    name: Mangrove Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_log
+    name: Mangrove Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_planks
+    name: Mangrove Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_pressure_plate
+    name: Mangrove Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_propagule
+    name: Mangrove Propagule
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_roots
+    name: Mangrove Roots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_shelf
+    name: Mangrove Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_sign
+    name: Mangrove Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_slab
+    name: Mangrove Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_stairs
+    name: Mangrove Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_trapdoor
+    name: Mangrove Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mangrove_wood
+    name: Mangrove Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: map
+    name: Map
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: medium_amethyst_bud
+    name: Medium Amethyst Bud
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: melon
+    name: Melon
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: melon_seeds
+    name: Melon Seeds
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: melon_slice
+    name: Melon Slice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: milk_bucket
+    name: Milk Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: minecart
+    name: Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: miner_pottery_sherd
+    name: Miner Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mojang_banner_pattern
+    name: Mojang Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mooshroom_spawn_egg
+    name: Mooshroom Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: moss_block
+    name: Moss Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: moss_carpet
+    name: Moss Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_cobblestone
+    name: Mossy Cobblestone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_cobblestone_slab
+    name: Mossy Cobblestone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_cobblestone_stairs
+    name: Mossy Cobblestone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_cobblestone_wall
+    name: Mossy Cobblestone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_stone_brick_slab
+    name: Mossy Stone Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_stone_brick_stairs
+    name: Mossy Stone Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_stone_brick_wall
+    name: Mossy Stone Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mossy_stone_bricks
+    name: Mossy Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mourner_pottery_sherd
+    name: Mourner Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mud
+    name: Mud
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mud_brick_slab
+    name: Mud Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mud_brick_stairs
+    name: Mud Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mud_brick_wall
+    name: Mud Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mud_bricks
+    name: Mud Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: muddy_mangrove_roots
+    name: Muddy Mangrove Roots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mule_spawn_egg
+    name: Mule Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mushroom_stem
+    name: Mushroom Stem
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mushroom_stew
+    name: Mushroom Stew
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_11
+    name: Music Disc 11
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_13
+    name: Music Disc 13
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_5
+    name: Music Disc 5
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_blocks
+    name: Music Disc Blocks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_cat
+    name: Music Disc Cat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_chirp
+    name: Music Disc Chirp
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_creator
+    name: Music Disc Creator
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_creator_music_box
+    name: Music Disc Creator Music Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_far
+    name: Music Disc Far
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_lava_chicken
+    name: Music Disc Lava Chicken
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_mall
+    name: Music Disc Mall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_mellohi
+    name: Music Disc Mellohi
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_otherside
+    name: Music Disc Otherside
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_pigstep
+    name: Music Disc Pigstep
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_precipice
+    name: Music Disc Precipice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_relic
+    name: Music Disc Relic
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_stal
+    name: Music Disc Stal
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_strad
+    name: Music Disc Strad
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_tears
+    name: Music Disc Tears
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_wait
+    name: Music Disc Wait
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: music_disc_ward
+    name: Music Disc Ward
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mutton
+    name: Mutton
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: mycelium
+    name: Mycelium
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: name_tag
+    name: Name Tag
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nautilus_shell
+    name: Nautilus Shell
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nautilus_spawn_egg
+    name: Nautilus Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_brick
+    name: Nether Brick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_brick_fence
+    name: Nether Brick Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_brick_slab
+    name: Nether Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_brick_stairs
+    name: Nether Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_brick_wall
+    name: Nether Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_bricks
+    name: Nether Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_gold_ore
+    name: Nether Gold Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_quartz_ore
+    name: Nether Quartz Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_sprouts
+    name: Nether Sprouts
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_star
+    name: Nether Star
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_wart
+    name: Nether Wart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: nether_wart_block
+    name: Nether Wart Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_axe
+    name: Netherite Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_block
+    name: Netherite Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_boots
+    name: Netherite Boots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_chestplate
+    name: Netherite Chestplate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_helmet
+    name: Netherite Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_hoe
+    name: Netherite Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_horse_armor
+    name: Netherite Horse Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_ingot
+    name: Netherite Ingot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_leggings
+    name: Netherite Leggings
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_nautilus_armor
+    name: Netherite Nautilus Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_pickaxe
+    name: Netherite Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_scrap
+    name: Netherite Scrap
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_shovel
+    name: Netherite Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_spear
+    name: Netherite Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_sword
+    name: Netherite Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherite_upgrade_smithing_template
+    name: Netherite Upgrade Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: netherrack
+    name: Netherrack
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: note_block
+    name: Note Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_boat
+    name: Oak Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_button
+    name: Oak Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_chest_boat
+    name: Oak Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_door
+    name: Oak Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_fence
+    name: Oak Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_fence_gate
+    name: Oak Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_hanging_sign
+    name: Oak Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_leaves
+    name: Oak Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_log
+    name: Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_planks
+    name: Oak Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_pressure_plate
+    name: Oak Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_sapling
+    name: Oak Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_shelf
+    name: Oak Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_sign
+    name: Oak Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_slab
+    name: Oak Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_stairs
+    name: Oak Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_trapdoor
+    name: Oak Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oak_wood
+    name: Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: observer
+    name: Observer
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: obsidian
+    name: Obsidian
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ocelot_spawn_egg
+    name: Ocelot Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ochre_froglight
+    name: Ochre Froglight
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ominous_bottle
+    name: Ominous Bottle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ominous_trial_key
+    name: Ominous Trial Key
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: open_eyeblossom
+    name: Open Eyeblossom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_banner
+    name: Orange Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_bed
+    name: Orange Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_bundle
+    name: Orange Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_candle
+    name: Orange Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_carpet
+    name: Orange Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_concrete
+    name: Orange Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_concrete_powder
+    name: Orange Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_dye
+    name: Orange Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_glazed_terracotta
+    name: Orange Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_harness
+    name: Orange Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_shulker_box
+    name: Orange Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_stained_glass
+    name: Orange Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_stained_glass_pane
+    name: Orange Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_terracotta
+    name: Orange Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_tulip
+    name: Orange Tulip
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: orange_wool
+    name: Orange Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxeye_daisy
+    name: Oxeye Daisy
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_chiseled_copper
+    name: Oxidized Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper
+    name: Oxidized Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_bars
+    name: Oxidized Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_bulb
+    name: Oxidized Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_chain
+    name: Oxidized Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_chest
+    name: Oxidized Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_door
+    name: Oxidized Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_golem_statue
+    name: Oxidized Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_grate
+    name: Oxidized Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_lantern
+    name: Oxidized Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_copper_trapdoor
+    name: Oxidized Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_cut_copper
+    name: Oxidized Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_cut_copper_slab
+    name: Oxidized Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_cut_copper_stairs
+    name: Oxidized Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: oxidized_lightning_rod
+    name: Oxidized Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: packed_ice
+    name: Packed Ice
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: packed_mud
+    name: Packed Mud
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: painting
+    name: Painting
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_hanging_moss
+    name: Pale Hanging Moss
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_moss_block
+    name: Pale Moss Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_moss_carpet
+    name: Pale Moss Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_boat
+    name: Pale Oak Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_button
+    name: Pale Oak Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_chest_boat
+    name: Pale Oak Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_door
+    name: Pale Oak Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_fence
+    name: Pale Oak Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_fence_gate
+    name: Pale Oak Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_hanging_sign
+    name: Pale Oak Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_leaves
+    name: Pale Oak Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_log
+    name: Pale Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_planks
+    name: Pale Oak Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_pressure_plate
+    name: Pale Oak Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_sapling
+    name: Pale Oak Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_shelf
+    name: Pale Oak Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_sign
+    name: Pale Oak Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_slab
+    name: Pale Oak Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_stairs
+    name: Pale Oak Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_trapdoor
+    name: Pale Oak Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pale_oak_wood
+    name: Pale Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: panda_spawn_egg
+    name: Panda Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: paper
+    name: Paper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: parched_spawn_egg
+    name: Parched Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: parrot_spawn_egg
+    name: Parrot Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pearlescent_froglight
+    name: Pearlescent Froglight
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: peony
+    name: Peony
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: petrified_oak_slab
+    name: Petrified Oak Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: phantom_membrane
+    name: Phantom Membrane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: phantom_spawn_egg
+    name: Phantom Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pig_spawn_egg
+    name: Pig Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: piglin_banner_pattern
+    name: Piglin Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: piglin_brute_spawn_egg
+    name: Piglin Brute Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: piglin_head
+    name: Piglin Head
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: piglin_spawn_egg
+    name: Piglin Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pillager_spawn_egg
+    name: Pillager Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_banner
+    name: Pink Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_bed
+    name: Pink Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_bundle
+    name: Pink Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_candle
+    name: Pink Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_carpet
+    name: Pink Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_concrete
+    name: Pink Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_concrete_powder
+    name: Pink Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_dye
+    name: Pink Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_glazed_terracotta
+    name: Pink Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_harness
+    name: Pink Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_petals
+    name: Pink Petals
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_shulker_box
+    name: Pink Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_stained_glass
+    name: Pink Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_stained_glass_pane
+    name: Pink Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_terracotta
+    name: Pink Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_tulip
+    name: Pink Tulip
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pink_wool
+    name: Pink Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: piston
+    name: Piston
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pitcher_plant
+    name: Pitcher Plant
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pitcher_pod
+    name: Pitcher Pod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: player_head
+    name: Player Head
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: plenty_pottery_sherd
+    name: Plenty Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: podzol
+    name: Podzol
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pointed_dripstone
+    name: Pointed Dripstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: poisonous_potato
+    name: Poisonous Potato
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polar_bear_spawn_egg
+    name: Polar Bear Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_andesite
+    name: Polished Andesite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_andesite_slab
+    name: Polished Andesite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_andesite_stairs
+    name: Polished Andesite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_basalt
+    name: Polished Basalt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone
+    name: Polished Blackstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_brick_slab
+    name: Polished Blackstone Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_brick_stairs
+    name: Polished Blackstone Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_brick_wall
+    name: Polished Blackstone Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_bricks
+    name: Polished Blackstone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_button
+    name: Polished Blackstone Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_pressure_plate
+    name: Polished Blackstone Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_slab
+    name: Polished Blackstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_stairs
+    name: Polished Blackstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_blackstone_wall
+    name: Polished Blackstone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_deepslate
+    name: Polished Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_deepslate_slab
+    name: Polished Deepslate Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_deepslate_stairs
+    name: Polished Deepslate Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_deepslate_wall
+    name: Polished Deepslate Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_diorite
+    name: Polished Diorite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_diorite_slab
+    name: Polished Diorite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_diorite_stairs
+    name: Polished Diorite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_granite
+    name: Polished Granite
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_granite_slab
+    name: Polished Granite Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_granite_stairs
+    name: Polished Granite Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_tuff
+    name: Polished Tuff
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_tuff_slab
+    name: Polished Tuff Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_tuff_stairs
+    name: Polished Tuff Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: polished_tuff_wall
+    name: Polished Tuff Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: popped_chorus_fruit
+    name: Popped Chorus Fruit
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: poppy
+    name: Poppy
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: porkchop
+    name: Porkchop
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: potato
+    name: Potato
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: potion
+    name: Potion
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: powder_snow_bucket
+    name: Powder Snow Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: powered_rail
+    name: Powered Rail
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine
+    name: Prismarine
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_brick_slab
+    name: Prismarine Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_brick_stairs
+    name: Prismarine Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_bricks
+    name: Prismarine Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_crystals
+    name: Prismarine Crystals
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_shard
+    name: Prismarine Shard
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_slab
+    name: Prismarine Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_stairs
+    name: Prismarine Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prismarine_wall
+    name: Prismarine Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: prize_pottery_sherd
+    name: Prize Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pufferfish
+    name: Pufferfish
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pufferfish_bucket
+    name: Pufferfish Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pufferfish_spawn_egg
+    name: Pufferfish Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pumpkin
+    name: Pumpkin
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pumpkin_pie
+    name: Pumpkin Pie
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: pumpkin_seeds
+    name: Pumpkin Seeds
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_banner
+    name: Purple Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_bed
+    name: Purple Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_bundle
+    name: Purple Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_candle
+    name: Purple Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_carpet
+    name: Purple Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_concrete
+    name: Purple Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_concrete_powder
+    name: Purple Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_dye
+    name: Purple Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_glazed_terracotta
+    name: Purple Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_harness
+    name: Purple Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_shulker_box
+    name: Purple Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_stained_glass
+    name: Purple Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_stained_glass_pane
+    name: Purple Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_terracotta
+    name: Purple Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purple_wool
+    name: Purple Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purpur_block
+    name: Purpur Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purpur_pillar
+    name: Purpur Pillar
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purpur_slab
+    name: Purpur Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: purpur_stairs
+    name: Purpur Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz
+    name: Quartz
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz_block
+    name: Quartz Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz_bricks
+    name: Quartz Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz_pillar
+    name: Quartz Pillar
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz_slab
+    name: Quartz Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: quartz_stairs
+    name: Quartz Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rabbit
+    name: Rabbit
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rabbit_foot
+    name: Rabbit Foot
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rabbit_hide
+    name: Rabbit Hide
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rabbit_spawn_egg
+    name: Rabbit Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rabbit_stew
+    name: Rabbit Stew
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rail
+    name: Rail
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raiser_armor_trim_smithing_template
+    name: Raiser Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ravager_spawn_egg
+    name: Ravager Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_copper
+    name: Raw Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_copper_block
+    name: Raw Copper Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_gold
+    name: Raw Gold
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_gold_block
+    name: Raw Gold Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_iron
+    name: Raw Iron
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: raw_iron_block
+    name: Raw Iron Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: recovery_compass
+    name: Recovery Compass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_banner
+    name: Red Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_bed
+    name: Red Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_bundle
+    name: Red Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_candle
+    name: Red Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_carpet
+    name: Red Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_concrete
+    name: Red Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_concrete_powder
+    name: Red Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_dye
+    name: Red Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_glazed_terracotta
+    name: Red Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_harness
+    name: Red Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_mushroom
+    name: Red Mushroom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_mushroom_block
+    name: Red Mushroom Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_nether_brick_slab
+    name: Red Nether Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_nether_brick_stairs
+    name: Red Nether Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_nether_brick_wall
+    name: Red Nether Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_nether_bricks
+    name: Red Nether Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_sand
+    name: Red Sand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_sandstone
+    name: Red Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_sandstone_slab
+    name: Red Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_sandstone_stairs
+    name: Red Sandstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_sandstone_wall
+    name: Red Sandstone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_shulker_box
+    name: Red Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_stained_glass
+    name: Red Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_stained_glass_pane
+    name: Red Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_terracotta
+    name: Red Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_tulip
+    name: Red Tulip
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: red_wool
+    name: Red Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: redstone
+    name: Redstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: redstone_block
+    name: Redstone Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: redstone_lamp
+    name: Redstone Lamp
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: redstone_ore
+    name: Redstone Ore
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: redstone_torch
+    name: Redstone Torch
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: reinforced_deepslate
+    name: Reinforced Deepslate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: repeater
+    name: Repeater
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: repeating_command_block
+    name: Repeating Command Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_block
+    name: Resin Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_brick
+    name: Resin Brick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_brick_slab
+    name: Resin Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_brick_stairs
+    name: Resin Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_brick_wall
+    name: Resin Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_bricks
+    name: Resin Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: resin_clump
+    name: Resin Clump
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: respawn_anchor
+    name: Respawn Anchor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rib_armor_trim_smithing_template
+    name: Rib Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rooted_dirt
+    name: Rooted Dirt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rose_bush
+    name: Rose Bush
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: rotten_flesh
+    name: Rotten Flesh
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: saddle
+    name: Saddle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: salmon
+    name: Salmon
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: salmon_bucket
+    name: Salmon Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: salmon_spawn_egg
+    name: Salmon Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sand
+    name: Sand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sandstone
+    name: Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sandstone_slab
+    name: Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sandstone_stairs
+    name: Sandstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sandstone_wall
+    name: Sandstone Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: scaffolding
+    name: Scaffolding
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: scrape_pottery_sherd
+    name: Scrape Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sculk
+    name: Sculk
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sculk_catalyst
+    name: Sculk Catalyst
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sculk_sensor
+    name: Sculk Sensor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sculk_shrieker
+    name: Sculk Shrieker
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sculk_vein
+    name: Sculk Vein
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sea_lantern
+    name: Sea Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sea_pickle
+    name: Sea Pickle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: seagrass
+    name: Seagrass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sentry_armor_trim_smithing_template
+    name: Sentry Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shaper_armor_trim_smithing_template
+    name: Shaper Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sheaf_pottery_sherd
+    name: Sheaf Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shears
+    name: Shears
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sheep_spawn_egg
+    name: Sheep Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shelter_pottery_sherd
+    name: Shelter Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shield
+    name: Shield
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: short_dry_grass
+    name: Short Dry Grass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: short_grass
+    name: Short Grass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shroomlight
+    name: Shroomlight
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shulker_box
+    name: Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shulker_shell
+    name: Shulker Shell
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: shulker_spawn_egg
+    name: Shulker Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: silence_armor_trim_smithing_template
+    name: Silence Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: silverfish_spawn_egg
+    name: Silverfish Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: skeleton_horse_spawn_egg
+    name: Skeleton Horse Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: skeleton_skull
+    name: Skeleton Skull
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: skeleton_spawn_egg
+    name: Skeleton Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: skull_banner_pattern
+    name: Skull Banner Pattern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: skull_pottery_sherd
+    name: Skull Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: slime_ball
+    name: Slime Ball
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: slime_block
+    name: Slime Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: slime_spawn_egg
+    name: Slime Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: small_amethyst_bud
+    name: Small Amethyst Bud
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: small_dripleaf
+    name: Small Dripleaf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smithing_table
+    name: Smithing Table
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smoker
+    name: Smoker
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_basalt
+    name: Smooth Basalt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_quartz
+    name: Smooth Quartz
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_quartz_slab
+    name: Smooth Quartz Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_quartz_stairs
+    name: Smooth Quartz Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_red_sandstone
+    name: Smooth Red Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_red_sandstone_slab
+    name: Smooth Red Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_red_sandstone_stairs
+    name: Smooth Red Sandstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_sandstone
+    name: Smooth Sandstone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_sandstone_slab
+    name: Smooth Sandstone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_sandstone_stairs
+    name: Smooth Sandstone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_stone
+    name: Smooth Stone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: smooth_stone_slab
+    name: Smooth Stone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sniffer_egg
+    name: Sniffer Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sniffer_spawn_egg
+    name: Sniffer Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: snort_pottery_sherd
+    name: Snort Pottery Sherd
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: snout_armor_trim_smithing_template
+    name: Snout Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: snow
+    name: Snow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: snow_block
+    name: Snow Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: snowball
+    name: Snowball
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: soul_campfire
+    name: Soul Campfire
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: soul_lantern
+    name: Soul Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: soul_sand
+    name: Soul Sand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: soul_soil
+    name: Soul Soil
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: soul_torch
+    name: Soul Torch
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spawner
+    name: Spawner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spectral_arrow
+    name: Spectral Arrow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spider_eye
+    name: Spider Eye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spider_spawn_egg
+    name: Spider Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spire_armor_trim_smithing_template
+    name: Spire Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: splash_potion
+    name: Splash Potion
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sponge
+    name: Sponge
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spore_blossom
+    name: Spore Blossom
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_boat
+    name: Spruce Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_button
+    name: Spruce Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_chest_boat
+    name: Spruce Chest Boat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_door
+    name: Spruce Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_fence
+    name: Spruce Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_fence_gate
+    name: Spruce Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_hanging_sign
+    name: Spruce Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_leaves
+    name: Spruce Leaves
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_log
+    name: Spruce Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_planks
+    name: Spruce Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_pressure_plate
+    name: Spruce Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_sapling
+    name: Spruce Sapling
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_shelf
+    name: Spruce Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_sign
+    name: Spruce Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_slab
+    name: Spruce Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_stairs
+    name: Spruce Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_trapdoor
+    name: Spruce Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spruce_wood
+    name: Spruce Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: spyglass
+    name: Spyglass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: squid_spawn_egg
+    name: Squid Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stick
+    name: Stick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sticky_piston
+    name: Sticky Piston
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone
+    name: Stone
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_axe
+    name: Stone Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_brick_slab
+    name: Stone Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_brick_stairs
+    name: Stone Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_brick_wall
+    name: Stone Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_bricks
+    name: Stone Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_button
+    name: Stone Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_hoe
+    name: Stone Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_pickaxe
+    name: Stone Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_pressure_plate
+    name: Stone Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_shovel
+    name: Stone Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_slab
+    name: Stone Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_spear
+    name: Stone Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_stairs
+    name: Stone Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stone_sword
+    name: Stone Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stonecutter
+    name: Stonecutter
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stray_spawn_egg
+    name: Stray Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: strider_spawn_egg
+    name: Strider Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: string
+    name: String
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_acacia_log
+    name: Stripped Acacia Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_acacia_wood
+    name: Stripped Acacia Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_bamboo_block
+    name: Stripped Bamboo Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_birch_log
+    name: Stripped Birch Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_birch_wood
+    name: Stripped Birch Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_cherry_log
+    name: Stripped Cherry Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_cherry_wood
+    name: Stripped Cherry Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_crimson_hyphae
+    name: Stripped Crimson Hyphae
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_crimson_stem
+    name: Stripped Crimson Stem
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_dark_oak_log
+    name: Stripped Dark Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_dark_oak_wood
+    name: Stripped Dark Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_jungle_log
+    name: Stripped Jungle Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_jungle_wood
+    name: Stripped Jungle Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_mangrove_log
+    name: Stripped Mangrove Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_mangrove_wood
+    name: Stripped Mangrove Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_oak_log
+    name: Stripped Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_oak_wood
+    name: Stripped Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_pale_oak_log
+    name: Stripped Pale Oak Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_pale_oak_wood
+    name: Stripped Pale Oak Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_spruce_log
+    name: Stripped Spruce Log
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_spruce_wood
+    name: Stripped Spruce Wood
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_warped_hyphae
+    name: Stripped Warped Hyphae
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: stripped_warped_stem
+    name: Stripped Warped Stem
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: structure_block
+    name: Structure Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: structure_void
+    name: Structure Void
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sugar
+    name: Sugar
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sugar_cane
+    name: Sugar Cane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sunflower
+    name: Sunflower
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: suspicious_gravel
+    name: Suspicious Gravel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: suspicious_sand
+    name: Suspicious Sand
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: suspicious_stew
+    name: Suspicious Stew
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: sweet_berries
+    name: Sweet Berries
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tadpole_bucket
+    name: Tadpole Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tadpole_spawn_egg
+    name: Tadpole Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tall_dry_grass
+    name: Tall Dry Grass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tall_grass
+    name: Tall Grass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: target
+    name: Target
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: terracotta
+    name: Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: test_block
+    name: Test Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: test_instance_block
+    name: Test Instance Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tide_armor_trim_smithing_template
+    name: Tide Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tinted_glass
+    name: Tinted Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tipped_arrow
+    name: Tipped Arrow
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tnt
+    name: Tnt
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tnt_minecart
+    name: Tnt Minecart
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: torch
+    name: Torch
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: torchflower
+    name: Torchflower
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: torchflower_seeds
+    name: Torchflower Seeds
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: totem_of_undying
+    name: Totem Of Undying
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: trader_llama_spawn_egg
+    name: Trader Llama Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: trapped_chest
+    name: Trapped Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: trial_key
+    name: Trial Key
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: trial_spawner
+    name: Trial Spawner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: trident
+    name: Trident
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tripwire_hook
+    name: Tripwire Hook
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tropical_fish
+    name: Tropical Fish
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tropical_fish_bucket
+    name: Tropical Fish Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tropical_fish_spawn_egg
+    name: Tropical Fish Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tube_coral
+    name: Tube Coral
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tube_coral_block
+    name: Tube Coral Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tube_coral_fan
+    name: Tube Coral Fan
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff
+    name: Tuff
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_brick_slab
+    name: Tuff Brick Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_brick_stairs
+    name: Tuff Brick Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_brick_wall
+    name: Tuff Brick Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_bricks
+    name: Tuff Bricks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_slab
+    name: Tuff Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_stairs
+    name: Tuff Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: tuff_wall
+    name: Tuff Wall
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: turtle_egg
+    name: Turtle Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: turtle_helmet
+    name: Turtle Helmet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: turtle_scute
+    name: Turtle Scute
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: turtle_spawn_egg
+    name: Turtle Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: twisting_vines
+    name: Twisting Vines
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: vault
+    name: Vault
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: verdant_froglight
+    name: Verdant Froglight
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: vex_armor_trim_smithing_template
+    name: Vex Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: vex_spawn_egg
+    name: Vex Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: villager_spawn_egg
+    name: Villager Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: vindicator_spawn_egg
+    name: Vindicator Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: vine
+    name: Vine
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wandering_trader_spawn_egg
+    name: Wandering Trader Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: ward_armor_trim_smithing_template
+    name: Ward Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warden_spawn_egg
+    name: Warden Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_button
+    name: Warped Button
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_door
+    name: Warped Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_fence
+    name: Warped Fence
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_fence_gate
+    name: Warped Fence Gate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_fungus
+    name: Warped Fungus
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_fungus_on_a_stick
+    name: Warped Fungus On A Stick
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_hanging_sign
+    name: Warped Hanging Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_hyphae
+    name: Warped Hyphae
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_nylium
+    name: Warped Nylium
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_planks
+    name: Warped Planks
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_pressure_plate
+    name: Warped Pressure Plate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_roots
+    name: Warped Roots
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_shelf
+    name: Warped Shelf
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_sign
+    name: Warped Sign
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_slab
+    name: Warped Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_stairs
+    name: Warped Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_stem
+    name: Warped Stem
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_trapdoor
+    name: Warped Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: warped_wart_block
+    name: Warped Wart Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: water_bucket
+    name: Water Bucket
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_chiseled_copper
+    name: Waxed Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_bars
+    name: Waxed Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_block
+    name: Waxed Copper Block
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_bulb
+    name: Waxed Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_chain
+    name: Waxed Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_chest
+    name: Waxed Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_door
+    name: Waxed Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_golem_statue
+    name: Waxed Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_grate
+    name: Waxed Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_lantern
+    name: Waxed Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_copper_trapdoor
+    name: Waxed Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_cut_copper
+    name: Waxed Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_cut_copper_slab
+    name: Waxed Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_cut_copper_stairs
+    name: Waxed Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_chiseled_copper
+    name: Waxed Exposed Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper
+    name: Waxed Exposed Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_bars
+    name: Waxed Exposed Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_bulb
+    name: Waxed Exposed Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_chain
+    name: Waxed Exposed Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_chest
+    name: Waxed Exposed Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_door
+    name: Waxed Exposed Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_golem_statue
+    name: Waxed Exposed Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_grate
+    name: Waxed Exposed Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_lantern
+    name: Waxed Exposed Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_copper_trapdoor
+    name: Waxed Exposed Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_cut_copper
+    name: Waxed Exposed Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_cut_copper_slab
+    name: Waxed Exposed Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_cut_copper_stairs
+    name: Waxed Exposed Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_exposed_lightning_rod
+    name: Waxed Exposed Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_lightning_rod
+    name: Waxed Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_chiseled_copper
+    name: Waxed Oxidized Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper
+    name: Waxed Oxidized Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_bars
+    name: Waxed Oxidized Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_bulb
+    name: Waxed Oxidized Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_chain
+    name: Waxed Oxidized Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_chest
+    name: Waxed Oxidized Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_door
+    name: Waxed Oxidized Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_golem_statue
+    name: Waxed Oxidized Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_grate
+    name: Waxed Oxidized Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_lantern
+    name: Waxed Oxidized Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_copper_trapdoor
+    name: Waxed Oxidized Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_cut_copper
+    name: Waxed Oxidized Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_cut_copper_slab
+    name: Waxed Oxidized Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_cut_copper_stairs
+    name: Waxed Oxidized Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_oxidized_lightning_rod
+    name: Waxed Oxidized Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_chiseled_copper
+    name: Waxed Weathered Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper
+    name: Waxed Weathered Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_bars
+    name: Waxed Weathered Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_bulb
+    name: Waxed Weathered Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_chain
+    name: Waxed Weathered Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_chest
+    name: Waxed Weathered Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_door
+    name: Waxed Weathered Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_golem_statue
+    name: Waxed Weathered Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_grate
+    name: Waxed Weathered Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_lantern
+    name: Waxed Weathered Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_copper_trapdoor
+    name: Waxed Weathered Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_cut_copper
+    name: Waxed Weathered Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_cut_copper_slab
+    name: Waxed Weathered Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_cut_copper_stairs
+    name: Waxed Weathered Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: waxed_weathered_lightning_rod
+    name: Waxed Weathered Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wayfinder_armor_trim_smithing_template
+    name: Wayfinder Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_chiseled_copper
+    name: Weathered Chiseled Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper
+    name: Weathered Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_bars
+    name: Weathered Copper Bars
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_bulb
+    name: Weathered Copper Bulb
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_chain
+    name: Weathered Copper Chain
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_chest
+    name: Weathered Copper Chest
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_door
+    name: Weathered Copper Door
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_golem_statue
+    name: Weathered Copper Golem Statue
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_grate
+    name: Weathered Copper Grate
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_lantern
+    name: Weathered Copper Lantern
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_copper_trapdoor
+    name: Weathered Copper Trapdoor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_cut_copper
+    name: Weathered Cut Copper
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_cut_copper_slab
+    name: Weathered Cut Copper Slab
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_cut_copper_stairs
+    name: Weathered Cut Copper Stairs
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weathered_lightning_rod
+    name: Weathered Lightning Rod
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: weeping_vines
+    name: Weeping Vines
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wet_sponge
+    name: Wet Sponge
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wheat
+    name: Wheat
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wheat_seeds
+    name: Wheat Seeds
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_banner
+    name: White Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_bed
+    name: White Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_bundle
+    name: White Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_candle
+    name: White Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_carpet
+    name: White Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_concrete
+    name: White Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_concrete_powder
+    name: White Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_dye
+    name: White Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_glazed_terracotta
+    name: White Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_harness
+    name: White Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_shulker_box
+    name: White Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_stained_glass
+    name: White Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_stained_glass_pane
+    name: White Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_terracotta
+    name: White Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_tulip
+    name: White Tulip
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: white_wool
+    name: White Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wild_armor_trim_smithing_template
+    name: Wild Armor Trim Smithing Template
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wildflowers
+    name: Wildflowers
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wind_charge
+    name: Wind Charge
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: witch_spawn_egg
+    name: Witch Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wither_rose
+    name: Wither Rose
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wither_skeleton_skull
+    name: Wither Skeleton Skull
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wither_skeleton_spawn_egg
+    name: Wither Skeleton Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wither_spawn_egg
+    name: Wither Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wolf_armor
+    name: Wolf Armor
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wolf_spawn_egg
+    name: Wolf Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_axe
+    name: Wooden Axe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_hoe
+    name: Wooden Hoe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_pickaxe
+    name: Wooden Pickaxe
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_shovel
+    name: Wooden Shovel
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_spear
+    name: Wooden Spear
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: wooden_sword
+    name: Wooden Sword
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: writable_book
+    name: Writable Book
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: written_book
+    name: Written Book
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_banner
+    name: Yellow Banner
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_bed
+    name: Yellow Bed
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_bundle
+    name: Yellow Bundle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_candle
+    name: Yellow Candle
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_carpet
+    name: Yellow Carpet
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_concrete
+    name: Yellow Concrete
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_concrete_powder
+    name: Yellow Concrete Powder
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_dye
+    name: Yellow Dye
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_glazed_terracotta
+    name: Yellow Glazed Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_harness
+    name: Yellow Harness
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_shulker_box
+    name: Yellow Shulker Box
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_stained_glass
+    name: Yellow Stained Glass
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_stained_glass_pane
+    name: Yellow Stained Glass Pane
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_terracotta
+    name: Yellow Terracotta
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: yellow_wool
+    name: Yellow Wool
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zoglin_spawn_egg
+    name: Zoglin Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombie_head
+    name: Zombie Head
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombie_horse_spawn_egg
+    name: Zombie Horse Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombie_nautilus_spawn_egg
+    name: Zombie Nautilus Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombie_spawn_egg
+    name: Zombie Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombie_villager_spawn_egg
+    name: Zombie Villager Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
+  - id: zombified_piglin_spawn_egg
+    name: Zombified Piglin Spawn Egg
+    price: null
+    quantity: 1
+    stock: unknown
