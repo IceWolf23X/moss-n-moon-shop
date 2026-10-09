@@ -1,0 +1,22 @@
+# ELENCO DEI NEGOZI DA CARICARE
+# Tutte le informazioni di ogni shop sono nel relativo file .yml.
+# Per aggiungerne uno:
+# 1. Copia docs/shop-template.yml in shops/nome-negozio.yml.
+# 2. Compila il file (cambia anche id e tutti i dati di esempio).
+# 3. Aggiungi qui sotto: - nome-negozio.yml
+# 4. Pubblica le modifiche. Non devi modificare alcun file JavaScript.
+#
+# I nomi sono relativi a shops/: NON scrivere shops/nome-negozio.yml.
+# Usa minuscole, numeri, trattini o underscore; l’estensione è .yml oppure .yaml.
+# Conta anche la differenza tra maiuscole e minuscole sui server.
+# I file non elencati NON vengono caricati, ma se pubblicati restano accessibili via URL.
+# Per una directory vuota usa: shops: []
+# L’ordine è quello iniziale; "Featured first" porta in cima gli shop featured: true.
+# Cinque esempi inclusi: non esiste un limite software di cinque negozi.
+
+shops:
+  - woolery.yml
+  - pale-found.yml
+  - moonbound.yml
+  - circuit.yml
+  - builders-bench.yml

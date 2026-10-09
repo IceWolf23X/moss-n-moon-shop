@@ -1,0 +1,288 @@
+# MOSS & MOON — SCHEDA NEGOZIO
+# ESEMPIO FITTIZIO: nomi, prezzi, stock e coordinate non sono dati verificati.
+# Modifica soltanto questo file per aggiornare questo negozio.
+# Le righe che iniziano con # sono commenti per te e non compaiono nell’interfaccia.
+# Usa spazi (2 per livello), mai TAB. Mantieni i rientri e salva come UTF-8.
+# Puoi usare virgolette per i testi e >- per un testo lungo su più righe.
+#
+# IDENTITÀ
+# id: unico nell’intera directory, minuscole/numeri/trattini. Mantienilo stabile:
+#     è usato nei link e nei preferiti. Cambiare il nome visualizzato è invece sicuro.
+# name: nome pubblico; owner: nickname Minecraft del proprietario.
+id: woolery
+name: The Woolery
+owner: CloudySheep
+
+# PRESENTAZIONE
+# tagline: breve frase nella scheda; description: descrizione completa nella finestra.
+tagline: A whole rainbow, by the stack.
+description: >-
+  Every shade for every idea. Pick up a stack or stock your next big build with a whole
+  rainbow of wool.
+
+# CLASSIFICAZIONE
+# kind: shop | stall | service. La scelta cambia etichette e filtri.
+# categories: uno o più id definiti in config.yml (non i nomi visualizzati).
+# location: id di una zona definita in config.yml.
+kind: shop
+categories:
+  - building
+location: district
+
+# POSIZIONE — numeri interi, anche negativi. Non inserire la dimensione qui:
+# la dimensione viene dalla location selezionata sopra.
+coords:
+  x: 128
+  y: 64
+  z: -240
+# Percorso per raggiungere il negozio; niente comandi automatici o teletrasporti.
+directions: >-
+  Follow the main path from the district entrance. These are demonstration coordinates;
+  replace them with the real route before publishing.
+
+# STATO E VISIBILITÀ
+# status: open (attivo) | paused (in pausa) | unverified (non verificato).
+# Tutti e tre restano VISIBILI quando il file è elencato in shops/index.yml.
+# "Listed as in stock" esclude gli shop che non sono open.
+# demo: true mostra il badge di esempio; false solo per una scheda reale approvata.
+# featured: true porta la scheda in cima nell’ordinamento "Featured first".
+# updated: ultima verifica manuale, YYYY-MM-DD; la data non si aggiorna da sola.
+status: open
+demo: true
+featured: true
+updated: '2026-10-09'
+
+# VALUTA PREDEFINITA DI QUESTO SHOP
+# diamond = diamanti; diamond_block = blocchi di diamante.
+# Puoi scegliere una valuta diversa in ciascun prodotto. Nessuna conversione automatica.
+currency: diamond
+
+# ASPETTO E NOTE (facoltativi)
+# theme: illustrazione usata quando images è vuoto. Esempi:
+# wool, pale, books, redstone, garden, food, builder, stone, ocean, crystal, travel, welcome.
+# tags: etichette brevi; se vuoi nessuna etichetta usa [].
+# notes: messaggio del negoziante; può essere vuoto, es. notes: "".
+theme: wool
+tags:
+  - All 16 colours
+  - Bulk friendly
+notes: 'Example prices: ordinary wool is listed in diamonds; the bulk listing uses diamond blocks.
+  The bulk quantity is wool only, with no container included.'
+
+# FOTO — percorsi relativi a index.html, NON al file .yml.
+# images: [] lascia l’illustrazione. Per aggiungere foto, sostituisci con:
+# images:
+#   - src: assets/shops/woolery/front.webp
+#     alt: "Front of the shop"
+#   - src: assets/shops/woolery/inside.webp
+#     alt: "Inside the shop"
+# Inserisci davvero i file immagine nel percorso indicato prima di pubblicare.
+images: []
+
+# INVENTARIO — aggiungi un blocco "- id: ..." per ogni prodotto o servizio.
+# id: identificatore univoco NELLO SHOP, es. black_wool o minecraft:black_wool.
+# name: nome leggibile; non serve che corrisponda esattamente a Minecraft.
+# price: costo dell’INTERO lotto indicato da quantity, non del singolo pezzo.
+#        Usa un numero (es. 1 o 1.5), 0 per gratuito, null per "Ask owner".
+#        Non scrivere "1 diamond" e non usare la virgola decimale.
+# currency: facoltativo sul prodotto; sovrascrive la valuta dello shop.
+#           diamond = diamanti; diamond_block = blocchi di diamante.
+#           Il valore di price viene mostrato com’è: NON viene convertito.
+# quantity: numero di oggetti/servizi venduti a quel prezzo, intero >= 1.
+# unit: testo mostrato dopo quantity, es. items, item, project; se omesso,
+#       il sito sceglie item per quantity: 1, altrimenti items.
+# stock: in (disponibile), low (pochi), out (esaurito), unknown (da chiedere).
+#        Se omesso: unknown. È una dichiarazione manuale, NON un dato live.
+# icon: cube, wool, log, resin, leaf, book, redstone, machine, tools, ecc.
+#       Se omesso usa cube. Le icone sono illustrazioni, non texture del gioco.
+# aliases: parole alternative per la ricerca; facoltativo, predefinito [].
+# color: facoltativo per l’icona wool, es. "#e7e5df"; le virgolette sono necessarie.
+items:
+  - id: white_wool
+    name: White Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#e7e5df'
+  - id: light_gray_wool
+    name: Light Gray Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#adb1ae'
+  - id: gray_wool
+    name: Gray Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#646b6b'
+  - id: black_wool
+    name: Black Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#303437'
+  - id: brown_wool
+    name: Brown Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#866143'
+  - id: red_wool
+    name: Red Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#b94740'
+  - id: orange_wool
+    name: Orange Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#e7903d'
+  - id: yellow_wool
+    name: Yellow Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#e5c45c'
+  - id: lime_wool
+    name: Lime Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#91b55d'
+  - id: green_wool
+    name: Green Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#607c46'
+  - id: cyan_wool
+    name: Cyan Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#338e92'
+  - id: light_blue_wool
+    name: Light Blue Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#73b9cf'
+  - id: blue_wool
+    name: Blue Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#576bab'
+  - id: purple_wool
+    name: Purple Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#9569aa'
+  - id: magenta_wool
+    name: Magenta Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#bb71a0'
+  - id: pink_wool
+    name: Pink Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+    aliases:
+      - wool
+      - colours
+      - colors
+    color: '#dfa8b4'
+  - id: black_wool_bulk
+    name: Black Wool — shulker quantity
+    price: 3
+    currency: diamond_block
+    quantity: 1728
+    unit: items
+    stock: in
+    icon: wool
+    color: '#303437'
+    aliases:
+      - bulk wool
+      - shulker of wool

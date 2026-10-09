@@ -1,0 +1,121 @@
+# Moss & Moon — configurazione modificabile a mano
+# UTF-8, 2 spazi per livello, mai TAB. Salvare i numeri senza virgolette.
+# I file pubblicati e tutti i commenti sono visibili a chi visita il sito.
+
+# CONFIGURAZIONE GENERALE — non contiene i negozi.
+# Le etichette dell’interfaccia rimangono in inglese; i commenti sono solo per chi modifica.
+config:
+  name: Moss & Moon
+  title: The community directory
+  # Lingua del documento; non traduce automaticamente i testi dell’interfaccia.
+  language: en
+  # Indirizzo mostrato e copiato. Il sito NON interroga lo stato del server.
+  serverAddress: play.moss-n-moon.me
+  # Percorso relativo a index.html, non a questo file.
+  logo: assets/logo.png
+  # true = banner di anteprima. Passa a false SOLO dopo aver sostituito gli esempi.
+  demoMode: true
+  # Valuta predefinita se non indicata nel singolo shop.
+  # Valori: diamond (diamanti) | diamond_block (blocchi di diamante).
+  # Priorità: prodotto > negozio > questa impostazione. Nessuna conversione del prezzo.
+  currency: diamond
+  # Identificatore dei preferiti locali. Mantienilo stabile per non perderli.
+  storageKey: moss-moon-directory-v1
+  # Inserisci URL reali https://... oppure lascia '' (vuoto). Niente token o password.
+  links:
+    discord: ''
+    store: ''
+    repository: ''
+  # Testi del riquadro introduttivo. Racchiudi tra virgolette i testi con : o #.
+  hero:
+    eyebrow: A WORLD OF PLAYER-MADE POSSIBILITIES
+    title: Small shops.
+    accent: Great discoveries.
+    description: Find the blocks, little treasures, and helping hands for your next adventure. All
+      in one corner of Moss & Moon.
+  # Ricerche suggerite sotto la barra. Non aggiungono nuovi prodotti al catalogo.
+  popular:
+    - Wool
+    - Mending
+    - Pale oak
+    - Building services
+  # Schede della sezione "How it works".
+  guide:
+    - icon: search
+      title: Find your thing
+      text: Search for an item, a shop, or a service. Narrow it down by category and location.
+    - icon: pin
+      title: Plan a little visit
+      text: Open a shop to see its listings, prices, and directions. Copy the coordinates for your
+        journey.
+    - icon: heart
+      title: Keep the good ones
+      text: Save your favourite shops on this device. Purchases and trades happen in Minecraft,
+        not here.
+  # Domande frequenti. Aggiorna i riferimenti ai dati demo prima della pubblicazione.
+  faq:
+    - question: Can I buy items on this website?
+      answer: No. This is a community directory, not an online checkout. Visit a shop in Minecraft
+        and follow its owner’s trading instructions. No real-money purchases take place here.
+    - question: Are prices and stock live?
+      answer: No. These are manually maintained listings. The owner’s in-game signs are the source
+        of truth. The example directory uses sample prices, stock labels, and coordinates.
+    - question: How do I add or update my shop?
+      answer: Use “List your shop” to prepare a YAML (.yml) listing file. Download it and send it
+        to the directory maintainers through your community’s normal channel. Nothing is submitted
+        or published automatically.
+    - question: Where are my saved shops stored?
+      answer: Only in your browser’s local storage on this device. There is no account, tracking,
+        or cross-device sync. Your browser may clear this data; private browsing and local-file
+        storage can behave differently.
+
+# CATEGORIE — gli id sono i valori da usare in categories: dentro ogni shop.
+# Aggiungi una categoria qui prima di usarla nei negozi.
+categories:
+  - id: building
+    name: Building blocks
+    icon: blocks
+    description: Every build starts with a block.
+  - id: nature
+    name: Wood & greenery
+    icon: leaf
+    description: A little more life for your world.
+  - id: redstone
+    name: Redstone & tech
+    icon: circuit
+    description: For clever little contraptions.
+  - id: equipment
+    name: Gear & enchantments
+    icon: book
+    description: A better-equipped adventure.
+  - id: farming
+    name: Food & farming
+    icon: wheat
+    description: Supplies to keep you growing.
+  - id: travel
+    name: Travel & exploration
+    icon: compass
+    description: Your next destination awaits.
+  - id: services
+    name: Player services
+    icon: tools
+    description: A helping hand from the community.
+
+# ZONE — gli id sono i valori da usare in location: dentro ogni shop.
+# La dimensione è descrittiva: non teletrasporta e non converte le coordinate.
+locations:
+  - id: district
+    name: Shopping District
+    short: Shopping District
+    dimension: Overworld
+    icon: store
+  - id: spawn
+    name: Spawn & surroundings
+    short: Near spawn
+    dimension: Overworld
+    icon: sprout
+  - id: nether
+    name: Nether roof
+    short: Nether roof
+    dimension: The Nether
+    icon: portal

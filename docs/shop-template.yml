@@ -1,0 +1,121 @@
+# MOSS & MOON — SCHEDA NEGOZIO
+# MODELLO DA COPIARE, non incluso nel catalogo.
+# Modifica soltanto questo file per aggiornare questo negozio.
+# Le righe che iniziano con # sono commenti per te e non compaiono nell’interfaccia.
+# Usa spazi (2 per livello), mai TAB. Mantieni i rientri e salva come UTF-8.
+# Puoi usare virgolette per i testi e >- per un testo lungo su più righe.
+#
+# IDENTITÀ
+# id: unico nell’intera directory, minuscole/numeri/trattini. Mantienilo stabile:
+#     è usato nei link e nei preferiti. Cambiare il nome visualizzato è invece sicuro.
+# name: nome pubblico; owner: nickname Minecraft del proprietario.
+id: my-shop
+name: My Shop
+owner: MinecraftUsername
+
+# PRESENTAZIONE
+# tagline: breve frase nella scheda; description: descrizione completa nella finestra.
+tagline: A short sentence about the shop.
+description: >-
+  Replace this example with a real description approved by the owner. Explain what players
+  can find and how trading works.
+
+# CLASSIFICAZIONE
+# kind: shop | stall | service. La scelta cambia etichette e filtri.
+# categories: uno o più id definiti in config.yml (non i nomi visualizzati).
+# location: id di una zona definita in config.yml.
+kind: shop
+categories:
+  - building
+location: district
+
+# POSIZIONE — numeri interi, anche negativi. Non inserire la dimensione qui:
+# la dimensione viene dalla location selezionata sopra.
+coords:
+  x: 0
+  y: 64
+  z: 0
+# Percorso per raggiungere il negozio; niente comandi automatici o teletrasporti.
+directions: >-
+  Replace these coordinates and directions before publishing.
+
+# STATO E VISIBILITÀ
+# status: open (attivo) | paused (in pausa) | unverified (non verificato).
+# Tutti e tre restano VISIBILI quando il file è elencato in shops/index.yml.
+# "Listed as in stock" esclude gli shop che non sono open.
+# demo: true mostra il badge di esempio; false solo per una scheda reale approvata.
+# featured: true porta la scheda in cima nell’ordinamento "Featured first".
+# updated: ultima verifica manuale, YYYY-MM-DD; la data non si aggiorna da sola.
+status: unverified
+demo: true
+featured: false
+updated: '2026-10-09'
+
+# VALUTA PREDEFINITA DI QUESTO SHOP
+# diamond = diamanti; diamond_block = blocchi di diamante.
+# Puoi scegliere una valuta diversa in ciascun prodotto. Nessuna conversione automatica.
+currency: diamond
+
+# ASPETTO E NOTE (facoltativi)
+# theme: illustrazione usata quando images è vuoto. Esempi:
+# wool, pale, books, redstone, garden, food, builder, stone, ocean, crystal, travel, welcome.
+# tags: etichette brevi; se vuoi nessuna etichetta usa [].
+# notes: messaggio del negoziante; può essere vuoto, es. notes: "".
+theme: welcome
+tags:
+  - Building supplies
+notes: Replace every sample price and quantity with verified information.
+
+# FOTO — percorsi relativi a index.html, NON al file .yml.
+# images: [] lascia l’illustrazione. Per aggiungere foto, sostituisci con:
+# images:
+#   - src: assets/shops/my-shop/front.webp
+#     alt: "Front of the shop"
+#   - src: assets/shops/my-shop/inside.webp
+#     alt: "Inside the shop"
+# Inserisci davvero i file immagine nel percorso indicato prima di pubblicare.
+images: []
+
+# INVENTARIO — aggiungi un blocco "- id: ..." per ogni prodotto o servizio.
+# id: identificatore univoco NELLO SHOP, es. black_wool o minecraft:black_wool.
+# name: nome leggibile; non serve che corrisponda esattamente a Minecraft.
+# price: costo dell’INTERO lotto indicato da quantity, non del singolo pezzo.
+#        Usa un numero (es. 1 o 1.5), 0 per gratuito, null per "Ask owner".
+#        Non scrivere "1 diamond" e non usare la virgola decimale.
+# currency: facoltativo sul prodotto; sovrascrive la valuta dello shop.
+#           diamond = diamanti; diamond_block = blocchi di diamante.
+#           Il valore di price viene mostrato com’è: NON viene convertito.
+# quantity: numero di oggetti/servizi venduti a quel prezzo, intero >= 1.
+# unit: testo mostrato dopo quantity, es. items, item, project; se omesso,
+#       il sito sceglie item per quantity: 1, altrimenti items.
+# stock: in (disponibile), low (pochi), out (esaurito), unknown (da chiedere).
+#        Se omesso: unknown. È una dichiarazione manuale, NON un dato live.
+# icon: cube, wool, log, resin, leaf, book, redstone, machine, tools, ecc.
+#       Se omesso usa cube. Le icone sono illustrazioni, non texture del gioco.
+# aliases: parole alternative per la ricerca; facoltativo, predefinito [].
+# color: facoltativo per l’icona wool, es. "#e7e5df"; le virgolette sono necessarie.
+items:
+  - id: stone
+    name: Stone
+    price: 1
+    quantity: 64
+    stock: unknown
+    icon: cube
+    aliases:
+      - stone blocks
+  - id: black_wool_bulk
+    name: Black Wool — bulk
+    price: 3
+    currency: diamond_block
+    quantity: 1728
+    unit: items
+    stock: unknown
+    icon: wool
+    color: '#303437'
+  - id: custom_order
+    name: Custom order
+    price: null
+    quantity: 1
+    unit: project
+    stock: unknown
+    icon: tools
