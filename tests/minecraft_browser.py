@@ -33,8 +33,12 @@ try:
         for shop, count in [('woolery', 17), ('pale-found', 5), ('moonbound', 5), ('circuit', 6)]:
             page.goto(origin + '#shop=' + shop, wait_until='networkidle')
             page.locator('#modal').wait_for(state='visible')
-            page.wait_for_function("[...document.querySelectorAll('#inventory-rows img.minecraft-item')].every(i=>i.complete&&i.naturalWidth>0)")
             images = page.locator('#inventory-rows img.minecraft-item')
+            page.wait_for_function("count=>document.querySelectorAll('#inventory-rows img.minecraft-item').length===count", arg=count)
+            # Enlarged rows can place lazy-loaded previews outside the dialog viewport.
+            for image in images.all():
+                image.scroll_into_view_if_needed()
+            page.wait_for_function("[...document.querySelectorAll('#inventory-rows img.minecraft-item')].every(i=>i.complete&&i.naturalWidth>0)")
             assert images.count() == count, shop
             assert all('/directory/assets/minecraft/rendered/' in src for src in images.evaluate_all('(images)=>images.map(i=>i.src)'))
             if shop == 'woolery' and os.getenv('MINECRAFT_SCREENSHOT'):
