@@ -1,8 +1,10 @@
 # Moss & Moon — directory with a YAML catalog
 
-Updated version: **5 demonstration shops, 36 inventory listings, one `.yml` file per shop**. Comments and editing instructions are in English, as is the interface. The original design, search, filters, favorites, themes and cards are preserved.
+Updated version: **5 demonstration shops, 36 inventory listings, one `.yml` file per shop**. Comments and editing instructions are in English, as is the interface. Search, filters, favorites and themes remain; the interface now uses compact directory entries.
 
 **Replace the entire previous package**, not just `js/data.js`: initial loading, validation, price display, the proposal form and the workflow have changed. `index.html` remains the only HTML file, and all interface content is created with JavaScript.
+
+The interface is a compact shop directory: search, category and location filters, shop listings, saved shops, and inventory/coordinate details. Promotional hero, banners, onboarding guide, FAQ and decorative shop illustrations are omitted.
 
 ## Where to edit data
 

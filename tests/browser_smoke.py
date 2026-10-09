@@ -90,6 +90,8 @@ def main():
         page=new_page()
         check(page.locator('.shop-card').count()==6,'Initial six demo shops loaded from YAML')
         if args.inline_fixture:check(len(page.evaluate('window.__yamlRequests'))==8,'Two catalog files and six separate shops are requested')
+        check(page.locator('.hero,.join-banner,.how-section,.faq-section,.sidebar-note,.sidebar-community').count()==0,'Directory has no promotional sections')
+        check(page.locator('#directory-heading').inner_text()=='Shops','Directory uses a plain functional heading')
         check(page.locator('h1').count()==1,'Exactly one primary heading')
         check(page.locator('.demo-notice').is_visible(),'Sample-data disclosure is visible')
         check(page.evaluate('new Set([...document.querySelectorAll("[id]")].map(e=>e.id)).size===document.querySelectorAll("[id]").length'),'No duplicate DOM IDs')
@@ -127,7 +129,7 @@ def main():
         page.locator('.desktop-nav [data-action="saved"]').click()
         check(page.locator('.shop-card').count()==1,'Saved-only view uses local favorites')
         page.locator('.save-button[data-id="woolery"]').click()
-        check('Your favourites start here' in page.locator('.empty-state').inner_text(),'Unsave last shop gives useful empty state')
+        check('No saved shops' in page.locator('.empty-state').inner_text(),'Unsave last shop gives useful empty state')
         page.locator('.empty-state [data-action="directory"]').click()
         page.locator('#sort').select_option('az')
         check(page.locator('.shop-card').first.get_attribute('data-shop')=='circuit','Alphabetical sorting works')
@@ -191,8 +193,8 @@ def main():
         for width in [320,390,540,768,1024,1440,1920,3440]:
             responsive=new_page(width=width,height=900)
             check(responsive.evaluate('document.documentElement.scrollWidth<=innerWidth'),'No horizontal page overflow at '+str(width)+'px')
-            bounds=responsive.locator('.hero h1 em').bounding_box();hero=responsive.locator('.hero').bounding_box()
-            check(bounds['x']+bounds['width']<=hero['x']+hero['width']+1,'Hero heading stays inside its panel at '+str(width)+'px')
+            bounds=responsive.locator('h1').bounding_box();hero=responsive.locator('.directory-intro').bounding_box()
+            check(bounds['x']+bounds['width']<=hero['x']+hero['width']+1,'Directory heading stays inside its container at '+str(width)+'px')
             if width==390:
                 responsive.locator('[data-action="filters"]').last.click()
                 check(responsive.locator('#filters').is_visible(),'Mobile filters expand')
