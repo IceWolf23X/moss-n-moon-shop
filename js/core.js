@@ -155,13 +155,14 @@
         shop.items.forEach((item,n) => {
           const at = `${prefix}.items[${n}]`;
           if (!object(item)) { errors.push(`${at}: an item object is required.`); return; }
-          allowed(item, ['id','name','price','quantity','unit','stock','icon','aliases','color','currency'], at);
+          allowed(item, ['id','name','price','quantity','unit','stock','icon','aliases','color','currency','minecraftId'], at);
           if (!text(item.id) || itemIds.has(item.id) || !text(item.name)) errors.push(`${at}: missing name/id or duplicate id.`);
           itemIds.add(item.id);
           if (item.price !== null && (!Number.isFinite(item.price) || item.price < 0)) errors.push(`${at}.price: use a nonnegative number or null, not a quoted string.`);
           if (!isCurrency(item.currency)) errors.push(`${at}.currency: use diamond or diamond_block.`);
           if (!Number.isSafeInteger(item.quantity) || item.quantity < 1) errors.push(`${at}: invalid quantity.`);
           if (!text(item.unit)) errors.push(`${at}.unit: a nonempty string is required.`);
+          if (item.minecraftId !== undefined && (typeof item.minecraftId !== 'string' || !/^(?:minecraft:)?[a-z0-9_]+$/.test(item.minecraftId))) errors.push(`${at}.minecraftId: use a Minecraft ID such as minecraft:white_wool.`);
           if (!text(item.icon)) errors.push(`${at}.icon: a nonempty string is required.`);
           if (!strings(item.aliases)) errors.push(`${at}.aliases: a list of strings is required.`);
           if (!['in','low','out','unknown'].includes(item.stock)) errors.push(`${at}: invalid stock.`);

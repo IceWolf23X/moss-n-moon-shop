@@ -157,12 +157,20 @@
     const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" class="shop-scene" aria-label="Illustrated example shop" role="img"><rect width="540" height="300" fill="${t.bg}"/><ellipse cx="276" cy="238" rx="185" ry="35" fill="#253a31" opacity=".08"/><g opacity=".36" fill="#ffffff"><circle cx="75" cy="58" r="3"/><circle cx="475" cy="122" r="2"/><path d="M439 43h3v10h-3zm-4 4h11v3zM95 146h2v8h-2zm-3 3h8v2z"/></g><g>${content}</g></svg>`;
     cache.set(themeName,svg);return svg;
   }
-  function itemIcon(item){
+  function illustratedItemIcon(item){
     const colors={wool:['#dd9cb0','#c9859e','#af6d8a'],resin:palettes.orange,log:palettes.wood,leaf:palettes.leaves,redstone:palettes.red,book:palettes.purple,machine:palettes.stone,carrot:palettes.orange,lantern:palettes.lantern,crystal:palettes.purple,pearl:palettes.green,food:palettes.yellow};
     let c=colors[item.icon]||palettes.stone;
     if(item.color&&/^#[0-9a-f]{6}$/i.test(item.color))c=[item.color,item.color,item.color];
     if(['tools','compass','rocket','wings'].includes(item.icon))return `<span class="item-drawing">${icon(item.icon==='rocket'?'sparkles':item.icon==='wings'?'compass':item.icon)}</span>`;
     return `<svg class="item-drawing" viewBox="0 0 32 32" aria-hidden="true"><path fill="${c[0]}" d="m16 3 12 6.5L16 16 4 9.5Z"/><path fill="${c[1]}" d="m4 9.5 12 6.5v13L4 22.5Z"/><path fill="${c[2]}" d="m16 16 12-6.5v13L16 29Z"/><path d="m16 16 12-6.5v13L16 29Z" fill="#000" opacity=".12"/><path d="m7 13 4 2v3l-4-2Zm4 8 3 1.5v2L11 23Z" fill="#fff" opacity=".15"/></svg>`;
   }
+  function itemIcon(item){
+    const fallback=illustratedItemIcon(item), src=root.MMMinecraft?.resolve(item);
+    if(!src)return fallback;
+    return `<span class="item-drawing item-preview" aria-hidden="true"><img class="minecraft-item" src="${src}" width="32" height="32" alt="" loading="lazy"><span class="item-fallback">${fallback}</span></span>`;
+  }
+  root.document?.addEventListener('error',event=>{
+    if(event.target?.matches?.('img.minecraft-item'))event.target.parentElement.classList.add('asset-missing');
+  },true);
   root.MMArt=Object.freeze({icon,scene,itemIcon});
 }(globalThis));

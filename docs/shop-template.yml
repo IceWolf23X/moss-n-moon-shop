@@ -78,6 +78,8 @@ images: []
 
 # INVENTORY — add a "- id: ..." block for each item or service.
 # id: unique identifier WITHIN THE SHOP, e.g. black_wool or minecraft:black_wool.
+# minecraftId: optional original Minecraft ID, e.g. minecraft:white_wool.
+#              Use when the listing id differs from the desired texture.
 # name: readable name; it does not need to match Minecraft exactly.
 # price: cost of the ENTIRE batch specified by quantity, not a single item.
 #        Use a number (e.g. 1 or 1.5), 0 for free, null for "Ask owner".

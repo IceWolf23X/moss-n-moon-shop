@@ -52,7 +52,7 @@ def inline_load(page, route='', stored=None, blocked_storage=False, overrides=No
       return new Response(found?window.__yamlSources[path]:'Not found',{status:found?200:404,headers:{'Content-Type':'text/yaml'}});
     };"""
     scripts = [init, (ROOT/'js/theme.js').read_text()]
-    scripts += [(ROOT/path).read_text() for path in ['js/vendor/js-yaml.js','js/core.js','js/data.js','js/art.js']]
+    scripts += [(ROOT/path).read_text() for path in ['js/vendor/js-yaml.js','js/core.js','js/data.js','js/minecraft-assets.js','js/minecraft.js','js/art.js']]
     # Logo-only fixture adaptation happens AFTER production YAML validation.
     scripts.append("const productionLoader=MMDataSource.loadCatalog; MMDataSource={...MMDataSource,async loadCatalog(options){const data=await productionLoader(options);data.config.logo="+json.dumps(logo)+";return data;}};")
     scripts.append((ROOT/'js/app.js').read_text())

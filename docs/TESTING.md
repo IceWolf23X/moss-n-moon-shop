@@ -52,3 +52,16 @@ python tests/browser_smoke.py --inline-fixture --screenshots ./test-previews
 Check approved data and image files, run the validator, and verify that `config.yml`, `shops/` and `js/vendor/` are published and Pages is configured. On the hosted site, test opening, search, shop links, reload, coordinate copying, YAML downloads, favorites and themes. Confirm Discord/store links with the maintainers.
 
 No independent security audit, screen reader verification or Minecraft synchronization tests were performed. Automatic synchronization is not provided.
+
+## Local Bare Bones integration
+
+The resource-pack integration adds six Node tests, bringing the suite to 42 tests. They verify local item/block lookup, catalog aliases, explicit `minecraftId` values, invalid IDs, illustration fallback, generated file existence and original asset checksums. Three Python importer tests verify base-first precedence, compatible overlays, preview frame cropping, repeatability and unsafe-path rejection.
+
+```sh
+node --test tests/*.test.cjs
+python -m pip install -r tools/requirements-assets.txt
+python tests/import_minecraft_test.py
+CHROMIUM_EXECUTABLE=/usr/bin/chromium python tests/minecraft_browser.py
+```
+
+The dedicated browser test uses real HTTP under a `/directory/` repository subpath. It loads all 33 item/block previews in the sample catalog, checks service illustrations, and deliberately blocks a texture request to verify the visible fallback. This checks actual PNG loading locally; it does not establish a successful public GitHub Pages deployment. The generated previews are flat texture images, not full 3D model renders.

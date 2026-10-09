@@ -40,3 +40,6 @@ dialog{padding:0;border:1px solid var(--line);border-radius:16px;color:var(--ink
 .inventory-table td:nth-child(2){min-width:84px}
 .detail-description,.directions,.shop-note p{white-space:pre-line}
 @media (prefers-reduced-motion:reduce){.loading-dot{animation:none}}
+
+/* Local Bare Bones previews; show the original illustration if an image fails. */
+.item-preview{display:inline-flex;align-items:center;justify-content:center;position:relative;flex-shrink:0}.minecraft-item{display:block;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.item-fallback{display:none}.asset-missing .minecraft-item{display:none}.asset-missing .item-fallback{display:inline-flex;width:100%;height:100%}.item-fallback .item-drawing{width:100%;height:100%}

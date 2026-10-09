@@ -56,6 +56,46 @@ To **update** a shop, edit only its YAML file and publish it. To **remove** it f
 
 The five shops are simply the number of included examples, **not a software limit**. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
 
+## Minecraft item and block previews
+
+The site serves local Bare Bones textures from `assets/minecraft/`. No resource-pack downloads or third-party requests happen in the visitor's browser. The included PNG previews are flat item sprites or block texture faces, not a full Minecraft model renderer. Animated textures use their first declared frame. Services and unknown objects retain the original illustrations; failed image requests also fall back to those illustrations.
+
+The supplied packs are merged by **missing path**, in this order:
+
+1. Bare Bones 1.21.11, including its compatible overlays (pack format 75).
+2. Bare Bones X Updated v1.0, only for paths absent from the base.
+3. Bare Bones Extra, only for paths still absent.
+
+This is intentionally different from installing add-on packs as overriding layers in Minecraft. Extra does not replace textures already supplied by the first two packs. `assets/minecraft/manifest.json` records the source archive, source member and SHA-256 for each imported file, plus archive checksums and original pack metadata. The originals are retained in `textures/`; `previews/` contains cropped PNGs for display. Block/item models, block states and item definitions supplied by the packs are also retained. Entity, GUI and other unrelated texture categories are not imported.
+
+An item's `id` is used to find its texture automatically. Use an optional `minecraftId` when the listing ID differs from the Minecraft ID:
+
+```yaml
+items:
+  - id: wool_delivery
+    minecraftId: minecraft:white_wool
+    name: White Wool — delivery
+    price: 1
+    quantity: 64
+```
+
+This excerpt shows the essential fields; existing optional item defaults still apply. `minecraftId` supports the `minecraft:` namespace or an unprefixed lowercase ID, not paths or URLs. The supplied bulk wool and enchanted-book listings already have aliases, so their catalog IDs remain unchanged.
+
+To refresh the generated assets, keep the original ZIPs outside the checkout and run from the repository root:
+
+```sh
+python -m pip install -r tools/requirements-assets.txt
+python tools/import_minecraft_assets.py \
+  --base "/path/to/Bare Bones 1.21.11.zip" \
+  --updated "/path/to/Bare Bones X Updated v1.0.zip" \
+  --extra "/path/to/Bare Bones Extra.zip"
+node --test tests/*.test.cjs
+python tests/import_minecraft_test.py
+node tests/validate-data.cjs
+```
+
+The importer rewrites its generated files and registry. It does not delete unrelated files; assets removed from newer packs may remain on disk but are no longer referenced by the generated registry. Commit `assets/minecraft/` and `js/minecraft-assets.js` together. The Pages workflow already publishes the entire `assets/` directory, so it does not need the ZIPs or Python at deployment time.
+
 ## Prices: diamonds or diamond blocks
 
 The two accepted currencies are:

@@ -1,0 +1,2 @@
+# Development-only image processing for importing resource packs.
+Pillow==12.3.0
