@@ -4,7 +4,7 @@ Updated version: **5 demonstration shops, 36 inventory listings, one `.yml` file
 
 **Replace the entire previous package**, not just `js/data.js`: initial loading, validation, price display, the proposal form and the workflow have changed. `index.html` remains the only HTML file, and all interface content is created with JavaScript.
 
-The interface is a compact shop directory: search, category and location filters, shop listings, saved shops, and inventory/coordinate details. Promotional hero, banners, onboarding guide, FAQ and decorative shop illustrations are omitted.
+The interface is a compact shop directory: search, category and location filters, shop listings, saved shops, and inventory/coordinate details. Promotional hero, banners, onboarding guide and FAQ are omitted. Shop preview images and illustrations remain visible in listing cards and shop details.
 
 ## Where to edit data
 
