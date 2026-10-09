@@ -29,6 +29,8 @@ try:
         errors = []
         page.on('pageerror', lambda error: errors.append(str(error)))
         origin = f'http://127.0.0.1:{server.server_port}/directory/'
+        manifest=json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())
+        previews={record['path']: record['pixel_size'] for record in manifest['items'].values()}
         total = 0
         for shop, count in [('woolery', 17), ('pale-found', 5), ('moonbound', 5), ('circuit', 6)]:
             page.goto(origin + '#shop=' + shop, wait_until='networkidle')
@@ -40,10 +42,11 @@ try:
                 image.scroll_into_view_if_needed()
             page.wait_for_function("[...document.querySelectorAll('#inventory-rows img.minecraft-item')].every(i=>i.complete&&i.naturalWidth>0)")
             assert images.count() == count, shop
-            assert all('/directory/assets/minecraft/rendered/' in src for src in images.evaluate_all('(images)=>images.map(i=>i.src)'))
+            assert all(src.removeprefix(origin) in previews for src in images.evaluate_all('(images)=>images.map(i=>i.src)'))
             if shop == 'woolery' and os.getenv('MINECRAFT_SCREENSHOT'):
                 page.screenshot(path=os.environ['MINECRAFT_SCREENSHOT'])
-            assert all(size == [256,256] for size in images.evaluate_all('(images)=>images.map(i=>[i.naturalWidth,i.naturalHeight])'))
+            for src,width,height in images.evaluate_all('(images)=>images.map(i=>[i.src,i.naturalWidth,i.naturalHeight])'):
+                assert width==height==previews[src.removeprefix(origin)]
             total += count
         page.goto(origin + '#shop=preview-test', wait_until='networkidle')
         expected=len(json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())['items'])

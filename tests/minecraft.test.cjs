@@ -7,10 +7,10 @@ function runtime(withAssets=true){
     if(fs.existsSync(path.join(base,f)))vm.runInContext(fs.readFileSync(path.join(base,f),'utf8'),ctx);
   return ctx;
 }
-test('Minecraft IDs resolve to local CoreChatX item and block previews',()=>{
+test('Minecraft IDs resolve to local native item and CoreChatX block previews',()=>{
   const c=runtime();assert.ok(c.MMMinecraft,'Minecraft asset resolver must exist');
   for(const [id,texture] of [['minecraft:white_wool','block/white_wool'],['diamond','item/diamond'],['observer','block/observer_front'],['pale_oak_log','block/pale_oak_log']]){
-    const src=c.MMMinecraft.resolve({id});assert.match(src,/^assets\/minecraft\/rendered\//);assert.ok(fs.existsSync(path.join(base,src)));
+    const src=c.MMMinecraft.resolve({id});assert.match(src,/^assets\/minecraft\/(?:rendered|textures|direct|previews)\//);assert.ok(fs.existsSync(path.join(base,src)));
     assert.equal(src,c.MMMinecraftRendered[id.replace(/^minecraft:/,'')]);
   }
 });
@@ -39,7 +39,7 @@ test('every flat/rendered preview and provenance texture exists',()=>{
   for(const entry of Object.values(rendered.items)){
     const png=fs.readFileSync(path.join(base,entry.path));
     assert.equal(crypto.createHash('sha256').update(png).digest('hex'),entry.sha256,entry.path);
-    assert.equal(png.readUInt32BE(16),256);assert.equal(png.readUInt32BE(20),256);
+    assert.equal(png.readUInt32BE(16),entry.pixel_size);assert.equal(png.readUInt32BE(20),entry.pixel_size);
     assert.equal(entry.used_fallback,false);
   }
   const manifest=JSON.parse(fs.readFileSync(path.join(base,'assets/minecraft/manifest.json')));
@@ -65,8 +65,19 @@ test('CoreChatX rendered previews take priority over flat textures at scale 16',
   const c=runtime();
   if(fs.existsSync(path.join(base,'js/minecraft-rendered.js')))vm.runInContext(fs.readFileSync(path.join(base,'js/minecraft-rendered.js'),'utf8'),c);
   assert.ok(c.MMMinecraftRendered,'CoreChatX rendered registry must exist');
-  for(const id of ['white_wool','pale_oak_log','observer','enchanted_book','diamond']){
+  for(const id of ['white_wool','pale_oak_log','observer','enchanted_book']){
     const src=c.MMMinecraft.resolve({id});assert.equal(src,c.MMMinecraftRendered[id]);assert.match(src,/^assets\/minecraft\/rendered\//);
     const png=fs.readFileSync(path.join(base,src));assert.equal(png.readUInt32BE(16),256);assert.equal(png.readUInt32BE(20),256);
   }
+});
+
+test('plain 2D items use original native-size PNGs while enchanted books retain glint',()=>{
+  const c=runtime();
+  for(const id of ['diamond','apple','iron_ingot']){
+    const src=c.MMMinecraft.resolve({id});
+    assert.match(src,/^assets\/minecraft\/(?:textures|direct|previews)\//);
+    const png=fs.readFileSync(path.join(base,src));assert.equal(png.readUInt32BE(16),16);assert.equal(png.readUInt32BE(20),16);
+    assert.ok(!fs.existsSync(path.join(base,'assets/minecraft/rendered/'+id+'.png')),'Redundant upscale must be removed');
+  }
+  assert.match(c.MMMinecraft.resolve({id:'enchanted_book'}),/\/rendered\/enchanted_book.png$/);
 });

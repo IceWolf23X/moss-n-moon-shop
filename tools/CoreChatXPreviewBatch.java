@@ -23,7 +23,8 @@ public final class CoreChatXPreviewBatch {
         TextureResolver textures=new TextureResolver(packs);
         RenderConfig config=new RenderConfig(RenderMode.ASSET_GRID,RenderedImageFormat.PNG,scale,false,false,null,null,null,null);
         RenderCacheService cache=new RenderCacheService(new CacheConfig(false,16,false,null,1,false,false));
-        ItemImageRenderer renderer=new ItemImageRenderer(packs,textures,new ItemModelResolver(packs,models),new CuboidModelRenderer(textures,models),cache,config);
+        ItemModelResolver itemModels=new ItemModelResolver(packs,models);
+        ItemImageRenderer renderer=new ItemImageRenderer(packs,textures,itemModels,new CuboidModelRenderer(textures,models),cache,config);
         InventoryImageRenderer completeRenderer=new InventoryImageRenderer(config,null,renderer);
         JsonArray ids=JsonParser.parseString(Files.readString(Path.of(args[3]))).getAsJsonArray();
         JsonObject items=new JsonObject(), failures=new JsonObject();
@@ -43,7 +44,9 @@ public final class CoreChatXPreviewBatch {
                 if(icon.usedFallback()||!visible){
                     failures.addProperty(id,icon.usedFallback()?icon.source():"empty-render");
                 } else {
-                    BufferedImage image=icon.image();
+                    List<ResolvedModel> selectedModels=itemModels.resolveAll(snapshot);
+                    boolean flat=enchantments.isEmpty()&&!selectedModels.isEmpty()&&selectedModels.stream().allMatch(model->!model.elementsDeclared()&&!model.layerTextures().isEmpty());
+                    BufferedImage image=flat?renderer.renderBaseIcon(snapshot,RenderMode.ASSET_GRID,16).image():icon.image();
                     if(!enchantments.isEmpty()){
                         BufferedImage full=completeRenderer.renderSingleItem(snapshot,RenderMode.ASSET_GRID);
                         int inset=(full.getWidth()-config.itemSize())/2;
@@ -55,6 +58,12 @@ public final class CoreChatXPreviewBatch {
                     record.addProperty("path","assets/minecraft/rendered/"+id+".png");
                     record.addProperty("source",icon.source());
                     record.addProperty("used_fallback",false);
+                    record.addProperty("pixel_size",image.getWidth());
+                    record.addProperty("flat",flat);
+                    if(flat&&selectedModels.size()==1&&selectedModels.getFirst().layerTextures().size()==1){
+                        ResourceLocation texture=selectedModels.getFirst().layerTextures().values().iterator().next();
+                        if(texture.namespace().equals("minecraft"))record.addProperty("texture_candidate",AssetPathResolver.texturePath(texture));
+                    }
                     if(!enchantments.isEmpty())record.addProperty("glint",true);
                     record.addProperty("sha256",HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(Files.readAllBytes(png))));
                     items.add(id,record);

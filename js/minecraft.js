@@ -7,8 +7,8 @@
     if(typeof id!=='string'||!/^(?:minecraft:)?[a-z0-9_]+$/.test(id))return '';
     id=id.replace(/^minecraft:/,'');
     id=aliases[id]||id;
-    const rendered=root.MMMinecraftRendered?.[id];
-    if(typeof rendered==='string'&&/^assets\/minecraft\/rendered\/[a-z0-9_]+\.png$/.test(rendered))return rendered;
+    const preview=root.MMMinecraftRendered?.[id];
+    if(typeof preview==='string'&&/^assets\/minecraft\/(?:rendered|textures|direct|previews)\/[a-z0-9_/-]+\.png$/.test(preview))return preview;
     const assets=root.MMMinecraftAssets||{};
     for(const name of ['item/'+id,'block/'+id,'block/'+id+'_front','block/'+id+'_side','block/'+id+'_top']){
       const src=assets[name];
