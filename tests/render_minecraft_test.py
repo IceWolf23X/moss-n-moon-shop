@@ -11,6 +11,20 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 
 class RenderTests(unittest.TestCase):
+    def test_enchanted_golden_apple_has_glint_and_plain_golden_apple_does_not(self):
+        manifest=json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())
+        enchanted=manifest['items']['enchanted_golden_apple'];plain=manifest['items']['golden_apple']
+        self.assertNotEqual(enchanted['path'],plain['path'],'Enchanted apple must not reuse the plain golden apple PNG')
+        self.assertTrue(enchanted.get('glint'))
+        self.assertFalse(plain.get('glint',False))
+        with Image.open(ROOT/plain['path']) as original, Image.open(ROOT/enchanted['path']) as rendered:
+            base=original.convert('RGBA').resize(rendered.size,Image.Resampling.NEAREST);actual=rendered.convert('RGBA')
+            self.assertEqual(actual.size,(256,256))
+            self.assertEqual(actual.getchannel('A').tobytes(),base.getchannel('A').tobytes())
+            changed=sum(before!=after for before,after in zip(base.get_flattened_data(),actual.get_flattened_data()) if before[3]>0)
+            self.assertGreater(changed,1000,'Enchanted golden apple must include the CoreChatX glint overlay')
+            self.assertTrue(all(after[3]==0 for before,after in zip(base.get_flattened_data(),actual.get_flattened_data()) if before[3]==0),'Glint must not extend outside the apple')
+
     def test_enchanted_book_has_glint_without_changing_its_silhouette(self):
         with Image.open(ROOT/'tests/fixtures/enchanted_book_base.png') as original, Image.open(ROOT/'assets/minecraft/rendered/enchanted_book.png') as rendered:
             base=original.convert('RGBA'); actual=rendered.convert('RGBA')

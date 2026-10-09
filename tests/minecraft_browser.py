@@ -52,7 +52,7 @@ try:
         expected=len(json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())['items'])
         page.wait_for_function("count=>document.querySelectorAll('#inventory-rows tr').length===count", arg=expected)
         assert page.locator('#inventory-rows img.minecraft-item').count()==expected
-        for item in ['enchanted_book','observer','white_wool']:
+        for item in ['enchanted_book','enchanted_golden_apple','observer','white_wool']:
             page.locator('#inventory-query').fill('minecraft:'+item)
             assert page.locator('#inventory-rows img.minecraft-item').count()==1
             page.wait_for_function("document.querySelector('#inventory-rows img').naturalWidth===256")

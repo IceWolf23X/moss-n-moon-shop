@@ -35,8 +35,8 @@ public final class CoreChatXPreviewBatch {
             if(!id.matches("[a-z0-9_]+"))throw new IllegalArgumentException("Unsafe item ID");
             try {
                 // The glint belongs to the complete item renderer, not renderBaseIcon.
-                // Stored enchanted books always glint; other catalog items stay unenchanted.
-                Map<String,Integer> enchantments=id.equals("enchanted_book")?Map.of("minecraft:mending",1):Map.of();
+                // Books and enchanted golden apples always glint, even without user-supplied enchantments.
+                Map<String,Integer> enchantments=Set.of("enchanted_book","enchanted_golden_apple").contains(id)?Map.of("minecraft:mending",1):Map.of();
                 ItemStackSnapshot snapshot=new ItemStackSnapshot(false,"minecraft:"+id,1,id,id,null,null,List.of(),List.of(),enchantments,null,null,null,null,Map.of("minecraft:context_dimension","minecraft:overworld","minecraft:time","0","minecraft:compass","0"),Map.of(),Map.of(),new byte[0]);
                 ItemImageRenderer.IconResult icon=renderer.renderBaseIcon(snapshot,RenderMode.ASSET_GRID,config.itemSize());
                 boolean visible=false;

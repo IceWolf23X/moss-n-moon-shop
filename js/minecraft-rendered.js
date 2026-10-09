@@ -470,7 +470,7 @@
   "emerald_block": "assets/minecraft/rendered/emerald_block.png",
   "emerald_ore": "assets/minecraft/rendered/emerald_ore.png",
   "enchanted_book": "assets/minecraft/rendered/enchanted_book.png",
-  "enchanted_golden_apple": "assets/minecraft/previews/item/golden_apple.png",
+  "enchanted_golden_apple": "assets/minecraft/rendered/enchanted_golden_apple.png",
   "enchanting_table": "assets/minecraft/rendered/enchanting_table.png",
   "end_crystal": "assets/minecraft/previews/item/end_crystal.png",
   "end_portal_frame": "assets/minecraft/rendered/end_portal_frame.png",

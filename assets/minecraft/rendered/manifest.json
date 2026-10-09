@@ -17,7 +17,7 @@
   "compatibility": "Legacy single-part bed definitions adapted to a head/foot composite; renderer source unchanged.",
   "adapter_sha256": {
     "render_minecraft_previews.py": "946cc261f1d6ee2d36477a3369ecf44ded153b5c7239f1a609af44aef1403dfe",
-    "CoreChatXPreviewBatch.java": "403981f3f43a4d5db7dd25bc43402d0d12fae56997d68ba4f704294d1384773c"
+    "CoreChatXPreviewBatch.java": "e504163f7871ce709b02d65f602e2482812c2765941189a0cd3e9937e324fba3"
   },
   "dependency_sha256": {
     "ecj-3.40.0.jar": "05cc22a24e7982970f63a405fc6c820bc80b806f27f3c5a6236fc475f8f7152b",
@@ -4660,15 +4660,14 @@
       "kind": "rendered"
     },
     "enchanted_golden_apple": {
-      "path": "assets/minecraft/previews/item/golden_apple.png",
+      "path": "assets/minecraft/rendered/enchanted_golden_apple.png",
       "source": "item-definition",
       "used_fallback": false,
-      "pixel_size": 16,
-      "flat": true,
-      "sha256": "7a4e79ed813bceb4e61415dea82510d1dc4913bd71bf2a5c6a98ee86678cd35d",
-      "kind": "texture",
-      "texture_path": "assets/minecraft/textures/item/golden_apple.png",
-      "texture_sha256": "c66ad50f67c74a193b0fd71051cc7dc095a5568b1e8dba1449a49fc9d18bbebf"
+      "pixel_size": 256,
+      "flat": false,
+      "glint": true,
+      "sha256": "c7465cdff6544e70c120b63548b31f213392364f35fb2a78e50c7a42e35c6faf",
+      "kind": "rendered"
     },
     "enchanting_table": {
       "path": "assets/minecraft/rendered/enchanting_table.png",
