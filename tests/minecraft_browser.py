@@ -60,7 +60,7 @@ try:
         assert page.locator('#modal').evaluate('d=>d.scrollWidth<=d.clientWidth+1')
         page.goto(origin + '#shop=builders-bench', wait_until='networkidle')
         assert page.locator('#inventory-rows img').count() == 0
-        page.route('**/rendered/white_wool.png', lambda route: route.abort())
+        page.route('**/'+manifest['items']['white_wool']['path'], lambda route: route.abort())
         page.goto(origin + '#shop=woolery', wait_until='networkidle')
         fallback = page.locator('.item-preview.asset-missing .item-fallback').first
         fallback.wait_for(state='visible')

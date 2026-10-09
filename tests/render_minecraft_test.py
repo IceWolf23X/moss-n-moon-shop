@@ -26,7 +26,8 @@ class RenderTests(unittest.TestCase):
             self.assertTrue(all(after[3]==0 for before,after in zip(base.get_flattened_data(),actual.get_flattened_data()) if before[3]==0),'Glint must not extend outside the apple')
 
     def test_enchanted_book_has_glint_without_changing_its_silhouette(self):
-        with Image.open(ROOT/'tests/fixtures/enchanted_book_base.png') as original, Image.open(ROOT/'assets/minecraft/rendered/enchanted_book.png') as rendered:
+        manifest=json.loads((ROOT/'assets/minecraft/rendered/manifest.json').read_text())
+        with Image.open(ROOT/'tests/fixtures/enchanted_book_base.png') as original, Image.open(ROOT/manifest['items']['enchanted_book']['path']) as rendered:
             base=original.convert('RGBA'); actual=rendered.convert('RGBA')
             self.assertEqual(actual.size,base.size)
             self.assertEqual(actual.getchannel('A').tobytes(),base.getchannel('A').tobytes())
@@ -54,6 +55,34 @@ class RenderTests(unittest.TestCase):
             alpha=im.convert('RGBA').getchannel('A')
             self.assertEqual(alpha.getpixel((0,0)),0)
             self.assertGreater(alpha.getpixel((128,128)),0)
+
+class WebPTests(unittest.TestCase):
+    def setUp(self):
+        spec=importlib.util.spec_from_file_location('renderer',ROOT/'tools/render_minecraft_previews.py')
+        self.renderer=importlib.util.module_from_spec(spec);spec.loader.exec_module(self.renderer)
+        self.assertTrue(hasattr(self.renderer,'optimize_webp'),'Selective lossless WebP conversion must exist')
+        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup);self.root=Path(self.temp.name)
+
+    def test_smaller_webp_preserves_all_rgba_pixels_and_removes_generated_png(self):
+        path=self.root/'assets/minecraft/rendered/sample.png';path.parent.mkdir(parents=True)
+        im=Image.new('RGBA',(256,256),(12,45,78,0));im.paste((100,200,50,120),(20,20,220,220));im.save(path)
+        original=im.tobytes();original_size=path.stat().st_size
+        manifest={'items':{'sample':{'path':str(path.relative_to(self.root)),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}}}
+        self.renderer.optimize_webp(self.root,manifest)
+        selected=self.root/manifest['items']['sample']['path']
+        self.assertEqual(selected.suffix,'.webp');self.assertFalse(path.exists())
+        self.assertLess(selected.stat().st_size,original_size)
+        with Image.open(selected) as actual:self.assertEqual(actual.convert('RGBA').tobytes(),original)
+
+    def test_larger_webp_keeps_png(self):
+        import random
+        path=self.root/'assets/minecraft/rendered/sample.png';path.parent.mkdir(parents=True)
+        Image.frombytes('RGB',(16,16),random.Random(1).randbytes(16*16*3)).save(path,optimize=True)
+        original=path.read_bytes()
+        manifest={'items':{'sample':{'path':str(path.relative_to(self.root)),'sha256':hashlib.sha256(original).hexdigest()}}}
+        self.renderer.optimize_webp(self.root,manifest)
+        self.assertEqual(manifest['items']['sample']['path'],str(path.relative_to(self.root)))
+        self.assertEqual(path.read_bytes(),original);self.assertFalse(path.with_suffix('.webp').exists())
 
 class FlatPreviewTests(unittest.TestCase):
     def setUp(self):

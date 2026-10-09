@@ -3,6 +3,7 @@
 import argparse
 from contextlib import ExitStack
 import hashlib
+from io import BytesIO
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -176,6 +177,49 @@ def reuse_flat_textures(batch, output, site, merged_pack, vanilla):
                       sha256=hashlib.sha256(public.read_bytes()).hexdigest())
 
 
+def optimize_webp(site, manifest):
+    """Select WebP only when it is smaller and every decoded RGBA byte is identical."""
+    paths={record['path'] for record in manifest['items'].values()}
+    choices={}
+    for name in sorted(paths):
+        relative=PurePosixPath(name)
+        if not re.fullmatch(r'assets/minecraft/(?:rendered|previews|direct|textures)/[a-z0-9_/-]+\.(?:png|webp)',name) or '..' in relative.parts:
+            raise ValueError('Unsafe preview path')
+        source=site/name
+        data=source.read_bytes()
+        if any(record['sha256']!=hashlib.sha256(data).hexdigest() for record in manifest['items'].values() if record['path']==name):
+            raise ValueError('Preview checksum mismatch: '+name)
+        if source.suffix=='.webp':
+            continue
+        with Image.open(source) as image:
+            original=image.convert('RGBA')
+            encoded=BytesIO()
+            original.save(encoded,format='WEBP',lossless=True,exact=True,method=6)
+            webp=encoded.getvalue()
+            if len(webp)>=len(data):
+                continue
+            with Image.open(BytesIO(webp)) as decoded:
+                if decoded.size!=original.size or decoded.convert('RGBA').tobytes()!=original.tobytes():
+                    raise ValueError('Lossless WebP changed pixels: '+name)
+        target=source.with_suffix('.webp')
+        target.write_bytes(webp)
+        choices[name]=(target.relative_to(site).as_posix(),hashlib.sha256(webp).hexdigest())
+        # Pack textures and imported previews remain available to the PNG fallback registry.
+        if relative.parts[2]=='rendered':
+            source.unlink()
+    for record in manifest['items'].values():
+        if record['path'] in choices:
+            record['path'],record['sha256']=choices[record['path']]
+        record['format']=Path(record['path']).suffix[1:]
+    manifest['encoding']='WebP lossless with exact RGBA verification when smaller; otherwise PNG.'
+
+def write_preview_catalog(site,manifest):
+    destination=site/'assets/minecraft/rendered'
+    (destination/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    registry={item:record['path'] for item,record in sorted(manifest['items'].items())}
+    (site/'js/minecraft-rendered.js').write_text('/* Generated Minecraft previews: native textures, compact 2D and CoreChatX 3D at scale '+str(manifest['scale'])+'. Do not edit. */\n(function(root){root.MMMinecraftRendered=Object.freeze('+json.dumps(registry,indent=2)+');})(globalThis);\n')
+
+
 def render(site, cache, scale=16, minecraft_version='1.21.11', only=None):
     if not 1 <= scale <= 32:
         raise ValueError('Scale must be between 1 and 32')
@@ -243,9 +287,8 @@ def render(site, cache, scale=16, minecraft_version='1.21.11', only=None):
                     target.unlink(missing_ok=True)
                 else:
                     shutil.copyfile(output/(item+'.png'),target)
-            (destination / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-            registry = {item: record['path'] for item, record in sorted(batch['items'].items())}
-            (site / 'js/minecraft-rendered.js').write_text('/* Generated Minecraft previews: native textures, compact 2D and CoreChatX 3D at scale ' + str(scale) + '. Do not edit. */\n(function(root){root.MMMinecraftRendered=Object.freeze(' + json.dumps(registry, indent=2) + ');})(globalThis);\n')
+            optimize_webp(site,manifest)
+            write_preview_catalog(site,manifest)
             return manifest
 
 def main():
@@ -255,7 +298,16 @@ def main():
     parser.add_argument('--scale', type=int, default=16)
     parser.add_argument('--minecraft-version', default='1.21.11')
     parser.add_argument('--only', nargs='+', help='Diagnostic subset; replaces the generated registry. Do not use for publication.')
+    parser.add_argument('--optimize-only',action='store_true',help='Optimize the committed preview catalog offline; no Java or downloads.')
     args = parser.parse_args()
+    if args.optimize_only:
+        site=args.site.resolve()
+        manifest=json.loads((site/'assets/minecraft/rendered/manifest.json').read_text())
+        optimize_webp(site,manifest)
+        manifest['adapter_sha256'][Path(__file__).name]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+        write_preview_catalog(site,manifest)
+        print(json.dumps({'optimized':len(manifest['items']),'encoding':manifest['encoding']}))
+        return
     result = render(args.site.resolve(), args.cache.resolve(), args.scale, args.minecraft_version, args.only)
     print(json.dumps({'rendered': len(result['items']), 'unavailable': len(result['failures']), 'pixels': result['pixel_size']}))
 
