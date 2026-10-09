@@ -36,13 +36,14 @@ try:
             page.wait_for_function("[...document.querySelectorAll('#inventory-rows img.minecraft-item')].every(i=>i.complete&&i.naturalWidth>0)")
             images = page.locator('#inventory-rows img.minecraft-item')
             assert images.count() == count, shop
-            assert all('/directory/assets/minecraft/' in src for src in images.evaluate_all('(images)=>images.map(i=>i.src)'))
+            assert all('/directory/assets/minecraft/rendered/' in src for src in images.evaluate_all('(images)=>images.map(i=>i.src)'))
             if shop == 'woolery' and os.getenv('MINECRAFT_SCREENSHOT'):
                 page.screenshot(path=os.environ['MINECRAFT_SCREENSHOT'])
+            assert all(size == [256,256] for size in images.evaluate_all('(images)=>images.map(i=>[i.naturalWidth,i.naturalHeight])'))
             total += count
         page.goto(origin + '#shop=builders-bench', wait_until='networkidle')
         assert page.locator('#inventory-rows img').count() == 0
-        page.route('**/previews/block/white_wool.png', lambda route: route.abort())
+        page.route('**/rendered/white_wool.png', lambda route: route.abort())
         page.goto(origin + '#shop=woolery', wait_until='networkidle')
         fallback = page.locator('.item-preview.asset-missing .item-fallback').first
         fallback.wait_for(state='visible')

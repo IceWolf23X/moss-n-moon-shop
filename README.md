@@ -58,7 +58,7 @@ The five shops are simply the number of included examples, **not a software limi
 
 ## Minecraft item and block previews
 
-The site serves local Bare Bones textures from `assets/minecraft/`. No resource-pack downloads or third-party requests happen in the visitor's browser. The included PNG previews are flat item sprites or block texture faces, not a full Minecraft model renderer. Animated textures use their first declared frame. Services and unknown objects retain the original illustrations; failed image requests also fall back to those illustrations.
+The site serves local Bare Bones textures from `assets/minecraft/`. No resource-pack downloads or third-party requests happen in the visitor's browser. The primary previews are transparent 256×256 PNGs generated offline by the CoreChatX renderer at scale ×16. Blocks with 3D inventory models use their actual geometry, textures and GUI transforms; items with flat inventory models keep that appearance. The browser only loads the finished PNGs, not Java or a live renderer. Flat texture previews remain a fallback for objects without a supported rendered model. Services and unknown objects retain the original illustrations; failed image requests also fall back to those illustrations.
 
 The supplied packs are merged by **missing path**, in this order:
 
@@ -66,7 +66,7 @@ The supplied packs are merged by **missing path**, in this order:
 2. Bare Bones X Updated v1.0, only for paths absent from the base.
 3. Bare Bones Extra, only for paths still absent.
 
-This is intentionally different from installing add-on packs as overriding layers in Minecraft. Extra does not replace textures already supplied by the first two packs. `assets/minecraft/manifest.json` records the source archive, source member and SHA-256 for each imported file, plus archive checksums and original pack metadata. The originals are retained in `textures/`; `previews/` contains cropped PNGs for display. Block/item models, block states and item definitions supplied by the packs are also retained. Entity, GUI and other unrelated texture categories are not imported.
+This is intentionally different from installing add-on packs as overriding layers in Minecraft. Extra does not replace textures already supplied by the first two packs. `assets/minecraft/manifest.json` records the source archive, source member and SHA-256 for each imported file, plus archive checksums and original pack metadata. The originals are retained in `textures/`; `previews/` contains cropped PNGs for display. Block/item models, block states and item definitions supplied by the packs are also retained. All supplied PNG texture categories are retained, including entity textures needed for beds, heads and other special item models.
 
 An item's `id` is used to find its texture automatically. Use an optional `minecraftId` when the listing ID differs from the Minecraft ID:
 
@@ -94,7 +94,27 @@ python tests/import_minecraft_test.py
 node tests/validate-data.cjs
 ```
 
-The importer rewrites its generated files and registry. It does not delete unrelated files; assets removed from newer packs may remain on disk but are no longer referenced by the generated registry. Commit `assets/minecraft/` and `js/minecraft-assets.js` together. The Pages workflow already publishes the entire `assets/` directory, so it does not need the ZIPs or Python at deployment time.
+The importer rewrites its generated files and registry. It does not delete unrelated files; assets removed from newer packs may remain on disk but are no longer referenced by the generated registry. Commit `assets/minecraft/`, `js/minecraft-assets.js` and `js/minecraft-rendered.js` together after regenerating both texture and rendered registries. The Pages workflow already publishes the entire `assets/` directory, so it does not need the ZIPs, Python or Java at deployment time.
+
+### Regenerate CoreChatX renders
+
+After importing or changing resource packs, regenerate the rendered images:
+
+```sh
+python tools/render_minecraft_previews.py --scale 16
+node --test tests/*.test.cjs
+python tests/render_minecraft_test.py
+```
+
+Generation requires Java 21 or newer and network access to GitHub, Maven Central and Mojang. It compiles the renderer from CoreChatX-plugin at pinned commit `9d1ef37bd266f18e7451d61db7e8ebaf91a055c2`, using a checksum-verified Eclipse compiler and Gson. It does not copy or modify CoreChatX source in this repository and does not require Bukkit, Discord or a running Minecraft server. Source, dependencies and the verified vanilla client archive are cached outside the checkout. Each run stages only checksum-validated entries from the current pack manifest and extracts vanilla assets into a fresh temporary directory, so removed or stale files cannot influence the new renders. Use `--cache /path/to/cache` to choose the cache location.
+
+The default vanilla model base is Java 1.21.11, matching the base pack. Vanilla models and textures only fill missing paths; the merged Bare Bones assets always take priority. Vanilla downloads and version metadata are checked against Mojang's published checksums. `--minecraft-version` can select a different official version when deliberately updating the catalog's model base.
+
+The offline adapter supplies fixed Overworld, clock and compass state and translates legacy single-part bed definitions into head/foot composites supported by the renderer. It leaves the original renderer unchanged. Amounts, tooltips and durability bars are not baked into the icon; catalog prices and quantities remain HTML.
+
+The current output contains **1,503 successful rendered previews**. The render manifest lists three excluded candidates: `air` (no useful icon), `snow_golem_spawn_egg` and the legacy ID `zombie_pigman_spawn_egg`. Generated placeholder/text fallbacks are not published as successful renders. All 33 item/block listings in the sample catalog resolve to rendered PNGs; services use illustrations.
+
+`assets/minecraft/rendered/manifest.json` records the renderer revision, scale, vanilla version/checksums, source-pack manifest checksum, PNG checksums, render source and unsuccessful candidates. `js/minecraft-rendered.js` is the generated runtime registry. The lookup order is rendered PNG → flat pack texture → original illustration; a failed image request also displays the original illustration. Files removed from a subsequent render may remain on disk, but are not included in its new registry. The `--only` option is for diagnostics and replaces the registry with that subset; do not use it for publication.
 
 ## Prices: diamonds or diamond blocks
 

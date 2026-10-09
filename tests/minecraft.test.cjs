@@ -3,15 +3,15 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const base=path.resolve(__dirname,'..');
 function runtime(withAssets=true){
   const ctx=vm.createContext({});
-  for(const f of [...(withAssets?['js/minecraft-assets.js']:[]),'js/minecraft.js','js/art.js'])
+  for(const f of [...(withAssets?['js/minecraft-assets.js','js/minecraft-rendered.js']:[]),'js/minecraft.js','js/art.js'])
     if(fs.existsSync(path.join(base,f)))vm.runInContext(fs.readFileSync(path.join(base,f),'utf8'),ctx);
   return ctx;
 }
-test('Minecraft IDs resolve to local Bare Bones item and block previews',()=>{
+test('Minecraft IDs resolve to local CoreChatX item and block previews',()=>{
   const c=runtime();assert.ok(c.MMMinecraft,'Minecraft asset resolver must exist');
   for(const [id,texture] of [['minecraft:white_wool','block/white_wool'],['diamond','item/diamond'],['observer','block/observer_front'],['pale_oak_log','block/pale_oak_log']]){
-    const src=c.MMMinecraft.resolve({id});assert.match(src,/^assets\/minecraft\/previews\//);assert.ok(fs.existsSync(path.join(base,src)));
-    assert.equal(src,c.MMMinecraftAssets[texture]);
+    const src=c.MMMinecraft.resolve({id});assert.match(src,/^assets\/minecraft\/rendered\//);assert.ok(fs.existsSync(path.join(base,src)));
+    assert.equal(src,c.MMMinecraftRendered[id.replace(/^minecraft:/,'')]);
   }
 });
 test('catalog aliases and explicit Minecraft IDs select the corresponding assets',()=>{
@@ -31,9 +31,17 @@ test('item rendering includes an original illustration fallback and safe local i
   assert.doesNotMatch(c.MMArt.itemIcon({id:'building_service',icon:'tools'}),/<img/);
   assert.doesNotMatch(runtime(false).MMArt.itemIcon({id:'white_wool',icon:'wool'}),/<img/);
 });
-test('every registry preview and provenance texture exists',()=>{
+test('every flat/rendered preview and provenance texture exists',()=>{
   const c=runtime();assert.ok(c.MMMinecraftAssets);
   for(const src of Object.values(c.MMMinecraftAssets))assert.ok(fs.existsSync(path.join(base,src)),src);
+  for(const src of Object.values(c.MMMinecraftRendered))assert.ok(fs.existsSync(path.join(base,src)),src);
+  const rendered=JSON.parse(fs.readFileSync(path.join(base,'assets/minecraft/rendered/manifest.json')));
+  for(const entry of Object.values(rendered.items)){
+    const png=fs.readFileSync(path.join(base,entry.path));
+    assert.equal(crypto.createHash('sha256').update(png).digest('hex'),entry.sha256,entry.path);
+    assert.equal(png.readUInt32BE(16),256);assert.equal(png.readUInt32BE(20),256);
+    assert.equal(entry.used_fallback,false);
+  }
   const manifest=JSON.parse(fs.readFileSync(path.join(base,'assets/minecraft/manifest.json')));
   assert.deepEqual(manifest.packs.map(p=>p.role),['base','updated','extra']);
   for(const entry of Object.values(manifest.files)){
@@ -51,5 +59,14 @@ test('YAML validation accepts explicit Minecraft IDs and rejects invalid values'
   for(const id of [123,'../../diamond','mod:diamond','']){
     const data=JSON.parse(JSON.stringify(c.MMData));data.shops[0].items[0].minecraftId=id;
     assert.ok(c.MMCore.validateData(data).some(e=>e.includes('.minecraftId:')));
+  }
+});
+test('CoreChatX rendered previews take priority over flat textures at scale 16',()=>{
+  const c=runtime();
+  if(fs.existsSync(path.join(base,'js/minecraft-rendered.js')))vm.runInContext(fs.readFileSync(path.join(base,'js/minecraft-rendered.js'),'utf8'),c);
+  assert.ok(c.MMMinecraftRendered,'CoreChatX rendered registry must exist');
+  for(const id of ['white_wool','pale_oak_log','observer','enchanted_book','diamond']){
+    const src=c.MMMinecraft.resolve({id});assert.equal(src,c.MMMinecraftRendered[id]);assert.match(src,/^assets\/minecraft\/rendered\//);
+    const png=fs.readFileSync(path.join(base,src));assert.equal(png.readUInt32BE(16),256);assert.equal(png.readUInt32BE(20),256);
   }
 });

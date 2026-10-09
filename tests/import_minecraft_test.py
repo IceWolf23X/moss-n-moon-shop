@@ -54,6 +54,15 @@ class ImportTests(unittest.TestCase):
         m=self.module.import_packs([base],self.root/'site',75)
         self.assertEqual(m['files']['textures/block/stone.png']['member'],'active/'+key)
 
+    def test_entity_textures_are_preserved_for_special_item_models(self):
+        key='assets/minecraft/textures/entity/shulker/shulker.png'
+        base=self.pack('base.zip',{key:'red'})
+        out=self.root/'site'
+        manifest=self.module.import_packs([base],out,75)
+        self.assertIn('textures/entity/shulker/shulker.png',manifest['files'])
+        self.assertTrue((out/'assets/minecraft/textures/entity/shulker/shulker.png').exists())
+        self.assertNotIn('entity/shulker/shulker', (out/'js/minecraft-assets.js').read_text())
+
     def test_unsafe_archive_paths_are_rejected(self):
         p=self.pack('unsafe.zip',{'../assets/minecraft/textures/block/stone.png':'red'})
         with self.assertRaises(ValueError):self.module.import_packs([p],self.root/'site',75)

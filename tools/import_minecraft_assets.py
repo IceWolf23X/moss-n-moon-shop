@@ -29,7 +29,7 @@ def compatible(entry, pack_format):
 
 def selected(path):
     return bool(SAFE.fullmatch(path)) and (
-        path.startswith(('textures/block/', 'textures/item/')) and path.endswith(('.png', '.png.mcmeta'))
+        path.startswith('textures/') and path.endswith(('.png', '.png.mcmeta'))
         or path.startswith(('models/block/', 'models/item/', 'blockstates/', 'items/')) and path.endswith('.json'))
 
 def read_pack(path, pack_format):
@@ -97,7 +97,7 @@ def import_packs(paths, site, pack_format=75):
     # Validate every preview before writing any generated files.
     previews = {}
     for name, (data, member, role) in merged.items():
-        if name.startswith('textures/') and name.endswith('.png'):
+        if name.startswith(('textures/block/', 'textures/item/')) and name.endswith('.png'):
             animation = json.loads(merged[name + '.mcmeta'][0]) if name + '.mcmeta' in merged else {}
             previews[name.removeprefix('textures/')] = preview(data, animation)
     manifest = {'pack_format': pack_format, 'precedence': roles[:len(paths)], 'packs': packs, 'files': {}}

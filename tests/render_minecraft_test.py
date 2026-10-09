@@ -1,0 +1,80 @@
+"""Validate real generated CoreChatX outputs, not placeholder icons."""
+import json
+import hashlib
+import importlib.util
+import tempfile
+import zipfile
+from pathlib import Path
+import unittest
+from PIL import Image
+
+ROOT=Path(__file__).resolve().parents[1]
+
+class RenderTests(unittest.TestCase):
+    def test_rendered_catalog_images_are_nonempty_256px_and_not_generated_fallbacks(self):
+        manifest=ROOT/'assets/minecraft/rendered/manifest.json'
+        self.assertTrue(manifest.exists(),'CoreChatX render manifest must exist')
+        m=json.loads(manifest.read_text())
+        self.assertEqual(m['scale'],16)
+        self.assertEqual(m['renderer_commit'],'9d1ef37bd266f18e7451d61db7e8ebaf91a055c2')
+        for item in ['white_wool','pale_oak_log','observer','enchanted_book','diamond','hopper','red_bed','clock','compass','recovery_compass']:
+            self.assertTrue(item in m['items'], 'Required preview was not rendered: '+item)
+            entry=m['items'][item]
+            self.assertFalse(entry['used_fallback'])
+            with Image.open(ROOT/entry['path']) as im:
+                self.assertEqual(im.size,(256,256))
+                self.assertIsNotNone(im.convert('RGBA').getchannel('A').getbbox())
+        with Image.open(ROOT/m['items']['red_bed']['path']) as im:
+            pillow=sum(1 for r,g,b,a in im.convert('RGBA').get_flattened_data() if a>0 and min(r,g,b)>180)
+            self.assertGreater(pillow,100, 'The rendered bed must include the pillow/head section')
+        with Image.open(ROOT/m['items']['white_wool']['path']) as im:
+            alpha=im.convert('RGBA').getchannel('A')
+            self.assertEqual(alpha.getpixel((0,0)),0)
+            self.assertGreater(alpha.getpixel((128,128)),0)
+
+class AssetIsolationTests(unittest.TestCase):
+    def setUp(self):
+        spec=importlib.util.spec_from_file_location('renderer',ROOT/'tools/render_minecraft_previews.py')
+        self.renderer=importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.renderer)
+        self.temp=tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root=Path(self.temp.name)
+        self.assertTrue(hasattr(self.renderer,'materialize_resource_pack'),'Rendering must stage only manifest-verified assets')
+
+    def test_removed_assets_do_not_survive_a_manifest_refresh(self):
+        site=self.root/'site'
+        original=site/'assets/minecraft'
+        (original/'models/item').mkdir(parents=True)
+        (original/'models/item/current.json').write_bytes(b'{}')
+        (original/'models/item/removed.json').write_bytes(b'{"stale":true}')
+        manifest={'files':{'models/item/current.json':{'path':'models/item/current.json','sha256':hashlib.sha256(b'{}').hexdigest()},'models/item/removed.json':{'path':'models/item/removed.json','sha256':hashlib.sha256(b'{"stale":true}').hexdigest()}}}
+        (original/'manifest.json').write_text(json.dumps(manifest))
+        self.renderer.materialize_resource_pack(site,self.root/'first')
+        del manifest['files']['models/item/removed.json']
+        (original/'manifest.json').write_text(json.dumps(manifest))
+        self.renderer.materialize_resource_pack(site,self.root/'refreshed')
+        self.assertFalse((self.root/'refreshed/assets/minecraft/models/item/removed.json').exists())
+        (original/'models/item/removed.json').unlink()
+        self.renderer.materialize_resource_pack(site,self.root/'fresh')
+        def files(root):return {str(p.relative_to(root)):p.read_bytes() for p in root.rglob('*') if p.is_file()}
+        self.assertEqual(files(self.root/'refreshed'),files(self.root/'fresh'))
+
+    def test_modified_source_assets_fail_checksum_validation(self):
+        site=self.root/'site'
+        original=site/'assets/minecraft'
+        (original/'models/item').mkdir(parents=True)
+        (original/'models/item/current.json').write_bytes(b'{"modified":true}')
+        (original/'manifest.json').write_text(json.dumps({'files':{'models/item/current.json':{'path':'models/item/current.json','sha256':hashlib.sha256(b'{}').hexdigest()}}}))
+        with self.assertRaises(ValueError):self.renderer.materialize_resource_pack(site,self.root/'output')
+
+    def test_vanilla_extraction_refuses_an_existing_contaminated_directory(self):
+        self.assertTrue(hasattr(self.renderer,'extract_vanilla_assets'))
+        jar=self.root/'client.jar'
+        with zipfile.ZipFile(jar,'w') as z:z.writestr('assets/minecraft/items/stone.json','{}')
+        output=self.root/'vanilla';output.mkdir();(output/'stale.json').write_text('{}')
+        with self.assertRaises(ValueError):self.renderer.extract_vanilla_assets(jar,output)
+        clean=self.root/'clean';self.renderer.extract_vanilla_assets(jar,clean)
+        self.assertEqual((clean/'assets/minecraft/items/stone.json').read_text(),'{}')
+
+if __name__=='__main__':unittest.main()

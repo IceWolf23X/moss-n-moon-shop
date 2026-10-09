@@ -55,7 +55,7 @@ No independent security audit, screen reader verification or Minecraft synchroni
 
 ## Local Bare Bones integration
 
-The resource-pack integration adds six Node tests, bringing the suite to 42 tests. They verify local item/block lookup, catalog aliases, explicit `minecraftId` values, invalid IDs, illustration fallback, generated file existence and original asset checksums. Three Python importer tests verify base-first precedence, compatible overlays, preview frame cropping, repeatability and unsafe-path rejection.
+The resource-pack integration adds seven Node tests, bringing the suite to 43 tests. They verify local item/block lookup, catalog aliases, explicit `minecraftId` values, invalid IDs, illustration fallback, generated file existence and original asset checksums. Four Python importer tests verify base-first precedence, compatible overlays, preview frame cropping, repeatability and unsafe-path rejection.
 
 ```sh
 node --test tests/*.test.cjs
@@ -64,4 +64,13 @@ python tests/import_minecraft_test.py
 CHROMIUM_EXECUTABLE=/usr/bin/chromium python tests/minecraft_browser.py
 ```
 
-The dedicated browser test uses real HTTP under a `/directory/` repository subpath. It loads all 33 item/block previews in the sample catalog, checks service illustrations, and deliberately blocks a texture request to verify the visible fallback. This checks actual PNG loading locally; it does not establish a successful public GitHub Pages deployment. The generated previews are flat texture images, not full 3D model renders.
+The dedicated browser test uses real HTTP under a `/directory/` repository subpath. It loads all 33 item/block previews in the sample catalog, checks service illustrations, and deliberately blocks a texture request to verify the visible fallback. This checks actual PNG loading locally; it does not establish a successful public GitHub Pages deployment. The primary previews are CoreChatX model renders at scale ×16 (256×256). The browser checks that size for every catalog preview; flat textures are retained only as a secondary lookup option.
+
+
+## CoreChatX render verification
+
+```sh
+python tests/render_minecraft_test.py
+```
+
+The four render tests include three input-isolation regressions: removed assets are excluded after a manifest refresh, modified originals fail checksum validation, and vanilla extraction refuses contaminated output directories. The render-output test checks nonempty 256×256 PNGs and excludes generated placeholders for representative blocks, sprites, special bed geometry, clocks and compasses. It also verifies that the bed contains its pillow/head section and that a wool block has a transparent canvas around its rendered model. The Node suite checks the existence, dimensions and SHA-256 of all 1,503 generated PNGs. Three unsupported/nonvisible candidates are listed separately in the render manifest, not counted as successful previews.
