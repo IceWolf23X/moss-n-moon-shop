@@ -73,11 +73,40 @@ test('submission validates coordinates and makes a publishable draft, never a li
   assert.ok(core().makeSubmission({...input,x:'nope'},data()).errors.length);
   assert.ok(core().makeSubmission({...input,name:'  '},data()).errors.length);
 });
+test('submission preserves a blank optional Y coordinate as null', () => {
+  // Catches blank form values being coerced to a fabricated height of zero.
+  const input = { name:'A New Shop',owner:'Player_1',kind:'shop',category:'building',location:'district',x:'-114',y:'',z:'400',description:'Our new shop.',items:'Stone' };
+  const result = core().makeSubmission(input,data());
+  assert.equal(result.errors.length,0);
+  assert.equal(JSON.stringify(result.shop.coords),'{"x":-114,"y":null,"z":400}');
+  assert.ok(core().makeSubmission({...input,y:'64'},data()).errors.length === 0);
+  assert.ok(core().makeSubmission({...input,y:'1.5'},data()).errors.length);
+  assert.ok(core().makeSubmission({...input,x:''},data()).errors.length);
+  assert.ok(core().makeSubmission({...input,z:''},data()).errors.length);
+});
+test('coordinate formatting omits an unknown height without changing complete coordinates', () => {
+  // Catches null heights leaking as null, zero, or undefined into visible/copyable text.
+  assert.equal(core().coordinateValue({x:-114,y:null,z:400},'y'),'Not specified');
+  assert.equal(core().coordinateCopyText({x:-114,y:null,z:400}),'X: -114, Z: 400');
+  assert.equal(core().coordinateCopyText({x:128,y:64,z:-240}),'128 64 -240');
+});
 test('unknown references and invalid coordinates are caught by data validation', () => {
   const broken = JSON.parse(JSON.stringify(data()));
   broken.shops[0].location='missing';
   broken.shops[0].coords.x='not-a-number';
   assert.ok(core().validateData(broken).length >= 2);
+});
+test('data validation accepts only an explicit null for unknown Y', () => {
+  // Catches nullable X/Z or noninteger coordinate values weakening the catalog contract.
+  const unknownHeight = JSON.parse(JSON.stringify(data()));
+  unknownHeight.shops[0].coords.y=null;
+  assert.equal(core().validateData(unknownHeight).length,0);
+  for (const [axis,value] of [['x',null],['z',null],['y','64'],['y',undefined],['y',1.5]]) {
+    const broken = JSON.parse(JSON.stringify(data()));
+    if (value === undefined) delete broken.shops[0].coords[axis];
+    else broken.shops[0].coords[axis]=value;
+    assert.ok(core().validateData(broken).some(error=>error.includes('coordinates')),`${axis}=${String(value)} must be rejected`);
+  }
 });
 test('validation reports malformed top-level arrays instead of throwing', () => {
   assert.ok(core().validateData({shops:[],categories:null,locations:[]}).length);

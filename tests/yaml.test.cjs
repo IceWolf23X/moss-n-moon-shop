@@ -96,6 +96,13 @@ test('loader reads config, manifest and individual files without embedded catalo
   assert.equal(data.shops[0].items[0].stock,'unknown');
   assert.equal(ctx.MMCore.validateData(data).length,0);
 });
+test('loader accepts an explicit unknown Y coordinate from YAML', async () => {
+  // Catches YAML null being rejected or silently converted while assembling the catalog.
+  const map=files();
+  map['shops/sample-shop.yml']=shopYaml.replace('coords: {x: -12, y: 64, z: 40}','coords: {x: -12, y: null, z: 40}');
+  const data=await src().loadCatalog({readText:readFrom(map)});
+  assert.equal(JSON.stringify(data.shops[0].coords),'{"x":-12,"y":null,"z":40}');
+});
 test('currency inheritance is item > shop > site, without converting the amount', async () => {
   const map=files();
   map['shops/sample-shop.yml']=shopYaml.replace('currency: diamond\n','currency: diamond_block\n');

@@ -1,0 +1,431 @@
+# Source: Screenshot 2026-10-10 005916.png, checked 2026-10-10.
+# Y coordinate, prices, quantities, and stock were not stated; Swift Sneak and Soul Speed are upcoming.
+id: enchanted-archives
+name: The Enchanted Archives of Clover Hollow
+owner: Fuzz, Rizizrii, and Haktaru
+tagline: Max-level enchanted books and a welcoming bookshop café.
+description: >-
+  A bookshop-café at plot A8 selling the announced enchantments at their maximum levels. The café
+  offers free cookies and an anvil wall for applying newly purchased books.
+kind: shop
+categories:
+  - equipment
+  - farming
+location: district
+coords:
+  x: -145
+  'y': null
+  z: 365
+directions: Plot A8 in the Ancient Alley shopping district.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: books
+tags:
+  - Enchanted books
+  - Café
+notes: >-
+  Book prices and stock were not included in the announcement. Swift Sneak and Soul Speed are coming
+  soon. Maximum levels are described in the announcement without numeric levels, except for the
+  explicitly named Knockback I and II.
+images: []
+items:
+  - id: mending
+    minecraftId: minecraft:enchanted_book
+    name: Mending
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - mending book
+  - id: unbreaking
+    minecraftId: minecraft:enchanted_book
+    name: Unbreaking
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - unbreaking book
+  - id: silk_touch
+    minecraftId: minecraft:enchanted_book
+    name: Silk Touch
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - silk touch book
+  - id: protection
+    minecraftId: minecraft:enchanted_book
+    name: Protection
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - protection book
+  - id: efficiency
+    minecraftId: minecraft:enchanted_book
+    name: Efficiency
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - efficiency book
+  - id: sharpness
+    minecraftId: minecraft:enchanted_book
+    name: Sharpness
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - sharpness book
+  - id: fortune
+    minecraftId: minecraft:enchanted_book
+    name: Fortune
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - fortune book
+  - id: looting
+    minecraftId: minecraft:enchanted_book
+    name: Looting
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - looting book
+  - id: feather_falling
+    minecraftId: minecraft:enchanted_book
+    name: Feather Falling
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - feather falling book
+  - id: luck_of_the_sea
+    minecraftId: minecraft:enchanted_book
+    name: Luck of the Sea
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - fishing book
+  - id: lure
+    minecraftId: minecraft:enchanted_book
+    name: Lure
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - fishing book
+  - id: aqua_affinity
+    minecraftId: minecraft:enchanted_book
+    name: Aqua Affinity
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - aqua affinity book
+  - id: depth_strider
+    minecraftId: minecraft:enchanted_book
+    name: Depth Strider
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - depth strider book
+  - id: respiration
+    minecraftId: minecraft:enchanted_book
+    name: Respiration
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - respiration book
+  - id: sweeping_edge
+    minecraftId: minecraft:enchanted_book
+    name: Sweeping Edge
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - sweeping edge book
+  - id: channeling
+    minecraftId: minecraft:enchanted_book
+    name: Channeling
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - channeling book
+  - id: flame
+    minecraftId: minecraft:enchanted_book
+    name: Flame
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - flame book
+  - id: infinity
+    minecraftId: minecraft:enchanted_book
+    name: Infinity
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - infinity book
+  - id: multishot
+    minecraftId: minecraft:enchanted_book
+    name: Multishot
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - multishot book
+  - id: fire_aspect
+    minecraftId: minecraft:enchanted_book
+    name: Fire Aspect
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - fire aspect book
+  - id: knockback_i
+    minecraftId: minecraft:enchanted_book
+    name: Knockback I
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - knockback book
+  - id: knockback_ii
+    minecraftId: minecraft:enchanted_book
+    name: Knockback II
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - knockback book
+  - id: punch
+    minecraftId: minecraft:enchanted_book
+    name: Punch
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - punch book
+  - id: curse_of_binding
+    minecraftId: minecraft:enchanted_book
+    name: Curse of Binding
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - binding curse
+  - id: curse_of_vanishing
+    minecraftId: minecraft:enchanted_book
+    name: Curse of Vanishing
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - vanishing curse
+  - id: quick_charge
+    minecraftId: minecraft:enchanted_book
+    name: Quick Charge
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - quick charge book
+  - id: riptide
+    minecraftId: minecraft:enchanted_book
+    name: Riptide
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - riptide book
+  - id: thorns
+    minecraftId: minecraft:enchanted_book
+    name: Thorns
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - thorns book
+  - id: loyalty
+    minecraftId: minecraft:enchanted_book
+    name: Loyalty
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - loyalty book
+  - id: lunge
+    minecraftId: minecraft:enchanted_book
+    name: Lunge
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - lunge book
+  - id: projectile_protection
+    minecraftId: minecraft:enchanted_book
+    name: Projectile Protection
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - projectile protection book
+  - id: piercing
+    minecraftId: minecraft:enchanted_book
+    name: Piercing
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - piercing book
+  - id: blast_protection
+    minecraftId: minecraft:enchanted_book
+    name: Blast Protection
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - blast protection book
+  - id: fire_protection
+    minecraftId: minecraft:enchanted_book
+    name: Fire Protection
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - fire protection book
+  - id: frost_walker
+    minecraftId: minecraft:enchanted_book
+    name: Frost Walker
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - frost walker book
+  - id: density
+    minecraftId: minecraft:enchanted_book
+    name: Density
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - density book
+  - id: bane_of_arthropods
+    minecraftId: minecraft:enchanted_book
+    name: Bane of Arthropods
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - bane book
+  - id: smite
+    minecraftId: minecraft:enchanted_book
+    name: Smite
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - smite book
+  - id: breach
+    minecraftId: minecraft:enchanted_book
+    name: Breach
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - breach book
+  - id: impaling
+    minecraftId: minecraft:enchanted_book
+    name: Impaling
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - impaling book
+  - id: power
+    minecraftId: minecraft:enchanted_book
+    name: Power
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: book
+    aliases:
+      - power book
+  - id: swift_sneak
+    minecraftId: minecraft:enchanted_book
+    name: Swift Sneak (coming soon)
+    price: null
+    quantity: 1
+    stock: out
+    icon: book
+    aliases:
+      - swift sneak book
+  - id: soul_speed
+    minecraftId: minecraft:enchanted_book
+    name: Soul Speed (coming soon)
+    price: null
+    quantity: 1
+    stock: out
+    icon: book
+    aliases:
+      - soul speed book
+  - id: cafe_cookie
+    minecraftId: minecraft:cookie
+    name: Café Cookie
+    price: 0
+    quantity: 1
+    stock: unknown
+    icon: food
+    aliases:
+      - free cookies
+      - cafe

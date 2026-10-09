@@ -1,0 +1,142 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005744.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: wolf-wears-wool
+name: The Wolf Wears Wool
+owner: IceWolf23X
+tagline: All 16 wool colors, one diamond per stack.
+description: >-
+  All 16 wool colors are available from day one. Buy wool by the stack or place a bulk order in the
+  shop while full-shulker purchases are still being prepared.
+kind: shop
+categories:
+  - building
+location: district
+coords:
+  x: -35
+  'y': 87
+  z: 385
+directions: Ancient Alley, plot A17.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: wool
+tags:
+  - All 16 colors
+  - Bulk orders
+notes: >-
+  Full-shulker stock is a work in progress. Bulk orders can be placed at the shop; the announced
+  price is around 23 diamonds per shulker box, so the bulk entry is an estimate to confirm with the
+  owner.
+images: []
+items:
+  - id: white_wool
+    name: White Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: light_gray_wool
+    name: Light Gray Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: gray_wool
+    name: Gray Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: black_wool
+    name: Black Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: brown_wool
+    name: Brown Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: red_wool
+    name: Red Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: orange_wool
+    name: Orange Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: yellow_wool
+    name: Yellow Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: lime_wool
+    name: Lime Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: green_wool
+    name: Green Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: cyan_wool
+    name: Cyan Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: light_blue_wool
+    name: Light Blue Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: blue_wool
+    name: Blue Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: purple_wool
+    name: Purple Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: magenta_wool
+    name: Magenta Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: pink_wool
+    name: Pink Wool
+    price: 1
+    quantity: 64
+    stock: in
+    icon: wool
+  - id: bulk_wool_order
+    name: Wool bulk order — estimated price
+    price: 23
+    quantity: 1
+    stock: unknown
+    unit: shulker box (estimate; confirm with owner)
+    icon: wool
+    minecraftId: minecraft:white_wool
+    aliases:
+      - bulk wool
+      - shulker box

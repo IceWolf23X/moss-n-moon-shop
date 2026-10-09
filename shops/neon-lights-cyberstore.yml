@@ -1,0 +1,73 @@
+# Source: Screenshot 2026-10-10 005856.png, checked 2026-10-10.
+# The source lists current goods explicitly; sea lanterns are upcoming and have no price or quantity.
+id: neon-lights-cyberstore
+name: Neon Lights CyberStore
+owner: 6p
+tagline: Bright blocks for builds that need a neon glow.
+description: >-
+  A lighting shop in Ancient Alley stocking all three froglight colors and end rods, with sea
+  lanterns announced for a future release.
+kind: shop
+categories:
+  - building
+location: district
+coords:
+  x: 45
+  y: 100
+  z: 327
+directions: Visit the CyberStore at coordinates 45, 100, 327 in Ancient Alley.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: crystal
+tags: [Lighting, Froglights]
+notes: Sea lanterns are coming after the announced guardian farm is ready.
+images: []
+items:
+  - id: verdant_froglight
+    minecraftId: minecraft:verdant_froglight
+    name: Verdant Froglight
+    price: 1
+    quantity: 128
+    unit: items
+    stock: in
+    icon: crystal
+    aliases: [green froglight]
+  - id: pearlescent_froglight
+    minecraftId: minecraft:pearlescent_froglight
+    name: Pearlescent Froglight
+    price: 1
+    quantity: 128
+    unit: items
+    stock: in
+    icon: crystal
+    aliases: [purple froglight]
+  - id: ochre_froglight
+    minecraftId: minecraft:ochre_froglight
+    name: Ochre Froglight
+    price: 1
+    quantity: 128
+    unit: items
+    stock: in
+    icon: crystal
+    aliases: [yellow froglight]
+  - id: end_rod
+    minecraftId: minecraft:end_rod
+    name: End Rod
+    price: 1
+    quantity: 64
+    unit: items
+    stock: in
+    icon: crystal
+    aliases: [end rods, lighting]
+  - id: sea_lantern_coming_soon
+    minecraftId: minecraft:sea_lantern
+    name: Sea Lanterns (coming soon)
+    price: null
+    quantity: 1
+    unit: batch (quantity not specified)
+    stock: out
+    icon: crystal
+    aliases: [guardian farm, lighting]

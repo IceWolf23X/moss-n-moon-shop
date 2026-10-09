@@ -1,0 +1,46 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005654.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: atomicsmb-halloween-shop
+name: The Deer Skull
+owner: AtomicSMB
+tagline: Seasonal Halloween map art and a spooky surprise.
+description: >-
+  A limited-time shop open exclusively during spooky month, offering Halloween-themed map art such
+  as custom pumpkin carvings and a surprise you can watch, and that can watch you, at the store.
+kind: shop
+categories:
+  - collectibles
+location: district
+coords:
+  x: 35
+  'y': null
+  z: 275
+directions: X 35, Z 275.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: welcome
+tags:
+  - October seasonal shop
+notes: >-
+  Open during October only according to the October 9 announcement. Prices were not supplied.
+images: []
+items:
+  - id: halloween_map_art
+    name: Halloween-themed map art
+    price: null
+    quantity: 1
+    stock: in
+    unit: artwork
+    icon: book
+  - id: pumpkin_carving_map_art
+    name: Custom pumpkin carving map art
+    price: null
+    quantity: 1
+    stock: in
+    unit: artwork
+    icon: book

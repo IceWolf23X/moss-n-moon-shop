@@ -1,0 +1,65 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005818.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: between-rock-and-hard-place
+name: Between a Rock and a Hard Place
+owner: ShadowSplinter21
+tagline: It's not just a boulder... it's a rock!
+description: >-
+  Stone and rock supplies for builders: stone, blackstone, granite, diorite, andesite, tuff and
+  deepslate.
+kind: shop
+categories:
+  - building
+location: district
+coords:
+  x: -71
+  'y': 78
+  z: 393
+directions: Ancient Alley, plot A16.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: stone
+tags: []
+notes: Read the welcome book in the shop for information about bulk orders.
+images: []
+items:
+  - id: stone
+    name: Stone
+    price: 1
+    quantity: 192
+    stock: in
+  - id: blackstone
+    name: Blackstone
+    price: 2
+    quantity: 64
+    stock: in
+  - id: granite
+    name: Granite
+    price: 1
+    quantity: 64
+    stock: in
+  - id: diorite
+    name: Diorite
+    price: 1
+    quantity: 64
+    stock: in
+  - id: andesite
+    name: Andesite
+    price: 1
+    quantity: 64
+    stock: in
+  - id: tuff
+    name: Tuff
+    price: 1
+    quantity: 64
+    stock: in
+  - id: deepslate
+    name: Deepslate
+    price: 1
+    quantity: 64
+    stock: in

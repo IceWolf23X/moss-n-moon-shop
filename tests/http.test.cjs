@@ -47,13 +47,3 @@ test('fetch timeouts have an actionable message instead of waiting forever',asyn
 test('file protocol fails with local-server instructions, without trying to fetch',async()=>{
   await assert.rejects(ctx.MMDataSource.fetchText('config.yml',{baseUrl:'file:///example/index.html'}), /HTTP\(S\).*double-clicking/);
 });
-
-test('preview test shop lists every rendered Minecraft item and block exactly once',async()=>{
-  const catalog=await ctx.MMDataSource.loadCatalog({readText:name=>fs.readFileSync(path.join(base,name),'utf8')});
-  const shop=catalog.shops.find(shop=>shop.id==='preview-test');
-  assert.ok(shop,'The preview test shop must be listed');
-  const rendered=JSON.parse(fs.readFileSync(path.join(base,'assets/minecraft/rendered/manifest.json')));
-  assert.deepEqual(Array.from(shop.items,item=>item.id).sort(),Object.keys(rendered.items).sort());
-  assert.equal(shop.demo,true);
-  assert.ok(shop.items.every(item=>item.price===null&&item.stock==='unknown'));
-});

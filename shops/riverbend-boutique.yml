@@ -1,0 +1,60 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005703.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: riverbend-boutique
+name: Riverbend Boutique
+owner: MessedUpLogic
+tagline: Rotating custom armor sets and October outfits.
+description: >-
+  A rotating selection of custom armor sets to show your style. October offers include the Grim
+  Reaper set, the Vault Dweller set, fully enchanted netherite armor and bundles.
+kind: shop
+categories:
+  - equipment
+location: district
+coords:
+  x: 110
+  'y': 109
+  z: 354
+directions: X 110, Y 109, Z 354. No plot number was supplied.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: crystal
+tags: []
+notes: >-
+  The October sets are temporary. The October 9 clarification confirms 6 diamond blocks PER PIECE of
+  netherite armor, not for a complete set. No names or enchantment combinations for the individual
+  pieces were supplied.
+images: []
+items:
+  - id: grim_reaper_piece
+    name: The Grim Reaper Set — armor piece
+    price: 7
+    quantity: 1
+    stock: in
+    unit: piece
+    icon: tools
+  - id: vault_dweller_piece
+    name: The Vault Dweller Set — armor piece
+    price: 7
+    quantity: 1
+    stock: in
+    unit: piece
+    icon: tools
+  - id: enchanted_netherite_piece
+    name: Fully Enchanted Netherite Armor — armor piece
+    price: 6
+    quantity: 1
+    stock: in
+    currency: diamond_block
+    unit: piece
+    icon: tools
+  - id: bundle
+    name: Bundles
+    price: 1
+    quantity: 9
+    stock: in

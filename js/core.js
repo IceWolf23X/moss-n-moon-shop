@@ -67,6 +67,7 @@
     const amount = new Intl.NumberFormat('en', {maximumSignificantDigits:21}).format(item.price);
     return `${amount} ${item.price === 1 ? currency.singular : currency.plural}`;
   }
+  // Validates the complete normalized catalog before any UI code consumes it.
   function validateData(data) {
     const errors = [];
     const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -137,7 +138,7 @@
       if (!locations.has(shop.location)) errors.push(`${prefix}: unknown location.`);
       if (!strings(shop.categories) || !shop.categories.length || shop.categories.some(id => !categories.has(id))) errors.push(`${prefix}: unknown or empty categories.`);
       if (!strings(shop.tags)) errors.push(`${prefix}.tags: a list of strings is required; use [] for none.`);
-      if (!object(shop.coords) || !['x','y','z'].every(key => Number.isSafeInteger(shop.coords[key]))) errors.push(`${prefix}: coordinates must be integers.`);
+      if (!object(shop.coords) || !Number.isSafeInteger(shop.coords.x) || !Number.isSafeInteger(shop.coords.z) || !Object.prototype.hasOwnProperty.call(shop.coords,'y') || (shop.coords.y !== null && !Number.isSafeInteger(shop.coords.y))) errors.push(`${prefix}: coordinates X/Z must be integers and Y must be an integer or null.`);
       else allowed(shop.coords, ['x','y','z'], `${prefix}.coords`);
       if (typeof shop.updated !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(shop.updated) || Number.isNaN(Date.parse(shop.updated)) || new Date(shop.updated).toISOString().slice(0,10) !== shop.updated) errors.push(`${prefix}: invalid updated date; use YYYY-MM-DD.`);
       if (!Array.isArray(shop.images)) errors.push(`${prefix}.images: a list is required; use [] for no images.`);
@@ -172,6 +173,7 @@
     });
     return errors;
   }
+  // Builds a review-only listing draft while preserving an explicitly unknown height.
   function makeSubmission(input,data) {
     const errors=[];
     const currency=input.currency === undefined ? (data.config?.currency || 'diamond') : input.currency;
@@ -183,11 +185,18 @@
     if (!['shop','stall','service'].includes(input.kind)) errors.push('Choose a valid listing type.');
     if (!data.categories.some(c=>c.id===input.category)) errors.push('Choose a category.');
     if (!data.locations.some(l=>l.id===input.location)) errors.push('Choose a location.');
-    const coords={};
-    for (const axis of ['x','y','z']) {
-      const raw=String(input[axis]??'').trim(); coords[axis]=Number(raw);
-      if (!/^-?\d+$/.test(raw)||!Number.isSafeInteger(coords[axis])||Math.abs(coords[axis])>30000000) errors.push(`Enter a valid integer for coordinate ${axis.toUpperCase()}.`);
+    const horizontal={};
+    for (const axis of ['x','z']) {
+      const raw=String(input[axis]??'').trim(); horizontal[axis]=Number(raw);
+      if (!/^-?\d+$/.test(raw)||!Number.isSafeInteger(horizontal[axis])||Math.abs(horizontal[axis])>30000000) errors.push(`Enter a valid integer for coordinate ${axis.toUpperCase()}.`);
     }
+    const rawY=String(input.y??'').trim();
+    let y=null;
+    if (rawY) {
+      y=Number(rawY);
+      if (!/^-?\d+$/.test(rawY)||!Number.isSafeInteger(y)||Math.abs(y)>30000000) errors.push('Enter a valid integer for coordinate Y or leave it blank.');
+    }
+    const coords={x:horizontal.x,y,z:horizontal.z};
     const itemNames=[...new Map(String(input.items||'').split(/[,\n]+/).map(s=>s.trim()).filter(Boolean).map(s=>[normalize(s),s])).values()];
     if (!itemNames.length||itemNames.length>50||itemNames.some(s=>s.length>100)) errors.push('List 1–50 item or service names, no more than 100 characters each.');
     if (errors.length) return {errors,shop:null};
@@ -198,5 +207,13 @@
       directions:'Add precise directions after staff review.',tags:[],
       items:itemNames.map((name,index)=>({id:normalize(name).replace(/ /g,'_')||`item_${index+1}`,name,price:null,currency,quantity:1,unit:input.kind==='service'?'project':'item',stock:'unknown',icon:'cube',aliases:[]}))}};
   }
-  root.MMCore = Object.freeze({normalize,has,itemText,searchShops,matchedItems,suggest,escapeHTML,safeUrl,safeAsset,validateData,makeSubmission,available,currencies,isCurrency,priceLabel});
+  // Returns a safe display value for one validated coordinate axis.
+  function coordinateValue(coords,axis) {
+    return axis === 'y' && coords.y === null ? 'Not specified' : String(coords[axis]);
+  }
+  // Keeps the legacy Minecraft triplet for known heights and labels the two known axes otherwise.
+  function coordinateCopyText(coords) {
+    return coords.y === null ? `X: ${coords.x}, Z: ${coords.z}` : `${coords.x} ${coords.y} ${coords.z}`;
+  }
+  root.MMCore = Object.freeze({normalize,has,itemText,searchShops,matchedItems,suggest,escapeHTML,safeUrl,safeAsset,validateData,makeSubmission,available,currencies,isCurrency,priceLabel,coordinateValue,coordinateCopyText});
 }(globalThis));

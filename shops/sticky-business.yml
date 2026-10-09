@@ -1,0 +1,61 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005834.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: sticky-business
+name: Sticky Business
+owner: spookymanda
+tagline: Honey, slime and all three froglight colors.
+description: Honeycomb, honey blocks, honeycomb blocks, slime blocks and mix-and-match froglights.
+kind: shop
+categories:
+  - building
+  - redstone
+location: district
+coords:
+  x: -166
+  'y': null
+  z: 366
+directions: Ancient Alley, X -166, Z 366. No plot number or height was supplied.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: garden
+tags: []
+notes: >-
+  The honey-block offer is written as half a stack for 2 diamonds. Froglight colors can be mixed in
+  the two-stack offer.
+images: []
+items:
+  - id: honeycomb
+    name: Honeycomb
+    price: 1
+    quantity: 128
+    stock: in
+  - id: honey_block
+    name: Honey Block
+    price: 2
+    quantity: 32
+    stock: in
+  - id: honeycomb_block
+    name: Honeycomb Block
+    price: 1
+    quantity: 64
+    stock: in
+  - id: slime_block
+    name: Slime Block
+    price: 2
+    quantity: 64
+    stock: in
+  - id: froglights_mix
+    name: Froglights — all three colors, mix and match
+    price: 1
+    quantity: 128
+    stock: in
+    minecraftId: minecraft:verdant_froglight
+    aliases:
+      - Verdant Froglight
+      - Pearlescent Froglight
+      - Ochre Froglight

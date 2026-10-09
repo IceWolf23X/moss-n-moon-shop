@@ -1,0 +1,65 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005724.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: calliopes-cat-cafe
+name: calliope's cat cafe
+owner: calliope1031
+tagline: Cookies, cat breeding and cat rescue.
+description: >-
+  Cookies, leads and name tags, plus cat breeding with every cat variant available and a rescue
+  service with random selections.
+kind: shop
+categories:
+  - farming
+  - equipment
+  - services
+location: district
+coords:
+  x: 10
+  'y': null
+  z: 380
+directions: Plot A29, on the pyramid.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: food
+tags: []
+notes: >-
+  Cat breeding costs 2 diamond blocks; cat rescue costs 1 diamond block. Other listed trades use
+  diamonds.
+images: []
+items:
+  - id: cookie
+    name: Cookies
+    price: 1
+    quantity: 128
+    stock: in
+  - id: lead
+    name: Leads
+    price: 1
+    quantity: 16
+    stock: in
+  - id: name_tag
+    name: Name Tags
+    price: 1
+    quantity: 16
+    stock: in
+  - id: cat_breeding
+    name: Cat breeding — every variant
+    price: 2
+    quantity: 1
+    stock: in
+    currency: diamond_block
+    unit: service
+    icon: tools
+  - id: cat_rescue
+    name: Cat rescue — random selection
+    price: 1
+    quantity: 1
+    stock: in
+    currency: diamond_block
+    unit: service
+    icon: tools

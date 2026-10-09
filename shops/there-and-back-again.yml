@@ -1,0 +1,38 @@
+# Source: Screenshot 2026-10-10 010012.png, checked 2026-10-10.
+# The announcement gives no Y coordinate, itemized inventory, prices, quantities, or stock.
+id: there-and-back-again
+name: THERE AND BACK AGAIN
+owner: SeFfantom
+tagline: The gas station for all your Nether-ly needs.
+description: >-
+  A Nether supply shop at plot A-4. The owner collects Nether goods so customers do not have
+  to travel there and back again.
+kind: shop
+categories:
+  - building
+  - travel
+location: district
+coords:
+  x: 60
+  y: null
+  z: 301
+directions: Plot A-4, next to Mooshine Literature.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: travel
+tags: [Nether supplies]
+notes: The source announces Nether supplies generally and does not enumerate products or prices.
+images: []
+items:
+  - id: nether_supplies
+    minecraftId: minecraft:netherrack
+    name: Nether Supplies
+    price: null
+    quantity: 1
+    unit: batch (quantity not specified)
+    stock: unknown
+    icon: cube
+    aliases: [nether goods, nether blocks, gas station]

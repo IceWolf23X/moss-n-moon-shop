@@ -1,0 +1,40 @@
+# Source: Screenshot 2026-10-10 005907.png, checked 2026-10-10.
+# Y coordinate, prank quotes, item prices, quantities, and stock were not stated.
+id: janks-and-pranks
+name: Janks & Pranks
+owner: ActuallyOmen
+tagline: Custom pranks and a broad collection of joke items.
+description: >-
+  A prank service at plot A14. Customers can drop into the pit, fill out the request book, and
+  receive a quote from ActuallyOmen, alongside a shop of mischievous joke supplies.
+kind: service
+categories: [services, equipment]
+location: district
+coords: {x: -93, y: null, z: 393}
+directions: Ancient Alley plot A14; use the request book in the pit for a prank quote.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: redstone
+tags: [Pranks, Joke items]
+notes: Pranks are quoted individually. The announcement says joke items may cost more due to their variety.
+images: []
+items:
+  - {id: custom_prank, name: 'Custom Prank', price: null, quantity: 1, unit: service, stock: unknown, icon: tools, aliases: [prank quote, mischief]}
+  - {id: chicken_eggs, minecraftId: 'minecraft:egg', name: 'Chicken Eggs', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: food, aliases: [eggs]}
+  - {id: creaking_heart_kits, minecraftId: 'minecraft:creaking_heart', name: 'Creaking Heart Kits', price: null, quantity: 1, unit: kit, stock: unknown, icon: redstone, aliases: [creaking prank]}
+  - {id: infested_potions, minecraftId: 'minecraft:potion', name: 'Infested Potions', price: null, quantity: 1, stock: unknown, icon: crystal, aliases: [potion of infestation]}
+  - {id: oozing_potions, minecraftId: 'minecraft:potion', name: 'Oozing Potions', price: null, quantity: 1, stock: unknown, icon: crystal, aliases: [potion of oozing]}
+  - {id: wind_charges, minecraftId: 'minecraft:wind_charge', name: 'Wind Charges', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: redstone, aliases: []}
+  - {id: knockback_sticks, minecraftId: 'minecraft:stick', name: 'Knockback Sticks', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: tools, aliases: [knockback stick]}
+  - {id: tnt, minecraftId: 'minecraft:tnt', name: 'TNT', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: redstone, aliases: [explosives]}
+  - {id: tripwires, minecraftId: 'minecraft:tripwire_hook', name: 'Tripwires', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: redstone, aliases: [tripwire hooks]}
+  - {id: anvils, minecraftId: 'minecraft:anvil', name: 'Anvils', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: tools, aliases: []}
+  - {id: cobwebs, minecraftId: 'minecraft:cobweb', name: 'Cobwebs', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [webs]}
+  - {id: powder_snow, minecraftId: 'minecraft:powder_snow_bucket', name: 'Powder Snow', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [powder snow bucket]}
+  - {id: magma_blocks, minecraftId: 'minecraft:magma_block', name: 'Magma Blocks', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: []}
+  - {id: ice, minecraftId: 'minecraft:ice', name: 'Ice', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: []}
+  - {id: pufferfish_buckets, minecraftId: 'minecraft:pufferfish_bucket', name: 'Pufferfish Buckets', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [bucket of pufferfish]}
+  - {id: vines, minecraftId: 'minecraft:vine', name: 'Vines', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: []}

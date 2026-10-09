@@ -1,6 +1,6 @@
 # Moss & Moon — directory with a YAML catalog
 
-Updated version: **5 demonstration shops, 36 inventory listings, one `.yml` file per shop**. Comments and editing instructions are in English, as is the interface. Search, filters, favorites and themes remain; the interface now uses compact directory entries.
+Current catalog: **23 real shops, one `.yml` file per shop**, transcribed from the screenshots supplied by the maintainer on October 10, 2026. See [catalog sources and limitations](docs/CATALOG_SOURCES.md). Comments and editing instructions are in English, as is the interface. Search, filters, favorites and themes remain; the interface now uses compact directory entries.
 
 **Replace the entire previous package**, not just `js/data.js`: initial loading, validation, price display, the proposal form and the workflow have changed. `index.html` remains the only HTML file, and all interface content is created with JavaScript.
 
@@ -13,14 +13,12 @@ index.html                         Single page, minimal structure
 config.yml                         Text, links, categories, locations and global currency
 shops/
   index.yml                        List of files to load
-  woolery.yml                      The Woolery
-  pale-found.yml                   Pale & Found
-  moonbound.yml                    Moonbound Books
-  circuit.yml                      Circuit & Co.
-  builders-bench.yml                The Builder’s Bench
+  <shop-id>.yml                    One real listing per shop (23 files)
 docs/
   shop-template.yml                Commented template to copy; NOT active
   TESTING.md                       Checks performed and limitations
+  CATALOG_SOURCES.md               Source mapping and unreported data
+CODE_INDEX.md                      Technical map of maintained source files
 js/
   data.js                          YAML loading and validation, not editable catalog data
   core.js                          Search, filters, currencies and validation
@@ -44,11 +42,9 @@ Add the filename to `shops/index.yml`:
 
 ```yaml
 shops:
-  - woolery.yml
-  - pale-found.yml
-  - moonbound.yml
-  - circuit.yml
-  - builders-bench.yml
+  - ancient-armory.yml
+  - wolf-wears-wool.yml
+  - calliopes-cat-cafe.yml
   - shop-name.yml  # The new file is relative to the shops/ directory
 ```
 
@@ -56,7 +52,7 @@ Publish both files. The site reads the manifest and then the individual shops. I
 
 To **update** a shop, edit only its YAML file and publish it. To **remove** it from the catalog, remove its line from the manifest. Also delete the file from the published site if it should no longer be directly accessible.
 
-The catalog includes five example shops and a Minecraft preview test shop; this is **not a software limit**. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
+The catalog includes 23 real shop listings; this is **not a software limit**. The six former demonstration/preview files have been removed. Manifest order is preserved as the base order; “Featured first” sorting moves shops with `featured: true` to the top. You can create an empty directory with `shops: []`.
 
 ## Minecraft item and block previews
 
@@ -116,7 +112,7 @@ The offline adapter supplies fixed Overworld, clock and compass state and transl
 
 To optimize existing previews offline without Java or downloads, run `python tools/render_minecraft_previews.py --optimize-only`. Source pack PNGs and the PNG fallback registry remain available; converted PNGs in the generated render directory are removed.
 
-The current output contains **1,503 successful previews: 615 native textures, 39 compact 2D images, and 849 rendered images**. The render manifest lists three excluded candidates: `air` (no useful icon), `snow_golem_spawn_egg` and the legacy ID `zombie_pigman_spawn_egg`. Generated placeholder/text fallbacks are not published as successful renders. All 33 item/block listings in the five example shops resolve to local native or rendered images; services use illustrations. Enchanted books and enchanted golden apples include the static glint produced by CoreChatX’s complete item renderer. The `Minecraft Preview Test` shop (`#shop=preview-test`) lists all 1,503 available previews with searchable names and Minecraft IDs, unspecified prices and unknown stock. It is a visual test gallery, not a real trading shop; remove `preview-test.yml` from `shops/index.yml` to hide it.
+The current output contains **1,503 successful previews: 615 native textures, 39 compact 2D images, and 849 rendered images**. The render manifest lists three excluded candidates: `air` (no useful icon), `snow_golem_spawn_egg` and the legacy ID `zombie_pigman_spawn_egg`. Generated placeholder/text fallbacks are not published as successful renders. Recognized item IDs use local native or rendered images; services, unspecified variants and unknown IDs use illustrations. Enchanted books and enchanted golden apples include the static glint produced by CoreChatX’s complete item renderer. The old `Minecraft Preview Test` listing has been removed from the real catalog; its generated image registries and renderer tests remain available.
 
 `assets/minecraft/rendered/manifest.json` records the renderer revision, scale, vanilla version/checksums, source-pack manifest checksum, image checksums and formats, per-item dimensions, preview kind, original texture checksums, render source and unsuccessful candidates. `js/minecraft-rendered.js` is the generated runtime registry. The lookup order is the generated native/compact/3D preview registry → flat pack texture → original illustration; a failed image request also displays the original illustration. Redundant enlarged PNGs are deleted when an item switches to its native texture. Other files removed from a subsequent render may remain on disk, but are not included in its new registry. The `--only` option is for diagnostics and replaces the registry with that subset; do not use it for publication.
 
@@ -271,7 +267,7 @@ Search test fixtures are separate from the published data. The validator and HTT
 
 ## Sample data and public information
 
-The five example shops with 36 listings, their owners, prices, coordinates, dates and availability are **demonstration data**. The additional Minecraft preview test shop is also sample content. Before launching an official directory, replace them with approved information; set `demo: false` on each real listing and `config.demoMode: false` when the entire catalog is ready. Also update text referring to the demo.
+The catalog uses owner announcements supplied as screenshots; it is not a live or independently checked server inventory. Unknown prices use `price: null`, and unknown heights use `coords.y: null`. The maintainer confirmed the three titles missing from the screenshots: The Deer Skull, Flowers N' Thyme and Impact's Brewery. `updated` records the transcription check, not an in-game visit. Upcoming products are marked unavailable and bulk estimates are explicitly labelled. See `docs/CATALOG_SOURCES.md` before updating or publishing data. Real listings use `demo: false`, and `config.demoMode` is false. The isolated engine test fixture remains fictional and is not published.
 
 Stock and prices are not synchronized with Minecraft. The logo is the supplied one; thumbnails are illustrations, not screenshots of real shops. The address and links do not imply that server status has been verified.
 

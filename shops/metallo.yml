@@ -1,0 +1,144 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005753.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: metallo
+name: Metallo!
+owner: jasian
+tagline: Mining goods, equipment and public enchanting facilities.
+description: >-
+  Affordable mining goods and equipment: mineral blocks, diamond pickaxes, enchanted books and
+  beacon materials. A max enchanting table and anvils are open to the public.
+kind: shop
+categories:
+  - building
+  - redstone
+  - equipment
+  - services
+location: district
+coords:
+  x: -30
+  'y': null
+  z: 360
+directions: Ancient Alley, plot A18.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: crystal
+tags: []
+notes: >-
+  No item prices or batch sizes were advertised. Public enchanting-table and anvil access is
+  complimentary.
+images: []
+items:
+  - id: iron_block
+    name: Iron Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: gold_block
+    name: Gold Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: redstone_block
+    name: Redstone Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: emerald_block
+    name: Emerald Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: lapis_block
+    name: Lapis Lazuli Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: coal_block
+    name: Coal Block
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: diamond_pickaxe
+    name: Diamond Pickaxe
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: beacon
+    name: Beacon
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: nether_star
+    name: Nether Star
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: wither_skeleton_skull
+    name: Wither Skeleton Skull
+    price: null
+    quantity: 1
+    stock: in
+    unit: batch (quantity not specified)
+  - id: efficiency_v_book
+    name: Efficiency V Enchanted Book
+    price: null
+    quantity: 1
+    stock: in
+    minecraftId: minecraft:enchanted_book
+    icon: book
+  - id: fortune_iii_book
+    name: Fortune III Enchanted Book
+    price: null
+    quantity: 1
+    stock: in
+    minecraftId: minecraft:enchanted_book
+    icon: book
+  - id: unbreaking_iii_book
+    name: Unbreaking III Enchanted Book
+    price: null
+    quantity: 1
+    stock: in
+    minecraftId: minecraft:enchanted_book
+    icon: book
+  - id: silk_touch_book
+    name: Silk Touch Enchanted Book
+    price: null
+    quantity: 1
+    stock: in
+    minecraftId: minecraft:enchanted_book
+    icon: book
+  - id: mending_book
+    name: Mending Enchanted Book
+    price: null
+    quantity: 1
+    stock: in
+    minecraftId: minecraft:enchanted_book
+    icon: book
+  - id: enchanting_table_access
+    name: Max enchanting table — public access
+    price: 0
+    quantity: 1
+    stock: in
+    unit: visit
+    icon: book
+  - id: anvil_access
+    name: Anvils — public access
+    price: 0
+    quantity: 1
+    stock: in
+    unit: visit
+    icon: tools

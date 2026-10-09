@@ -1,0 +1,44 @@
+# Source: Screenshot 2026-10-10 010001.png, checked 2026-10-10.
+# Every trim is 8 diamonds each; stock is not stated. Grimm and Beanbag are co-owners.
+id: premades-trims
+name: Premades Trims (Services)
+owner: Grimm and Beanbag
+tagline: Every armor trim, displayed and ready to choose.
+description: >-
+  All armor trim patterns are available at plot A11. Customers can inspect trims on armor stands,
+  and application is free with a trim purchase when the supplied material is not diamond or netherite.
+kind: service
+categories: [equipment, services]
+location: district
+coords: {x: -160, y: 64, z: 390}
+directions: Plot A11 in Ancient Alley.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: builder
+tags: [Armor trims, Smithing service]
+notes: Colourblind-friendly displays were announced as coming soon. The shop also offers a free Premades banner.
+images: []
+items:
+  - {id: bolt_trim, minecraftId: 'minecraft:bolt_armor_trim_smithing_template', name: 'Bolt Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: coast_trim, minecraftId: 'minecraft:coast_armor_trim_smithing_template', name: 'Coast Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: dune_trim, minecraftId: 'minecraft:dune_armor_trim_smithing_template', name: 'Dune Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: eye_trim, minecraftId: 'minecraft:eye_armor_trim_smithing_template', name: 'Eye Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: flow_trim, minecraftId: 'minecraft:flow_armor_trim_smithing_template', name: 'Flow Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: host_trim, minecraftId: 'minecraft:host_armor_trim_smithing_template', name: 'Host Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: raiser_trim, minecraftId: 'minecraft:raiser_armor_trim_smithing_template', name: 'Raiser Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: rib_trim, minecraftId: 'minecraft:rib_armor_trim_smithing_template', name: 'Rib Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: sentry_trim, minecraftId: 'minecraft:sentry_armor_trim_smithing_template', name: 'Sentry Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: shaper_trim, minecraftId: 'minecraft:shaper_armor_trim_smithing_template', name: 'Shaper Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: silence_trim, minecraftId: 'minecraft:silence_armor_trim_smithing_template', name: 'Silence Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: snout_trim, minecraftId: 'minecraft:snout_armor_trim_smithing_template', name: 'Snout Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: spire_trim, minecraftId: 'minecraft:spire_armor_trim_smithing_template', name: 'Spire Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: tide_trim, minecraftId: 'minecraft:tide_armor_trim_smithing_template', name: 'Tide Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: vex_trim, minecraftId: 'minecraft:vex_armor_trim_smithing_template', name: 'Vex Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: ward_trim, minecraftId: 'minecraft:ward_armor_trim_smithing_template', name: 'Ward Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: wayfinder_trim, minecraftId: 'minecraft:wayfinder_armor_trim_smithing_template', name: 'Wayfinder Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: wild_trim, minecraftId: 'minecraft:wild_armor_trim_smithing_template', name: 'Wild Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
+  - {id: trim_application, name: 'Trim Application with Purchase — non-diamond/non-netherite material', price: 0, quantity: 1, unit: service, stock: unknown, icon: tools, aliases: [apply armor trim, free trim service]}
+  - {id: premades_banner, minecraftId: 'minecraft:white_banner', name: 'Premades Banner', price: 0, quantity: 1, stock: unknown, icon: cube, aliases: [free banner]}

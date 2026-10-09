@@ -1,0 +1,175 @@
+# Source: Screenshot 2026-10-10 010026.png, checked 2026-10-10.
+# The announcement prices armor per piece and names tool enchantment variants; stock is not stated.
+id: ancient-armory
+name: Ancient Armory
+owner: ExoticButter_
+tagline: Netherite and diamond gear, tools, and armor trims.
+description: >-
+  Armor and enchanted netherite tools at plot A-42, with armor trims sold separately or at a
+  reduced per-piece price when purchased with armor.
+kind: shop
+categories:
+  - equipment
+location: district
+coords:
+  x: 9
+  y: 100
+  z: 337
+directions: Plot A-42 in Ancient Alley.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: stone
+tags:
+  - Armor
+  - Enchanted tools
+  - Armor trims
+notes: Prices are per armor piece or tool. Trim choice and stock were not specified.
+images: []
+items:
+  - id: netherite_helmet
+    minecraftId: minecraft:netherite_helmet
+    name: Netherite Helmet
+    price: 36
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [netherite armor]
+  - id: netherite_chestplate
+    minecraftId: minecraft:netherite_chestplate
+    name: Netherite Chestplate
+    price: 36
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [netherite armor]
+  - id: netherite_leggings
+    minecraftId: minecraft:netherite_leggings
+    name: Netherite Leggings
+    price: 36
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [netherite armor]
+  - id: netherite_boots
+    minecraftId: minecraft:netherite_boots
+    name: Netherite Boots
+    price: 36
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [netherite armor]
+  - id: diamond_helmet
+    minecraftId: minecraft:diamond_helmet
+    name: Diamond Helmet
+    price: 8
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [diamond armor]
+  - id: diamond_chestplate
+    minecraftId: minecraft:diamond_chestplate
+    name: Diamond Chestplate
+    price: 8
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [diamond armor]
+  - id: diamond_leggings
+    minecraftId: minecraft:diamond_leggings
+    name: Diamond Leggings
+    price: 8
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [diamond armor]
+  - id: diamond_boots
+    minecraftId: minecraft:diamond_boots
+    name: Diamond Boots
+    price: 8
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [diamond armor]
+  - id: netherite_pickaxe_fortune
+    minecraftId: minecraft:netherite_pickaxe
+    name: Netherite Pickaxe — Fortune
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [fortune pick]
+  - id: netherite_pickaxe_silk_touch
+    minecraftId: minecraft:netherite_pickaxe
+    name: Netherite Pickaxe — Silk Touch
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [silk touch pick]
+  - id: netherite_axe_sharpness
+    minecraftId: minecraft:netherite_axe
+    name: Netherite Axe — Sharpness
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [sharpness axe]
+  - id: netherite_axe_smite
+    minecraftId: minecraft:netherite_axe
+    name: Netherite Axe — Smite
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [smite axe]
+  - id: netherite_axe_fortune
+    minecraftId: minecraft:netherite_axe
+    name: Netherite Axe — Fortune
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [fortune axe]
+  - id: netherite_axe_silk_touch
+    minecraftId: minecraft:netherite_axe
+    name: Netherite Axe — Silk Touch
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [silk touch axe]
+  - id: netherite_shovel_fortune
+    minecraftId: minecraft:netherite_shovel
+    name: Netherite Shovel — Fortune
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [fortune shovel]
+  - id: netherite_shovel_silk_touch
+    minecraftId: minecraft:netherite_shovel
+    name: Netherite Shovel — Silk Touch
+    price: 26
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [silk touch shovel]
+  - id: armor_trim
+    minecraftId: minecraft:sentry_armor_trim_smithing_template
+    name: Armor Trim — choice of pattern
+    price: 8
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [smithing template, trim template]
+  - id: armor_trim_with_armor
+    minecraftId: minecraft:sentry_armor_trim_smithing_template
+    name: Armor Trim — with armor purchase
+    price: 7
+    quantity: 1
+    stock: unknown
+    icon: tools
+    aliases: [smithing template, armor bundle trim]

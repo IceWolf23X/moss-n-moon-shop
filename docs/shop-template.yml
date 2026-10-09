@@ -29,11 +29,12 @@ categories:
   - building
 location: district
 
-# POSITION — integers, including negative values. Do not enter the dimension here:
-# the dimension comes from the location selected above.
+# POSITION — X and Z are required integers, including negative values. Y is an integer
+# when known; use exactly null when the screenshot/source does not show a height. Do not omit Y.
+# Do not enter the dimension here: it comes from the location selected above.
 coords:
   x: 0
-  y: 64
+  y: null
   z: 0
 # Directions to the shop; no automatic commands or teleportation.
 directions: >-

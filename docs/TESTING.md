@@ -1,5 +1,25 @@
 # YAML version verification
 
+## Real catalog import — October 10, 2026
+
+The active catalog now contains **23 real shops and 265 inventory listings**. Source mapping and interpretation limits are in `CATALOG_SOURCES.md`. The historical demonstration-package results below are retained as historical evidence.
+
+Observed checks for this import:
+
+- `node tests/validate-data.cjs`: passed against the actual checkout; all shop data, local assets and HTML dependencies exist.
+- `node --test tests/catalog.test.cjs tests/core.test.cjs tests/yaml.test.cjs tests/http.test.cjs`: **46/46 passed**. This covers source-specific currencies, per-piece/batch offers, removed demo files, unavailable future stock, explicit unknown Y, safe form export and real Node HTTP loading.
+- `node --test tests/*.test.cjs`: **53/54 passed in the Windows checkout**. The existing original-resource checksum test fails because `core.autocrlf=true` changed 81 manifest-tracked text assets from LF to CRLF during checkout. All 4,000 other original resources match directly; those 81 match their recorded SHA-256 after reversing only CRLF to LF, with zero other mismatches. No resource files were modified for this import.
+- The **unchanged complete Node suite passed 54/54** in a disposable copy with those 81 original asset line endings restored. This distinguishes a checkout-format issue from catalog/renderer regression; it does not claim the current checkout's checksum test passes.
+- Real local HTTP navigation in the installed headless Chromium: **19 checks passed**, no JavaScript page errors. Observed 23 cards/265 listings, Mending search, wool and cafe inventories, diamond/diamond-block prices, estimated bulk text, exact triplet clipboard copying, labelled X/Z copying for unknown Y, blank-Y proposal export, actual YAML download initiation and 390px mobile layout/dialog behavior. Desktop/mobile captures were opened and inspected.
+- `tests/browser_smoke.py` was adapted to the real catalog and parsed with Python's `ast.parse`. Its full Python Playwright suite was **not run** because that module is not installed; the separate 19-check Node Chromium run used an already-installed bundled Playwright runtime. No test dependencies were installed.
+- `git diff --check`: passed after final whitespace cleanup. The initial `CODE_INDEX.md` covers maintained files, including all 23 manifest paths; indexed concrete paths were checked against disk.
+
+The task-local Node browser harness and disposable-copy verification helper were outside the published repository. Browser captures are ignored under `test-previews/real-catalog/`. The checked-in `tests/browser_smoke.py` remains the reusable browser suite, with its optional tooling requirements documented below.
+
+Confidence: **PARTIALLY VERIFIED** for the current Windows checkout because the existing asset checksum check remains sensitive to its checkout line endings. Catalog/coordinate regressions, real local browser behavior and the full suite with original resource bytes passed. Hosted Pages deployment and a current in-game stock/price check were not performed.
+
+## Historical demonstration package — October 9, 2026
+
 Checks performed on October 9, 2026. Included data: **5 shops and 36 inventory listings**. These numbers describe the demonstration package, not a catalog verified on the server.
 
 ## Node tests: 36 tests passed
@@ -45,7 +65,7 @@ For an environment that blocks navigation:
 python tests/browser_smoke.py --inline-fixture --screenshots ./test-previews
 ```
 
-`CHROMIUM_EXECUTABLE` can point to an existing Chromium executable. The browser suite captures the five examples and requires names/counts to be adjusted if you change the catalog. Engine tests use an independent fixture; the validator always reads the actual catalog.
+`CHROMIUM_EXECUTABLE` can point to an existing Chromium executable. The browser suite now reads the actual manifest and catalog, using real wool, cafe and enchanted-book listings for the relevant interactions. Engine tests retain an independent fictional fixture; the validator always reads the actual catalog.
 
 ## Before a real deployment
 

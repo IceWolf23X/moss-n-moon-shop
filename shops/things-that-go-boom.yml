@@ -1,0 +1,31 @@
+# Source: Screenshot 2026-10-10 005943.png, checked 2026-10-10.
+# The refill abbreviation "1b" is undefined in the source and is preserved in shop notes.
+id: things-that-go-boom
+name: Things That Go BOOM!
+owner: cerulean, Faevynstein, and spookymanda
+tagline: Rockets, explosive supplies, and an Elytra launch pad.
+description: >-
+  Rockets and explosives at plot A34, with an Elytra launcher on the roof for customers heading
+  to their next destination.
+kind: shop
+categories: [travel, equipment]
+location: district
+coords: {x: 89, y: 121, z: 401}
+directions: Plot A34; follow the signs to the roof for the Elytra launcher after a purchase.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: travel
+tags: [Rockets, Explosives]
+notes: Emergency Rocket Refills were advertised as "1b/1d"; the meaning of "b" was not specified.
+images: []
+items:
+  - {id: tier_1_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 1 Rockets', price: 1, quantity: 128, unit: items, stock: unknown, icon: travel, aliases: [flight duration 1, two stacks]}
+  - {id: tier_2_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 2 Rockets', price: 1, quantity: 64, unit: items, stock: unknown, icon: travel, aliases: [flight duration 2, one stack]}
+  - {id: tier_3_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 3 Rockets', price: 2, quantity: 64, unit: items, stock: unknown, icon: travel, aliases: [flight duration 3, one stack]}
+  - {id: tier_1_rocket_shulker, minecraftId: 'minecraft:shulker_box', name: 'Tier 1 Rocket Shulker', price: 15, quantity: 1, unit: 'shulker box', stock: unknown, icon: travel, aliases: [firework shulker]}
+  - {id: emergency_rocket_refill, minecraftId: 'minecraft:firework_rocket', name: 'Emergency Rocket Refill', price: 1, quantity: 1, unit: 'batch (source: 1b; unit unspecified)', stock: unknown, icon: travel, aliases: [rocket refill]}
+  - {id: bed_shulker, minecraftId: 'minecraft:shulker_box', name: 'Bed Shulker', price: 3, quantity: 1, unit: 'shulker box', stock: unknown, icon: cube, aliases: [explosive beds]}
+  - {id: tnt, minecraftId: 'minecraft:tnt', name: 'TNT', price: 2, quantity: 32, unit: items, stock: unknown, icon: redstone, aliases: [explosives]}

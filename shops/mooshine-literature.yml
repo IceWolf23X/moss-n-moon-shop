@@ -1,0 +1,68 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005842.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: mooshine-literature
+name: Mooshine Literature
+owner: sundriedmummy
+tagline: Novelty books, writing and transcription services.
+description: >-
+  Mooshine Literature provides novelty books and non-AI in-game writing and transcription for
+  community posts, shop books, lore, fictional stories and chat logs. Contact the owner to place an
+  order. Brought to you by Mooshine Co & The Cowasseum.
+kind: service
+categories:
+  - services
+location: district
+coords:
+  x: -81
+  'y': null
+  z: 301
+directions: Plot A-3, the big books between Mooshine Bookcafe and There And Back Again.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: books
+tags: []
+notes: >-
+  Prices and batch sizes were not provided. Visit the store for information and message the owner to
+  order.
+images: []
+items:
+  - id: novelty_books
+    name: Novelty books
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: book
+    icon: book
+  - id: community_posts
+    name: Community posts
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: project
+    icon: book
+  - id: shop_books
+    name: Shop books
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: project
+    icon: book
+  - id: lore_and_fictional_stories
+    name: Lore and fictional stories
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: project
+    icon: book
+  - id: chat_log_transcription
+    name: Chat log transcription
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: project
+    icon: book

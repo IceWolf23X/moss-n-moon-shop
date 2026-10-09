@@ -1,23 +1,28 @@
-# LIST OF SHOPS TO LOAD
-# Each shop's information is stored in its own .yml file.
-# To add a shop:
-# 1. Copy docs/shop-template.yml to shops/shop-name.yml.
-# 2. Fill in the file (also change id and all sample data).
-# 3. Add below: - shop-name.yml
-# 4. Publish your changes. No JavaScript files need editing.
-#
-# Filenames are relative to shops/: do NOT write shops/shop-name.yml.
-# Use lowercase letters, numbers, hyphens or underscores; the extension is .yml or .yaml.
-# Filenames are case-sensitive on servers.
-# Unlisted files are NOT loaded, but remain accessible by URL if published.
-# For an empty directory, use: shops: []
-# This is the initial order; "Featured first" moves shops with featured: true to the top.
-# Includes five example shops and a complete Minecraft preview test catalog.
-
+# REAL SHOP CATALOG
+# One editable YAML file per shop, in the source screenshot order.
+# See docs/CATALOG_SOURCES.md for provenance and data limitations.
+# Filenames are relative to shops/. Unlisted files remain accessible if published.
 shops:
-  - woolery.yml
-  - pale-found.yml
-  - moonbound.yml
-  - circuit.yml
-  - builders-bench.yml
-  - preview-test.yml
+  - ancient-armory.yml
+  - bricked-up-pots.yml
+  - there-and-back-again.yml
+  - premades-trims.yml
+  - gadgets-and-gizmos.yml
+  - things-that-go-boom.yml
+  - horse-of-course.yml
+  - enchanted-archives.yml
+  - neon-lights-cyberstore.yml
+  - janks-and-pranks.yml
+  - mooshine-literature.yml
+  - sticky-business.yml
+  - between-rock-and-hard-place.yml
+  - totally-stumped.yml
+  - wooden-emporium.yml
+  - metallo.yml
+  - wolf-wears-wool.yml
+  - jungle-jams.yml
+  - calliopes-cat-cafe.yml
+  - berrylelli-flower-shop.yml
+  - riverbend-boutique.yml
+  - atomicsmb-halloween-shop.yml
+  - impact-potion-shop.yml

@@ -1,0 +1,74 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005733.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: jungle-jams
+name: Jungle Jams
+owner: frankencece
+tagline: Music discs, rotating rarities and a jukebox hangout.
+description: >-
+  Every variety of creeper music disc, with rarer specialty discs on rotating stock. Hang out by the
+  jukebox and jam to rotating songs. Prices are listed in-store.
+kind: shop
+categories:
+  - collectibles
+  - services
+location: district
+coords:
+  x: -185
+  'y': null
+  z: 380
+directions: X -185, Z 380.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: welcome
+tags: []
+notes: >-
+  Specialty-disc availability rotates. Album-cover posters, disc buy-back in exchange for diamonds
+  and bulk disc buying were announced as coming soon.
+images: []
+items:
+  - id: creeper_music_discs
+    name: Creeper music discs — all variants
+    price: null
+    quantity: 1
+    stock: in
+    unit: disc
+    icon: book
+  - id: specialty_music_discs
+    name: Rarer specialty music discs — rotating selection
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: disc
+    icon: book
+  - id: jukebox_listening
+    name: Jukebox listening
+    price: null
+    quantity: 1
+    stock: unknown
+    unit: visit
+    icon: book
+  - id: album_cover_posters
+    name: Album-cover posters — coming soon
+    price: null
+    quantity: 1
+    stock: out
+    icon: book
+  - id: disc_buy_back
+    name: Disc buy-back — coming soon
+    price: null
+    quantity: 1
+    stock: out
+    unit: trade
+    icon: book
+  - id: bulk_disc_buying
+    name: Bulk disc buying — coming soon
+    price: null
+    quantity: 1
+    stock: out
+    unit: order
+    icon: book

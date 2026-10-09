@@ -1,0 +1,71 @@
+# Source: Screenshot 2026-10-10 010021.png, checked 2026-10-10.
+# Y coordinate, prices, batch sizes, and stock were not stated.
+id: bricked-up-pots
+name: Bricked up Pots
+owner: ZoeIsEpy
+tagline: Pots, pottery sherds, and bricks for every style.
+description: >-
+  A pottery shop at plot A12 offering every pottery sherd, blank and small pots, raw bricks,
+  and brick blocks.
+kind: shop
+categories:
+  - building
+location: district
+coords:
+  x: -145
+  y: null
+  z: 400
+directions: Plot A12 in Ancient Alley.
+status: open
+demo: false
+featured: false
+updated: '2026-10-10'
+currency: diamond
+theme: stone
+tags: [Pottery, Bricks]
+notes: Prices and quantities were not included in the announcement; ask the owner.
+images: []
+items:
+  - id: pottery_sherds_all_variants
+    minecraftId: minecraft:angler_pottery_sherd
+    name: Pottery Sherds — all variants
+    price: null
+    quantity: 1
+    unit: batch (quantity not specified)
+    stock: unknown
+    icon: cube
+    aliases: [sherds, pottery shards, decorated pot patterns]
+  - id: blank_decorated_pot
+    minecraftId: minecraft:decorated_pot
+    name: Blank Pot
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: cube
+    aliases: [decorated pot, plain pot]
+  - id: small_pot
+    minecraftId: minecraft:flower_pot
+    name: Small Pot
+    price: null
+    quantity: 1
+    stock: unknown
+    icon: cube
+    aliases: [flower pot]
+  - id: brick
+    minecraftId: minecraft:brick
+    name: Raw Bricks
+    price: null
+    quantity: 1
+    unit: batch (quantity not specified)
+    stock: unknown
+    icon: cube
+    aliases: [brick item]
+  - id: bricks
+    minecraftId: minecraft:bricks
+    name: Brick Blocks
+    price: null
+    quantity: 1
+    unit: batch (quantity not specified)
+    stock: unknown
+    icon: cube
+    aliases: [brick block]

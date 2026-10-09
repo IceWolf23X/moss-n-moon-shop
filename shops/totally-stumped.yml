@@ -1,0 +1,95 @@
+# MOSS & MOON — REAL SHOP LISTING
+# Source: Screenshot 2026-10-10 005809.png supplied by the directory maintainer.
+# updated records the transcription check, not a live stock or in-game visit.
+# Unreported heights use y: null; unreported prices use price: null.
+id: totally-stumped
+name: Totally STUMPED!
+owner: mojohit (izzayy)
+tagline: Wood types for one diamond per slot.
+description: Oak, spruce, dark oak, birch, acacia, jungle, cherry, pale oak and bamboo wood types.
+kind: shop
+categories:
+  - building
+  - nature
+location: district
+coords:
+  x: 33
+  'y': null
+  z: 405
+directions: Ancient Alley, plot A31.
+status: open
+demo: false
+featured: false
+updated: 2026-10-10
+currency: diamond
+theme: pale
+tags: []
+notes: >-
+  The screenshot title credits mojohit (izzayy); the posting display name is izzler. The price is
+  per slot; the announcement does not specify the number of items in that slot or their exact wood
+  form.
+images: []
+items:
+  - id: oak_wood_types
+    name: Oak wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: spruce_wood_types
+    name: Spruce wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: dark_oak_wood_types
+    name: Dark Oak wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: birch_wood_types
+    name: Birch wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: acacia_wood_types
+    name: Acacia wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: jungle_wood_types
+    name: Jungle wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: cherry_wood_types
+    name: Cherry wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: pale_oak_wood_types
+    name: Pale Oak wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
+  - id: bamboo_wood_types
+    name: Bamboo wood types
+    price: 1
+    quantity: 1
+    stock: in
+    unit: slot
+    icon: log
