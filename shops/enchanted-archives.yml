@@ -1,5 +1,8 @@
 # Source: Screenshot 2026-10-10 005916.png, checked 2026-10-10.
-# Y coordinate, prices, quantities, and stock were not stated; Swift Sneak and Soul Speed are upcoming.
+# Maintainer confirmed coordinates and Y 80 and supplied the original facade on 2026-10-10.
+# Maintainer states all books cost 2 diamonds each; 33 labels are visible in the supplied signs.
+# All other books confirmed at maximum level; numeric maxima verified from vanilla 1.21.11 and 26.3.
+# Knockback I/II stay separate; availability is intentionally unverified.
 id: enchanted-archives
 name: The Enchanted Archives of Clover Hollow
 owner: Fuzz, Rizizrii, and Haktaru
@@ -14,7 +17,7 @@ categories:
 location: district
 coords:
   x: -145
-  'y': null
+  'y': 80
   z: 365
 directions: Plot A8 in the Ancient Alley shopping district.
 status: open
@@ -27,187 +30,213 @@ tags:
   - Enchanted books
   - Café
 notes: >-
-  Book prices and stock were not included in the announcement. Swift Sneak and Soul Speed are coming
-  soon. Maximum levels are described in the announcement without numeric levels, except for the
-  explicitly named Knockback I and II.
-images: []
+  The maintainer confirmed coordinates -145, 80, 365 and supplied a facade photo on October 10, 2026.
+  The maintainer confirmed a uniform price of 2 diamonds per book and supplied signs for 33 enchantment labels.
+  This uniform rate is applied to every listed enchanted book. The maintainer confirmed maximum
+  levels for all other enchantments; Knockback I and II remain separate. Numeric maxima were
+  verified from vanilla Minecraft 1.21.11 and 26.3 data. The original announcement
+  lists Swift Sneak and Soul Speed as coming soon; their arrival was not confirmed by these signs.
+  Availability is not tracked.
+images:
+  - src: assets/shops/enchanted-archives/front.png
+    alt: The Enchanted Archives of Clover Hollow facade in Ancient Alley, plot A8.
 items:
   - id: mending
     minecraftId: minecraft:enchanted_book
-    name: Mending
-    price: null
+    name: Mending I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - mending book
   - id: unbreaking
     minecraftId: minecraft:enchanted_book
-    name: Unbreaking
-    price: null
+    name: Unbreaking III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - unbreaking book
   - id: silk_touch
     minecraftId: minecraft:enchanted_book
-    name: Silk Touch
-    price: null
+    name: Silk Touch I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - silk touch book
   - id: protection
     minecraftId: minecraft:enchanted_book
-    name: Protection
-    price: null
+    name: Protection IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - protection book
   - id: efficiency
     minecraftId: minecraft:enchanted_book
-    name: Efficiency
-    price: null
+    name: Efficiency V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - efficiency book
   - id: sharpness
     minecraftId: minecraft:enchanted_book
-    name: Sharpness
-    price: null
+    name: Sharpness V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - sharpness book
   - id: fortune
     minecraftId: minecraft:enchanted_book
-    name: Fortune
-    price: null
+    name: Fortune III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - fortune book
   - id: looting
     minecraftId: minecraft:enchanted_book
-    name: Looting
-    price: null
+    name: Looting III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - looting book
   - id: feather_falling
     minecraftId: minecraft:enchanted_book
-    name: Feather Falling
-    price: null
+    name: Feather Falling IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - feather falling book
   - id: luck_of_the_sea
     minecraftId: minecraft:enchanted_book
-    name: Luck of the Sea
-    price: null
+    name: Luck of the Sea III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - fishing book
   - id: lure
     minecraftId: minecraft:enchanted_book
-    name: Lure
-    price: null
+    name: Lure III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - fishing book
   - id: aqua_affinity
     minecraftId: minecraft:enchanted_book
-    name: Aqua Affinity
-    price: null
+    name: Aqua Affinity I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - aqua affinity book
   - id: depth_strider
     minecraftId: minecraft:enchanted_book
-    name: Depth Strider
-    price: null
+    name: Depth Strider III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - depth strider book
   - id: respiration
     minecraftId: minecraft:enchanted_book
-    name: Respiration
-    price: null
+    name: Respiration III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - respiration book
   - id: sweeping_edge
     minecraftId: minecraft:enchanted_book
-    name: Sweeping Edge
-    price: null
+    name: Sweeping Edge III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - sweeping edge book
   - id: channeling
     minecraftId: minecraft:enchanted_book
-    name: Channeling
-    price: null
+    name: Channeling I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - channeling book
   - id: flame
     minecraftId: minecraft:enchanted_book
-    name: Flame
-    price: null
+    name: Flame I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - flame book
   - id: infinity
     minecraftId: minecraft:enchanted_book
-    name: Infinity
-    price: null
+    name: Infinity I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - infinity book
   - id: multishot
     minecraftId: minecraft:enchanted_book
-    name: Multishot
-    price: null
+    name: Multishot I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - multishot book
   - id: fire_aspect
     minecraftId: minecraft:enchanted_book
-    name: Fire Aspect
-    price: null
+    name: Fire Aspect II
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
@@ -215,8 +244,9 @@ items:
   - id: knockback_i
     minecraftId: minecraft:enchanted_book
     name: Knockback I
-    price: null
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
@@ -224,198 +254,220 @@ items:
   - id: knockback_ii
     minecraftId: minecraft:enchanted_book
     name: Knockback II
-    price: null
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - knockback book
   - id: punch
     minecraftId: minecraft:enchanted_book
-    name: Punch
-    price: null
+    name: Punch II
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - punch book
   - id: curse_of_binding
     minecraftId: minecraft:enchanted_book
-    name: Curse of Binding
-    price: null
+    name: Curse of Binding I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - binding curse
   - id: curse_of_vanishing
     minecraftId: minecraft:enchanted_book
-    name: Curse of Vanishing
-    price: null
+    name: Curse of Vanishing I
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - vanishing curse
   - id: quick_charge
     minecraftId: minecraft:enchanted_book
-    name: Quick Charge
-    price: null
+    name: Quick Charge III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - quick charge book
   - id: riptide
     minecraftId: minecraft:enchanted_book
-    name: Riptide
-    price: null
+    name: Riptide III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - riptide book
   - id: thorns
     minecraftId: minecraft:enchanted_book
-    name: Thorns
-    price: null
+    name: Thorns III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - thorns book
   - id: loyalty
     minecraftId: minecraft:enchanted_book
-    name: Loyalty
-    price: null
+    name: Loyalty III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - loyalty book
   - id: lunge
     minecraftId: minecraft:enchanted_book
-    name: Lunge
-    price: null
+    name: Lunge III
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - lunge book
   - id: projectile_protection
     minecraftId: minecraft:enchanted_book
-    name: Projectile Protection
-    price: null
+    name: Projectile Protection IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - projectile protection book
   - id: piercing
     minecraftId: minecraft:enchanted_book
-    name: Piercing
-    price: null
+    name: Piercing IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - piercing book
   - id: blast_protection
     minecraftId: minecraft:enchanted_book
-    name: Blast Protection
-    price: null
+    name: Blast Protection IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - blast protection book
   - id: fire_protection
     minecraftId: minecraft:enchanted_book
-    name: Fire Protection
-    price: null
+    name: Fire Protection IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - fire protection book
   - id: frost_walker
     minecraftId: minecraft:enchanted_book
-    name: Frost Walker
-    price: null
+    name: Frost Walker II
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - frost walker book
   - id: density
     minecraftId: minecraft:enchanted_book
-    name: Density
-    price: null
+    name: Density V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - density book
   - id: bane_of_arthropods
     minecraftId: minecraft:enchanted_book
-    name: Bane of Arthropods
-    price: null
+    name: Bane of Arthropods V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - bane book
   - id: smite
     minecraftId: minecraft:enchanted_book
-    name: Smite
-    price: null
+    name: Smite V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - smite book
   - id: breach
     minecraftId: minecraft:enchanted_book
-    name: Breach
-    price: null
+    name: Breach IV
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - breach book
   - id: impaling
     minecraftId: minecraft:enchanted_book
-    name: Impaling
-    price: null
+    name: Impaling V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - impaling book
   - id: power
     minecraftId: minecraft:enchanted_book
-    name: Power
-    price: null
+    name: Power V
+    price: 2
     quantity: 1
+    unit: book
     stock: unknown
     icon: book
     aliases:
       - power book
   - id: swift_sneak
     minecraftId: minecraft:enchanted_book
-    name: Swift Sneak (coming soon)
-    price: null
+    name: Swift Sneak III (coming soon)
+    price: 2
     quantity: 1
-    stock: out
+    unit: book
+    stock: unknown
     icon: book
     aliases:
       - swift sneak book
   - id: soul_speed
     minecraftId: minecraft:enchanted_book
-    name: Soul Speed (coming soon)
-    price: null
+    name: Soul Speed III (coming soon)
+    price: 2
     quantity: 1
-    stock: out
+    unit: book
+    stock: unknown
     icon: book
     aliases:
       - soul speed book

@@ -34,13 +34,13 @@ items:
     name: Halloween-themed map art
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: artwork
     icon: book
   - id: pumpkin_carving_map_art
     name: Custom pumpkin carving map art
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: artwork
     icon: book

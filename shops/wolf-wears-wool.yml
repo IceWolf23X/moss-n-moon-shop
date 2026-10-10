@@ -37,97 +37,97 @@ items:
     name: White Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: light_gray_wool
     name: Light Gray Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: gray_wool
     name: Gray Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: black_wool
     name: Black Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: brown_wool
     name: Brown Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: red_wool
     name: Red Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: orange_wool
     name: Orange Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: yellow_wool
     name: Yellow Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: lime_wool
     name: Lime Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: green_wool
     name: Green Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: cyan_wool
     name: Cyan Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: light_blue_wool
     name: Light Blue Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: blue_wool
     name: Blue Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: purple_wool
     name: Purple Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: magenta_wool
     name: Magenta Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: pink_wool
     name: Pink Wool
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
     icon: wool
   - id: bulk_wool_order
     name: Wool bulk order — estimated price

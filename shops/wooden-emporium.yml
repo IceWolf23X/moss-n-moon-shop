@@ -35,76 +35,76 @@ items:
     name: Oak Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: spruce_log
     name: Spruce Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: dark_oak_log
     name: Dark Oak Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: pale_oak_log
     name: Pale Oak Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: cherry_log
     name: Cherry Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: mangrove_log
     name: Mangrove Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: jungle_log
     name: Jungle Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: acacia_log
     name: Acacia Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: birch_log
     name: Birch Log
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: assorted_shelves
     name: Shelves — assorted colors
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log
   - id: assorted_hanging_signs
     name: Hanging signs — assorted colors
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     icon: log

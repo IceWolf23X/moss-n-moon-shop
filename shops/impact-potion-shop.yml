@@ -35,77 +35,77 @@ items:
     name: Fire Resistance Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:potion
   - id: water_breathing_potion
     name: Water Breathing Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:potion
   - id: invisibility_potion
     name: Invisibility Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:potion
   - id: night_vision_potion
     name: Night Vision Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:potion
   - id: speed_potion
     name: Speed Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:potion
   - id: splash_weakness_potion
     name: Splash Weakness Potion
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
     minecraftId: minecraft:splash_potion
   - id: magma_cream
     name: Magma Cream
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
   - id: glowstone_ingredient
     name: Glowstone
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
   - id: sugar
     name: Sugar
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
   - id: redstone
     name: Redstone
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
   - id: glass_bottle
     name: Bottles
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)
   - id: nether_wart
     name: Nether Wart
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: batch (quantity not specified)

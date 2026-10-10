@@ -1,5 +1,6 @@
 # Source: Screenshot 2026-10-10 005949.png, checked 2026-10-10.
-# Prices, batch sizes, rental terms, and stock were not stated.
+# Prices, batches, rental terms, coordinates and original facade confirmed on 2026-10-10.
+# Trident enchantment levels were not shown; availability is intentionally unverified.
 id: gadgets-and-gizmos
 name: Gadgets & Gizmos by Faevyn
 owner: Faevynstein
@@ -19,28 +20,34 @@ updated: '2026-10-10'
 currency: diamond
 theme: ocean
 tags: [Coral, Prismarine, Tridents]
-notes: Ask Faevynstein for prices, quantities, stock, and sponge rental terms.
-images: []
+notes: >-
+  Prices, batch quantities and coordinates were confirmed by the maintainer on October 10, 2026.
+  Sponge rental costs 1 diamond per 32 sponges per day. Leave 1 diamond extra if the sponges
+  are still wet when returned. Trident enchantment levels and other enchantments were not
+  shown on the price signs. Availability is not tracked.
+images:
+  - src: assets/shops/gadgets-and-gizmos/front.png
+    alt: Gadgets & Gizmos by Faevyn facade in Ancient Alley, plot R15.
 items:
-  - {id: tube_coral_block, minecraftId: 'minecraft:tube_coral_block', name: 'Tube Coral Block', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [blue coral block]}
-  - {id: brain_coral_block, minecraftId: 'minecraft:brain_coral_block', name: 'Brain Coral Block', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [pink coral block]}
-  - {id: bubble_coral_block, minecraftId: 'minecraft:bubble_coral_block', name: 'Bubble Coral Block', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [purple coral block]}
-  - {id: fire_coral_block, minecraftId: 'minecraft:fire_coral_block', name: 'Fire Coral Block', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [red coral block]}
-  - {id: horn_coral_block, minecraftId: 'minecraft:horn_coral_block', name: 'Horn Coral Block', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: [yellow coral block]}
-  - {id: tube_coral, minecraftId: 'minecraft:tube_coral', name: 'Tube Coral', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [blue coral]}
-  - {id: brain_coral, minecraftId: 'minecraft:brain_coral', name: 'Brain Coral', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [pink coral]}
-  - {id: bubble_coral, minecraftId: 'minecraft:bubble_coral', name: 'Bubble Coral', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [purple coral]}
-  - {id: fire_coral, minecraftId: 'minecraft:fire_coral', name: 'Fire Coral', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [red coral]}
-  - {id: horn_coral, minecraftId: 'minecraft:horn_coral', name: 'Horn Coral', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [yellow coral]}
-  - {id: tube_coral_fan, minecraftId: 'minecraft:tube_coral_fan', name: 'Tube Coral Fan', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [blue coral fan]}
-  - {id: brain_coral_fan, minecraftId: 'minecraft:brain_coral_fan', name: 'Brain Coral Fan', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [pink coral fan]}
-  - {id: bubble_coral_fan, minecraftId: 'minecraft:bubble_coral_fan', name: 'Bubble Coral Fan', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [purple coral fan]}
-  - {id: fire_coral_fan, minecraftId: 'minecraft:fire_coral_fan', name: 'Fire Coral Fan', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [red coral fan]}
-  - {id: horn_coral_fan, minecraftId: 'minecraft:horn_coral_fan', name: 'Horn Coral Fan', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: leaf, aliases: [yellow coral fan]}
-  - {id: sponge_rental, minecraftId: 'minecraft:sponge', name: 'Sponge Rental', price: null, quantity: 1, unit: rental, stock: unknown, icon: tools, aliases: [rent sponges, wet sponge]}
-  - {id: prismarine, minecraftId: 'minecraft:prismarine', name: 'Prismarine', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: []}
-  - {id: prismarine_bricks, minecraftId: 'minecraft:prismarine_bricks', name: 'Prismarine Bricks', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: []}
-  - {id: sea_lantern, minecraftId: 'minecraft:sea_lantern', name: 'Sea Lanterns', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: crystal, aliases: [lighting]}
-  - {id: dark_prismarine, minecraftId: 'minecraft:dark_prismarine', name: 'Dark Prismarine', price: null, quantity: 1, unit: 'batch (quantity not specified)', stock: unknown, icon: cube, aliases: []}
-  - {id: riptide_trident, minecraftId: 'minecraft:trident', name: 'Trident — Riptide', price: null, quantity: 1, stock: unknown, icon: tools, aliases: [riptide]}
-  - {id: channeling_trident, minecraftId: 'minecraft:trident', name: 'Trident — Channeling', price: null, quantity: 1, stock: unknown, icon: tools, aliases: [channeling]}
+  - {id: tube_coral_block, minecraftId: 'minecraft:tube_coral_block', name: 'Tube Coral Block', price: 1, quantity: 16, unit: items, stock: unknown, icon: cube, aliases: [blue coral block]}
+  - {id: brain_coral_block, minecraftId: 'minecraft:brain_coral_block', name: 'Brain Coral Block', price: 1, quantity: 16, unit: items, stock: unknown, icon: cube, aliases: [pink coral block]}
+  - {id: bubble_coral_block, minecraftId: 'minecraft:bubble_coral_block', name: 'Bubble Coral Block', price: 1, quantity: 16, unit: items, stock: unknown, icon: cube, aliases: [purple coral block]}
+  - {id: fire_coral_block, minecraftId: 'minecraft:fire_coral_block', name: 'Fire Coral Block', price: 1, quantity: 16, unit: items, stock: unknown, icon: cube, aliases: [red coral block]}
+  - {id: horn_coral_block, minecraftId: 'minecraft:horn_coral_block', name: 'Horn Coral Block', price: 1, quantity: 16, unit: items, stock: unknown, icon: cube, aliases: [yellow coral block]}
+  - {id: tube_coral, minecraftId: 'minecraft:tube_coral', name: 'Tube Coral', price: 1, quantity: 8, unit: items, stock: unknown, icon: leaf, aliases: [blue coral]}
+  - {id: brain_coral, minecraftId: 'minecraft:brain_coral', name: 'Brain Coral', price: 1, quantity: 8, unit: items, stock: unknown, icon: leaf, aliases: [pink coral]}
+  - {id: bubble_coral, minecraftId: 'minecraft:bubble_coral', name: 'Bubble Coral', price: 1, quantity: 8, unit: items, stock: unknown, icon: leaf, aliases: [purple coral]}
+  - {id: fire_coral, minecraftId: 'minecraft:fire_coral', name: 'Fire Coral', price: 1, quantity: 8, unit: items, stock: unknown, icon: leaf, aliases: [red coral]}
+  - {id: horn_coral, minecraftId: 'minecraft:horn_coral', name: 'Horn Coral', price: 1, quantity: 8, unit: items, stock: unknown, icon: leaf, aliases: [yellow coral]}
+  - {id: tube_coral_fan, minecraftId: 'minecraft:tube_coral_fan', name: 'Tube Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [blue coral fan]}
+  - {id: brain_coral_fan, minecraftId: 'minecraft:brain_coral_fan', name: 'Brain Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [pink coral fan]}
+  - {id: bubble_coral_fan, minecraftId: 'minecraft:bubble_coral_fan', name: 'Bubble Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [purple coral fan]}
+  - {id: fire_coral_fan, minecraftId: 'minecraft:fire_coral_fan', name: 'Fire Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [red coral fan]}
+  - {id: horn_coral_fan, minecraftId: 'minecraft:horn_coral_fan', name: 'Horn Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [yellow coral fan]}
+  - {id: sponge_rental, minecraftId: 'minecraft:sponge', name: 'Sponge Rental', price: 1, quantity: 32, unit: 'sponges per day', stock: unknown, icon: tools, aliases: [rent sponges, wet sponge]}
+  - {id: prismarine, minecraftId: 'minecraft:prismarine', name: 'Prismarine', price: 1, quantity: 192, unit: items, stock: unknown, icon: cube, aliases: []}
+  - {id: prismarine_bricks, minecraftId: 'minecraft:prismarine_bricks', name: 'Prismarine Bricks', price: 1, quantity: 192, unit: items, stock: unknown, icon: cube, aliases: []}
+  - {id: sea_lantern, minecraftId: 'minecraft:sea_lantern', name: 'Sea Lanterns', price: 1, quantity: 192, unit: items, stock: unknown, icon: crystal, aliases: [lighting]}
+  - {id: dark_prismarine, minecraftId: 'minecraft:dark_prismarine', name: 'Dark Prismarine', price: 1, quantity: 128, unit: items, stock: unknown, icon: cube, aliases: []}
+  - {id: riptide_trident, minecraftId: 'minecraft:trident', name: 'Trident — Riptide', price: 20, quantity: 1, stock: unknown, icon: tools, aliases: [riptide]}
+  - {id: channeling_trident, minecraftId: 'minecraft:trident', name: 'Trident — Channeling', price: 20, quantity: 1, stock: unknown, icon: tools, aliases: [channeling]}

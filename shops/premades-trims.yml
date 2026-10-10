@@ -1,16 +1,18 @@
 # Source: Screenshot 2026-10-10 010001.png, checked 2026-10-10.
-# Every trim is 8 diamonds each; stock is not stated. Grimm and Beanbag are co-owners.
+# The maintainer confirmed all 18 trim patterns at 8 diamonds each, Y 80 and the original facade.
+# The application service/banner remain based on the original announcement; availability is unverified.
 id: premades-trims
 name: Premades Trims (Services)
 owner: Grimm and Beanbag
 tagline: Every armor trim, displayed and ready to choose.
 description: >-
-  All armor trim patterns are available at plot A11. Customers can inspect trims on armor stands,
-  and application is free with a trim purchase when the supplied material is not diamond or netherite.
+  Eighteen armor trim patterns are offered at plot A11. Customers can inspect trims on armor stands.
+  The original announcement offers free application with a trim purchase when the supplied material
+  is not diamond or netherite.
 kind: service
 categories: [equipment, services]
 location: district
-coords: {x: -160, y: 64, z: 390}
+coords: {x: -160, y: 80, z: 390}
 directions: Plot A11 in Ancient Alley.
 status: open
 demo: false
@@ -19,8 +21,14 @@ updated: '2026-10-10'
 currency: diamond
 theme: builder
 tags: [Armor trims, Smithing service]
-notes: Colourblind-friendly displays were announced as coming soon. The shop also offers a free Premades banner.
-images: []
+notes: >-
+  The maintainer confirmed all 18 trim patterns at 8 diamonds each and height Y 80 on October 10, 2026.
+  Availability is not tracked. The original announcement also offers a free Premades banner and
+  conditional free trim application; those extras were not checked during this visit.
+  Colourblind-friendly displays were announced as coming soon.
+images:
+  - src: assets/shops/premades-trims/front.png
+    alt: Premades Trims facade in Ancient Alley, plot A11.
 items:
   - {id: bolt_trim, minecraftId: 'minecraft:bolt_armor_trim_smithing_template', name: 'Bolt Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}
   - {id: coast_trim, minecraftId: 'minecraft:coast_armor_trim_smithing_template', name: 'Coast Armor Trim', price: 8, quantity: 1, stock: unknown, icon: tools, aliases: [smithing template]}

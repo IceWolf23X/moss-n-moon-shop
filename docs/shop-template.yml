@@ -93,6 +93,8 @@ images: []
 #       the site uses item for quantity: 1, otherwise items.
 # stock: in (available), low (few left), out (sold out), unknown (ask the owner).
 #        If omitted: unknown. This is a manual statement, NOT live data.
+#        Current directory policy: keep unknown for every item; stock is not tracked.
+#        Keep coming-soon information in the item's name and the shop notes.
 # icon: cube, wool, log, resin, leaf, book, redstone, machine, tools, etc.
 #       If omitted, cube is used. Icons are illustrations, not game textures.
 # aliases: alternative search terms; optional, defaults to [].

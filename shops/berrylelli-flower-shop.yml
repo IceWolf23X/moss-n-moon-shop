@@ -34,117 +34,117 @@ items:
     name: Torchflower Seeds
     price: 10
     quantity: 32
-    stock: in
+    stock: unknown
   - id: pitcher_pod
     name: Pitcher Pod seeds
     price: 10
     quantity: 32
-    stock: in
+    stock: unknown
   - id: rose
     name: Rose
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: lilac
     name: Lilac
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: peony
     name: Peony
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: sunflower
     name: Sunflower
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: cornflower
     name: Cornflower
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: poppy
     name: Poppy
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: dandelion
     name: Dandelion
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: azure_bluet
     name: Azure
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: oxeye_daisy
     name: Daisy
     price: 1
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: red_tulip
     name: Red Tulip
     price: 2
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: white_tulip
     name: White Tulip
     price: 2
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: orange_tulip
     name: Orange Tulip
     price: 2
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: pink_tulip
     name: Pink Tulip
     price: 2
     quantity: 32
-    stock: in
+    stock: unknown
     icon: leaf
   - id: cactus_flower
     name: Cactus Flower
     price: 4
     quantity: 3
-    stock: in
+    stock: unknown
     icon: leaf
   - id: spore_blossom
     name: Spore Blossom
     price: 4
     quantity: 3
-    stock: in
+    stock: unknown
     icon: leaf
   - id: lily
     name: Lily
     price: 1
     quantity: 8
-    stock: in
+    stock: unknown
     icon: leaf
   - id: allium
     name: Allium
     price: 2
     quantity: 16
-    stock: in
+    stock: unknown
     icon: leaf
   - id: orchid
     name: Orchid
     price: 2
     quantity: 16
-    stock: in
+    stock: unknown
     icon: leaf

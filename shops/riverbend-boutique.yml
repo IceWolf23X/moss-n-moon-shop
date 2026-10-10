@@ -35,21 +35,21 @@ items:
     name: The Grim Reaper Set — armor piece
     price: 7
     quantity: 1
-    stock: in
+    stock: unknown
     unit: piece
     icon: tools
   - id: vault_dweller_piece
     name: The Vault Dweller Set — armor piece
     price: 7
     quantity: 1
-    stock: in
+    stock: unknown
     unit: piece
     icon: tools
   - id: enchanted_netherite_piece
     name: Fully Enchanted Netherite Armor — armor piece
     price: 6
     quantity: 1
-    stock: in
+    stock: unknown
     currency: diamond_block
     unit: piece
     icon: tools
@@ -57,4 +57,4 @@ items:
     name: Bundles
     price: 1
     quantity: 9
-    stock: in
+    stock: unknown

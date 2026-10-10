@@ -1,12 +1,13 @@
 # Source: Screenshot 2026-10-10 005936.png, checked 2026-10-10.
-# Y coordinate, prices, quantities, and current stock were not stated; custom horse orders are upcoming.
+# Maintainer confirmed prices, batch quantities, Y 80 and supplied the original facade on 2026-10-10.
+# Horse purchases are advertised at Thistle Town on the Nether roof; availability is unverified.
 id: horse-of-course
 name: Horse of Course!
 owner: LadyGhostHeart
 tagline: Horse supplies and carefully selected horses from Thistle.
 description: >-
-  Horse supplies and horses at plot A13. The announced horses come from the town of Thistle
-  and are selected for some of the best horse stats in the game.
+  Horse supplies at plot A13. Thistle Town horses are advertised as having high stats and are
+  sold separately on the Nether roof at X 777, Z -257 for 20 diamonds each.
 kind: shop
 categories:
   - equipment
@@ -14,7 +15,7 @@ categories:
 location: district
 coords:
   x: -114
-  y: null
+  y: 80
   z: 400
 directions: Plot A13 in the Ancient Alley shopping district.
 status: open
@@ -24,40 +25,47 @@ updated: '2026-10-10'
 currency: diamond
 theme: travel
 tags: [Horses, Horse supplies]
-notes: Prices and stock were not included in the announcement. Custom horse orders are coming soon.
-images: []
+notes: >-
+  The maintainer confirmed the equipment shop at -114, 80, 400 and its prices on October 10, 2026.
+  Horse purchases take place at Thistle Town on the Nether roof, X 777, Z -257, for 20 diamonds
+  per horse; the Nether location's Y was not supplied. The book advertises high stats without
+  numerical speed/jump/health values. Custom horse orders were originally announced as coming soon.
+  Availability is not tracked.
+images:
+  - src: assets/shops/horse-of-course/front.png
+    alt: Horse of Course facade and horse statue in Ancient Alley, plot A13.
 items:
   - id: saddle
     minecraftId: minecraft:saddle
     name: Saddles
-    price: null
+    price: 1
     quantity: 1
-    unit: batch (quantity not specified)
+    unit: saddle
     stock: unknown
     icon: tools
     aliases: [horse saddle]
   - id: lead
     minecraftId: minecraft:lead
     name: Leads
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+    price: 1
+    quantity: 3
+    unit: items
     stock: unknown
     icon: tools
     aliases: [leash]
   - id: name_tag
     minecraftId: minecraft:name_tag
     name: Name Tags
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+    price: 1
+    quantity: 3
+    unit: items
     stock: unknown
     icon: tools
     aliases: [nametag]
   - id: leather_horse_armor
     minecraftId: minecraft:leather_horse_armor
     name: Leather Horse Armor
-    price: null
+    price: 2
     quantity: 1
     stock: unknown
     icon: tools
@@ -65,27 +73,26 @@ items:
   - id: leather
     minecraftId: minecraft:leather
     name: Leather
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+    price: 2
+    quantity: 16
+    unit: items
     stock: unknown
     icon: cube
     aliases: []
   - id: horse
-    minecraftId: minecraft:horse_spawn_egg
-    name: Horses
-    price: null
+    name: Thistle Town Horse — sold on the Nether roof
+    price: 20
     quantity: 1
     unit: horse
     stock: unknown
     icon: travel
-    aliases: [Thistle horses, horse sales]
+    aliases: [Thistle horses, horse sales, Nether roof, high stats]
   - id: custom_horse_order
     minecraftId: minecraft:horse_spawn_egg
     name: Custom Horse Orders (coming soon)
     price: null
     quantity: 1
     unit: order
-    stock: out
+    stock: unknown
     icon: tools
     aliases: [custom horse]

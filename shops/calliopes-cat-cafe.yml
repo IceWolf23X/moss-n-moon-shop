@@ -36,22 +36,22 @@ items:
     name: Cookies
     price: 1
     quantity: 128
-    stock: in
+    stock: unknown
   - id: lead
     name: Leads
     price: 1
     quantity: 16
-    stock: in
+    stock: unknown
   - id: name_tag
     name: Name Tags
     price: 1
     quantity: 16
-    stock: in
+    stock: unknown
   - id: cat_breeding
     name: Cat breeding — every variant
     price: 2
     quantity: 1
-    stock: in
+    stock: unknown
     currency: diamond_block
     unit: service
     icon: tools
@@ -59,7 +59,7 @@ items:
     name: Cat rescue — random selection
     price: 1
     quantity: 1
-    stock: in
+    stock: unknown
     currency: diamond_block
     unit: service
     icon: tools

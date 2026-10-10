@@ -1,5 +1,6 @@
 # Source: Screenshot 2026-10-10 005943.png, checked 2026-10-10.
-# The refill abbreviation "1b" is undefined in the source and is preserved in shop notes.
+# Maintainer confirmed coordinates, supplied current price signs and the original facade on 2026-10-10.
+# Emergency refill clarified as 1 diamond block for 32 gunpowder + 32 paper; availability unverified.
 id: things-that-go-boom
 name: Things That Go BOOM!
 owner: cerulean, Faevynstein, and spookymanda
@@ -19,13 +20,22 @@ updated: '2026-10-10'
 currency: diamond
 theme: travel
 tags: [Rockets, Explosives]
-notes: Emergency Rocket Refills were advertised as "1b/1d"; the meaning of "b" was not specified.
-images: []
+notes: >-
+  The maintainer confirmed coordinates and supplied the current price signs on October 10, 2026.
+  Tier 1 rocket shulkers cost 19 diamonds and Tier 3 rocket shulkers cost 50 diamonds each.
+  The maintainer clarified the emergency refill: 1 diamond block buys one kit containing
+  32 gunpowder and 32 paper. This replaces the original ambiguous "1b/1d" notation;
+  no finished rockets or container are assumed to be included.
+  Availability is not tracked.
+images:
+  - src: assets/shops/things-that-go-boom/front.png
+    alt: Things That Go BOOM! facade in Ancient Alley, plot A34.
 items:
   - {id: tier_1_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 1 Rockets', price: 1, quantity: 128, unit: items, stock: unknown, icon: travel, aliases: [flight duration 1, two stacks]}
   - {id: tier_2_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 2 Rockets', price: 1, quantity: 64, unit: items, stock: unknown, icon: travel, aliases: [flight duration 2, one stack]}
   - {id: tier_3_rockets, minecraftId: 'minecraft:firework_rocket', name: 'Tier 3 Rockets', price: 2, quantity: 64, unit: items, stock: unknown, icon: travel, aliases: [flight duration 3, one stack]}
-  - {id: tier_1_rocket_shulker, minecraftId: 'minecraft:shulker_box', name: 'Tier 1 Rocket Shulker', price: 15, quantity: 1, unit: 'shulker box', stock: unknown, icon: travel, aliases: [firework shulker]}
-  - {id: emergency_rocket_refill, minecraftId: 'minecraft:firework_rocket', name: 'Emergency Rocket Refill', price: 1, quantity: 1, unit: 'batch (source: 1b; unit unspecified)', stock: unknown, icon: travel, aliases: [rocket refill]}
+  - {id: tier_1_rocket_shulker, minecraftId: 'minecraft:shulker_box', name: 'Tier 1 Rocket Shulker', price: 19, quantity: 1, unit: 'shulker box', stock: unknown, icon: travel, aliases: [firework shulker]}
+  - {id: tier_3_rocket_shulker, minecraftId: 'minecraft:shulker_box', name: 'Tier 3 Rocket Shulker', price: 50, quantity: 1, unit: 'shulker box', stock: unknown, icon: travel, aliases: [firework shulker, flight duration 3]}
+  - {id: emergency_rocket_refill, name: 'Emergency Rocket Refill — 32 Gunpowder + 32 Paper', price: 1, currency: diamond_block, quantity: 1, unit: 'refill kit', stock: unknown, icon: travel, aliases: [rocket refill, gunpowder, paper, emergency supplies]}
   - {id: bed_shulker, minecraftId: 'minecraft:shulker_box', name: 'Bed Shulker', price: 3, quantity: 1, unit: 'shulker box', stock: unknown, icon: cube, aliases: [explosive beds]}
   - {id: tnt, minecraftId: 'minecraft:tnt', name: 'TNT', price: 2, quantity: 32, unit: items, stock: unknown, icon: redstone, aliases: [explosives]}

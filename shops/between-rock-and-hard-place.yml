@@ -32,34 +32,34 @@ items:
     name: Stone
     price: 1
     quantity: 192
-    stock: in
+    stock: unknown
   - id: blackstone
     name: Blackstone
     price: 2
     quantity: 64
-    stock: in
+    stock: unknown
   - id: granite
     name: Granite
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
   - id: diorite
     name: Diorite
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
   - id: andesite
     name: Andesite
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
   - id: tuff
     name: Tuff
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
   - id: deepslate
     name: Deepslate
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown

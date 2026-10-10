@@ -58,8 +58,8 @@ config:
       answer: No. This is a community directory, not an online checkout. Visit a shop in Minecraft
         and follow its owner’s trading instructions. No real-money purchases take place here.
     - question: Are prices and stock live?
-      answer: No. These are manually maintained listings. The owner’s in-game signs are the source
-        of truth. Listings are transcribed from owner announcements and are not live stock checks.
+      answer: No. Prices and product ranges are maintained manually from announcements and shop visits.
+        Stock is not tracked on this site; ask the owner about current availability.
     - question: How do I add or update my shop?
       answer: Use “List your shop” to prepare a YAML (.yml) listing file. Download it and send it
         to the directory maintainers through your community’s normal channel. Nothing is submitted

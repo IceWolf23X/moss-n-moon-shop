@@ -94,10 +94,12 @@ test('confirmed shop names retain stable IDs and unknown heights and slot sizes 
   assert.equal(honey.price, 2);
 });
 
-// Future stock must never pass an available-inventory filter.
-test('announced coming-soon inventory remains unavailable', async () => {
+// Never claim current stock; retain future-product labels without implying availability.
+test('catalog availability stays unverified, including coming-soon listings', async () => {
   const data = await catalog();
+  const items = data.shops.flatMap(shop => shop.items);
+  assert.ok(items.every(item => item.stock === 'unknown' && !context.MMCore.available(item)));
   const future = data.shops.flatMap(shop => shop.items).filter(item => /coming soon/i.test(item.name));
   assert.ok(future.length >= 6);
-  assert.ok(future.every(item => item.stock === 'out' && !context.MMCore.available(item)));
+  assert.ok(future.every(item => item.stock === 'unknown' && !context.MMCore.available(item)));
 });

@@ -1,21 +1,23 @@
 # Source: Screenshot 2026-10-10 010012.png, checked 2026-10-10.
-# The announcement gives no Y coordinate, itemized inventory, prices, quantities, or stock.
+# The maintainer supplied corrected coordinates, seven batch trades and an original facade photo.
+# Confirmed on 2026-10-10; availability is intentionally unverified for every listing.
 id: there-and-back-again
 name: THERE AND BACK AGAIN
 owner: SeFfantom
 tagline: The gas station for all your Nether-ly needs.
 description: >-
-  A Nether supply shop at plot A-4. The owner collects Nether goods so customers do not have
-  to travel there and back again.
+  A Nether supply shop at plot A-4 selling blackstone, red nether bricks, netherrack, nether bricks,
+  soul sand, basalt and soul soil. The owner collects Nether goods so customers do not have to
+  travel there and back again.
 kind: shop
 categories:
   - building
   - travel
 location: district
 coords:
-  x: 60
-  y: null
-  z: 301
+  x: -60
+  y: 80
+  z: 300
 directions: Plot A-4, next to Mooshine Literature.
 status: open
 demo: false
@@ -24,15 +26,62 @@ updated: '2026-10-10'
 currency: diamond
 theme: travel
 tags: [Nether supplies]
-notes: The source announces Nether supplies generally and does not enumerate products or prices.
-images: []
+notes: >-
+  The maintainer confirmed coordinates, products, prices and sale quantities on October 10, 2026.
+  Every listed batch costs 1 diamond. Netherrack is sold as three stacks (192 blocks) per diamond.
+  Availability is not tracked.
+images:
+  - src: assets/shops/there-and-back-again/front.png
+    alt: THERE AND BACK AGAIN facade in Ancient Alley, plot A-4.
 items:
-  - id: nether_supplies
-    minecraftId: minecraft:netherrack
-    name: Nether Supplies
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+  - id: blackstone
+    minecraftId: minecraft:blackstone
+    name: Blackstone
+    price: 1
+    quantity: 64
     stock: unknown
     icon: cube
-    aliases: [nether goods, nether blocks, gas station]
+  - id: red_nether_bricks
+    minecraftId: minecraft:red_nether_bricks
+    name: Red Nether Bricks
+    price: 1
+    quantity: 32
+    stock: unknown
+    icon: cube
+  - id: netherrack
+    minecraftId: minecraft:netherrack
+    name: Netherrack
+    price: 1
+    quantity: 192
+    stock: unknown
+    icon: cube
+    aliases: [three stacks, nether rock]
+  - id: nether_bricks
+    minecraftId: minecraft:nether_bricks
+    name: Nether Bricks
+    price: 1
+    quantity: 64
+    stock: unknown
+    icon: cube
+  - id: soul_sand
+    minecraftId: minecraft:soul_sand
+    name: Soul Sand
+    price: 1
+    quantity: 64
+    stock: unknown
+    icon: cube
+    aliases: [soulsand]
+  - id: basalt
+    minecraftId: minecraft:basalt
+    name: Basalt
+    price: 1
+    quantity: 64
+    stock: unknown
+    icon: cube
+  - id: soul_soil
+    minecraftId: minecraft:soul_soil
+    name: Soul Soil
+    price: 1
+    quantity: 64
+    stock: unknown
+    icon: cube

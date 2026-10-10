@@ -1,8 +1,84 @@
 # YAML version verification
 
+## Neon Lights CyberStore visit — October 10, 2026
+
+The maintainer confirmed **45, 100, 327**, supplied the original facade, and confirmed **1 diamond per 128 froglights** for all three types plus **1 diamond per 64 End Rods**. Existing price fields already matched and were retained. The original future Sea Lanterns entry remains unpriced/unconfirmed; all stock stays unknown. The photo copy matches the source SHA-256.
+
+The catalog validator and **6 catalog regressions** passed. Production-loader checks verified all three equal froglight trades, End Rods, coordinates and retained future entry. **17 real local HTTP/Chromium checks** passed, including facade in card/details, Y 100, exact coordinate-copy format, four 1-diamond prices, three 128-item batches and one 64-item batch, confirmation notes, owner-verification stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## Enchanted Archives book prices/levels — October 10, 2026
+
+The maintainer stated **all books cost 2 diamonds per book**, supplied five shelf-label screenshots matching 33 existing labels, and confirmed all other enchantments are maximum level except the separately displayed **Knockback I/II**. All 43 book entries now use `price: 2`, `quantity: 1`, `unit: book`; the free cookie, stable IDs and unknown availability are preserved. Original Swift Sneak/Soul Speed coming-soon labels remain separate from the pricing/maximum-level rule and do not assert arrival.
+
+Numerical maxima were extracted from the installed vanilla **1.21.11 and 26.3 client JARs** at `data/minecraft/enchantment/*.json`. The complete maxima maps agree; the 1.21.11 client SHA-1 matches the repository's pinned renderer provenance. All 43 name labels were checked against those maxima, with explicit Knockback I/II preserved and all non-name inventory fields unchanged during level enrichment.
+
+The catalog validator and **6 catalog regressions** passed. Production-loader checks covered 43 prices/units, representative verified levels, the two Knockback variants and the unchanged free cookie. **17 real local HTTP/Chromium checks** passed, including 43 displayed 2-diamond prices, 43 one-book units, both Knockback variants, visible uniform-price/maximum-level notes, retained facade/coordinates, mobile overflow and no JavaScript page errors. `git diff --check` and the affected index entry passed review.
+
+## Enchanted Archives coordinates/facade — October 10, 2026
+
+The maintainer confirmed **-145, 80, 365** and supplied the original facade photo. Its unchanged copy matches the source SHA-256. This update confirms location/photo only: all 44 announcement-based inventory entries remain, including 43 entries without an announced price; no book prices, unreported batch details or numeric levels were fabricated, and availability stays unknown.
+
+The catalog validator and **6 catalog regressions** passed. **14 real local HTTP/Chromium checks** passed for the photo in card/details, Y 80, exact coordinate-copy format, all 44 existing rows, visible pending-price/level notes, owner-verification stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. The coordinate triplet, inventory count, missing-price count and affected index paths were checked; `git diff --check` passed.
+
+## Horse of Course visit and emergency-refill clarification — October 10, 2026
+
+The maintainer supplied Horse of Course's original facade and confirmed **-114, 80, 400**, the equipment prices/batches and a book advertising horses at **20 diamonds each** on the **Nether roof, X 777, Z -257**. The equipment shop retains its Overworld location; the remote horse sale is disclosed separately without guessing Nether Y or numerical stats. The facade copy matches the source SHA-256. Future custom orders retain their announcement-based label.
+
+The maintainer also clarified Things That Go BOOM!'s emergency refill as **1 diamond block for 32 gunpowder + 32 paper**. The item now explicitly overrides currency to `diamond_block` and uses one refill kit with named components, without depicting finished rockets or assuming a container. Its former ambiguous unit is removed.
+
+The catalog validator and **6 catalog regressions** passed. The six horse trade pairs, location separation, exact refill composition/currency/unit and unknown availability were checked through the production loader. **21 real local HTTP/Chromium checks** passed for facade loading in card/details, Y 80 and coordinate-copy format, 7 horse shop rows, the 20-diamond Nether horse offer, separate Nether coordinates, the Overworld equipment location, displayed diamond-block refill price and contents, stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## Things That Go BOOM! visit — October 10, 2026
+
+The maintainer confirmed **89, 121, 401**, supplied two price-sign screenshots and the original facade photo, and confirmed the emergency refill still exists. Tier 1 rocket shulkers changed from the old 15-diamond announcement to **19 diamonds**; Tier 3 shulkers were added at **50 diamonds**. Seven signed trades are verified, plus the existing emergency-refill entry whose `1b` unit remains explicitly unresolved. Container trades keep one shulker box as their quantity/unit. The photo copy matches the source SHA-256. The complete catalog contains **23 shops and 294 listings**, with unknown stock throughout.
+
+The catalog validator and **6 catalog regressions** passed. All seven price/quantity pairs, currency, container units, local previews, coordinates and retained emergency-refill uncertainty were checked through the production loader. **17 real local HTTP/Chromium checks** passed for the facade in card/details, Y 121, exact coordinate-copy format, 8 rows, visible 19/50-diamond prices, unresolved-unit disclosure, stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## Gadgets & Gizmos visit — October 10, 2026
+
+The maintainer confirmed coordinates **-73, 78, 369**, supplied 12 price-sign screenshots and the original facade photo. All 22 prices/batches were filled: coral plants 1 diamond/8, coral blocks/fans 1/16; prismarine, bricks and lanterns 1/192; dark prismarine 1/128; two tridents 20 each; sponge rental 1 diamond/32 sponges/day, with a separately disclosed 1-diamond extra fee if returned wet. No trident levels or unshown rental rules were inferred. All availability remains unknown. The facade copy matches the source SHA-256.
+
+The catalog validator and **6 catalog regressions** passed. All exact price/quantity pairs, currency, unknown stock, local previews, daily unit and coordinates were checked through the production loader. **16 real local HTTP/Chromium checks** passed for facade loading in card/details, Y 78, exact coordinate-copy format, 22 inventory rows, visible daily rental unit and conditional fee, manual confirmation notes, owner-verification stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## Premades Trims visit — October 10, 2026
+
+The maintainer confirmed all 18 named trim patterns at **8 diamonds each**, supplied **Y 80** and an original facade screenshot. Coordinates are **-160, 80, 390**. The photo copy matches the source SHA-256. The original announcement's free banner/application extras remain explicitly distinguished from this visit's confirmed trim prices.
+
+The catalog validator and **6 catalog regressions** passed. The exact 18-pattern set, 8-diamond unit prices, quantities, unknown availability and local previews were checked through the production loader. **14 real local HTTP/Chromium checks** passed for the facade in card/details, visible Y 80, exact coordinate-copy format, 20 total inventory/service rows, manual confirmation notes, unknown-stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## THERE AND BACK AGAIN visit — October 10, 2026
+
+The maintainer supplied corrected coordinates **-60, 80, 300**, seven exact 1-diamond batch trades and an original facade photo. The generic Nether Supplies entry was replaced by seven item entries; the complete catalog now has **23 shops and 293 listings**, all with unknown availability. The photo was copied unchanged with matching source/destination SHA-256.
+
+`node tests/validate-data.cjs` and all **6 catalog regressions** passed. The seven price/quantity pairs, diamond currency, unknown stock, corrected coordinate triplet and local item previews were checked through the production loader. **15 real local HTTP/Chromium checks** passed, including facade loading in card/details, visible Y 80, exact coordinate-copy format, 7 inventory rows, netherrack displayed as 192 items per diamond, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected. Affected index paths and `git diff --check` passed.
+
+## Bricked up Pots sherd inventory — October 10, 2026
+
+The seven supplied sign screenshots identify 23 variants priced at **1 diamond per 4 sherds**. The generic inventory entry was replaced by 23 individually searchable entries, all with `stock: unknown`. Bricked up Pots has 27 listings; the complete catalog contained **23 shops and 287 listings** at that stage.
+
+The maintainer subsequently confirmed the four remaining trades: 1 diamond per 64 brick blocks, 64 brick items, 24 Flower Pots or 16 Decorated Pots. The catalog validator and six catalog regressions passed after this update; the four exact price/quantity pairs, diamond currency and unknown availability were checked through the production loader.
+
+Height Y 80 and the original facade photo were then supplied. The PNG copy's SHA-256 matches the source. The catalog validator and six catalog regressions passed again; **14 real local HTTP/Chromium checks** passed for the photo in card/details, complete coordinate triplet `-145 80 400`, all 27 listings with owner-verification stock labels, mobile layout and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected.
+
+`node tests/validate-data.cjs` passed, and `node --test tests/catalog.test.cjs tests/core.test.cjs tests/yaml.test.cjs tests/http.test.cjs` passed **46/46**. All 23 sherd IDs match existing local preview registry entries, and their price/batch fields and the four remaining pot/brick entries were checked during the update.
+
+## Ancient Armory visit and stock policy — October 10, 2026
+
+Ancient Armory's prices and advertised assortment were confirmed by the maintainer. Its original facade PNG was copied unchanged, with matching source/destination SHA-256, and connected to card/detail images. The maintainer requested unverified availability throughout the directory: all **265 listings** now use `stock: unknown`, including products whose names still disclose coming-soon status.
+
+Observed checks:
+
+- The stock-policy regression failed before the data update and passed afterwards.
+- `node --test tests/catalog.test.cjs tests/core.test.cjs tests/yaml.test.cjs tests/http.test.cjs`: **46/46 passed**.
+- `node tests/validate-data.cjs`: **23 shops, 265 listings valid**, including the new local photo.
+- Real local HTTP/Chromium: **12 checks passed**, with all stocks unknown, facade loading in card/details, 18 Ancient Armory listings, visible confirmation notes and owner-verification stock labels, mobile overflow checks and no JavaScript page errors. Desktop card and mobile facade captures were opened and inspected.
+- `git diff --check` and the affected concrete index paths passed verification.
+
+These results concern the local changes. The existing Windows resource-checksum limitation documented below remains; asset generation and hosted deployment were not part of this update.
+
 ## Real catalog import — October 10, 2026
 
-The active catalog now contains **23 real shops and 265 inventory listings**. Source mapping and interpretation limits are in `CATALOG_SOURCES.md`. The historical demonstration-package results below are retained as historical evidence.
+At the initial import, the catalog contained **23 real shops and 265 inventory listings**. Source mapping and interpretation limits are in `CATALOG_SOURCES.md`; later shop updates are recorded above. The historical demonstration-package results below are retained as historical evidence.
 
 Observed checks for this import:
 

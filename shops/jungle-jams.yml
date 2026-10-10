@@ -35,7 +35,7 @@ items:
     name: Creeper music discs — all variants
     price: null
     quantity: 1
-    stock: in
+    stock: unknown
     unit: disc
     icon: book
   - id: specialty_music_discs
@@ -56,19 +56,19 @@ items:
     name: Album-cover posters — coming soon
     price: null
     quantity: 1
-    stock: out
+    stock: unknown
     icon: book
   - id: disc_buy_back
     name: Disc buy-back — coming soon
     price: null
     quantity: 1
-    stock: out
+    stock: unknown
     unit: trade
     icon: book
   - id: bulk_disc_buying
     name: Bulk disc buying — coming soon
     price: null
     quantity: 1
-    stock: out
+    stock: unknown
     unit: order
     icon: book

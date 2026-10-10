@@ -1,19 +1,21 @@
 # Source: Screenshot 2026-10-10 010021.png, checked 2026-10-10.
-# Y coordinate, prices, batch sizes, and stock were not stated.
+# All 23 sherd variants and 1 diamond per 4 sherds confirmed by the maintainer on 2026-10-10.
+# Pot/brick prices, batch sizes, Y 80 and original facade photo supplied by the maintainer.
+# Availability is intentionally unverified for every listing.
 id: bricked-up-pots
 name: Bricked up Pots
 owner: ZoeIsEpy
 tagline: Pots, pottery sherds, and bricks for every style.
 description: >-
-  A pottery shop at plot A12 offering every pottery sherd, blank and small pots, raw bricks,
-  and brick blocks.
+  A pottery shop at plot A12 offering every pottery sherd, decorated pots, flower pots,
+  bricks and brick blocks.
 kind: shop
 categories:
   - building
 location: district
 coords:
   x: -145
-  y: null
+  y: 80
   z: 400
 directions: Plot A12 in Ancient Alley.
 status: open
@@ -23,49 +25,321 @@ updated: '2026-10-10'
 currency: diamond
 theme: stone
 tags: [Pottery, Bricks]
-notes: Prices and quantities were not included in the announcement; ask the owner.
-images: []
+notes: >-
+  The maintainer confirmed all 23 pottery sherd variants at 1 diamond per 4 sherds on October 10, 2026.
+  Pot and brick prices and batch sizes were also confirmed. Every listed price covers the whole
+  batch shown in the inventory. Availability is not tracked.
+images:
+  - src: assets/shops/bricked-up-pots/front.png
+    alt: Bricked up Pots facade in Ancient Alley, plot A12.
 items:
-  - id: pottery_sherds_all_variants
-    minecraftId: minecraft:angler_pottery_sherd
-    name: Pottery Sherds — all variants
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+  - id: archer_pottery_sherd
+    minecraftId: minecraft:archer_pottery_sherd
+    name: Archer Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
     stock: unknown
     icon: cube
-    aliases: [sherds, pottery shards, decorated pot patterns]
+    aliases:
+      - Archer sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: miner_pottery_sherd
+    minecraftId: minecraft:miner_pottery_sherd
+    name: Miner Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Miner sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: prize_pottery_sherd
+    minecraftId: minecraft:prize_pottery_sherd
+    name: Prize Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Prize sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: skull_pottery_sherd
+    minecraftId: minecraft:skull_pottery_sherd
+    name: Skull Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Skull sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: sheaf_pottery_sherd
+    minecraftId: minecraft:sheaf_pottery_sherd
+    name: Sheaf Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Sheaf sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: howl_pottery_sherd
+    minecraftId: minecraft:howl_pottery_sherd
+    name: Howl Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Howl sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: heartbreak_pottery_sherd
+    minecraftId: minecraft:heartbreak_pottery_sherd
+    name: Heartbreak Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Heartbreak sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: heart_pottery_sherd
+    minecraftId: minecraft:heart_pottery_sherd
+    name: Heart Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Heart sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: friend_pottery_sherd
+    minecraftId: minecraft:friend_pottery_sherd
+    name: Friend Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Friend sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: danger_pottery_sherd
+    minecraftId: minecraft:danger_pottery_sherd
+    name: Danger Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Danger sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: burn_pottery_sherd
+    minecraftId: minecraft:burn_pottery_sherd
+    name: Burn Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Burn sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: blade_pottery_sherd
+    minecraftId: minecraft:blade_pottery_sherd
+    name: Blade Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Blade sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: explorer_pottery_sherd
+    minecraftId: minecraft:explorer_pottery_sherd
+    name: Explorer Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Explorer sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: mourner_pottery_sherd
+    minecraftId: minecraft:mourner_pottery_sherd
+    name: Mourner Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Mourner sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: plenty_pottery_sherd
+    minecraftId: minecraft:plenty_pottery_sherd
+    name: Plenty Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Plenty sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: angler_pottery_sherd
+    minecraftId: minecraft:angler_pottery_sherd
+    name: Angler Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Angler sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: shelter_pottery_sherd
+    minecraftId: minecraft:shelter_pottery_sherd
+    name: Shelter Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Shelter sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: snort_pottery_sherd
+    minecraftId: minecraft:snort_pottery_sherd
+    name: Snort Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Snort sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: scrape_pottery_sherd
+    minecraftId: minecraft:scrape_pottery_sherd
+    name: Scrape Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Scrape sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: guster_pottery_sherd
+    minecraftId: minecraft:guster_pottery_sherd
+    name: Guster Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Guster sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: flow_pottery_sherd
+    minecraftId: minecraft:flow_pottery_sherd
+    name: Flow Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Flow sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: arms_up_pottery_sherd
+    minecraftId: minecraft:arms_up_pottery_sherd
+    name: Arms Up Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Arms Up sherd
+      - pottery shards
+      - decorated pot pattern
+  - id: brewer_pottery_sherd
+    minecraftId: minecraft:brewer_pottery_sherd
+    name: Brewer Pottery Sherd
+    price: 1
+    quantity: 4
+    unit: sherds
+    stock: unknown
+    icon: cube
+    aliases:
+      - Brewer sherd
+      - pottery shards
+      - decorated pot pattern
   - id: blank_decorated_pot
     minecraftId: minecraft:decorated_pot
-    name: Blank Pot
-    price: null
-    quantity: 1
+    name: Decorated Pot
+    price: 1
+    quantity: 16
     stock: unknown
     icon: cube
     aliases: [decorated pot, plain pot]
   - id: small_pot
     minecraftId: minecraft:flower_pot
-    name: Small Pot
-    price: null
-    quantity: 1
+    name: Flower Pot
+    price: 1
+    quantity: 24
     stock: unknown
     icon: cube
     aliases: [flower pot]
   - id: brick
     minecraftId: minecraft:brick
-    name: Raw Bricks
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+    name: Bricks
+    price: 1
+    quantity: 64
+    unit: items
     stock: unknown
     icon: cube
     aliases: [brick item]
   - id: bricks
     minecraftId: minecraft:bricks
     name: Brick Blocks
-    price: null
-    quantity: 1
-    unit: batch (quantity not specified)
+    price: 1
+    quantity: 64
+    unit: items
     stock: unknown
     icon: cube
     aliases: [brick block]

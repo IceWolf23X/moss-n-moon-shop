@@ -1,5 +1,6 @@
 # Source: Screenshot 2026-10-10 010026.png, checked 2026-10-10.
-# The announcement prices armor per piece and names tool enchantment variants; stock is not stated.
+# Prices and advertised products confirmed by the maintainer on 2026-10-10; facade photo supplied.
+# Detailed enchantment levels, trim patterns and current stock were not reported.
 id: ancient-armory
 name: Ancient Armory
 owner: ExoticButter_
@@ -26,8 +27,13 @@ tags:
   - Armor
   - Enchanted tools
   - Armor trims
-notes: Prices are per armor piece or tool. Trim choice and stock were not specified.
-images: []
+notes: >-
+  Prices and advertised products were confirmed by the maintainer on October 10, 2026.
+  Prices are per armor piece or tool. Full enchantment levels, exact axe enchantment combinations,
+  available trim patterns and current stock were not reported.
+images:
+  - src: assets/shops/ancient-armory/front.png
+    alt: Ancient Armory facade in Ancient Alley, plot A-42.
 items:
   - id: netherite_helmet
     minecraftId: minecraft:netherite_helmet

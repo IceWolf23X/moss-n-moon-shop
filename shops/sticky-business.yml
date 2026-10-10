@@ -33,27 +33,27 @@ items:
     name: Honeycomb
     price: 1
     quantity: 128
-    stock: in
+    stock: unknown
   - id: honey_block
     name: Honey Block
     price: 2
     quantity: 32
-    stock: in
+    stock: unknown
   - id: honeycomb_block
     name: Honeycomb Block
     price: 1
     quantity: 64
-    stock: in
+    stock: unknown
   - id: slime_block
     name: Slime Block
     price: 2
     quantity: 64
-    stock: in
+    stock: unknown
   - id: froglights_mix
     name: Froglights — all three colors, mix and match
     price: 1
     quantity: 128
-    stock: in
+    stock: unknown
     minecraftId: minecraft:verdant_froglight
     aliases:
       - Verdant Froglight

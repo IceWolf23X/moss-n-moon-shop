@@ -1,5 +1,6 @@
 # Source: Screenshot 2026-10-10 005856.png, checked 2026-10-10.
-# The source lists current goods explicitly; sea lanterns are upcoming and have no price or quantity.
+# Maintainer confirmed coordinates, the three froglight trades, end rods and the original facade.
+# Sea lanterns retain the original future announcement; availability is intentionally unverified.
 id: neon-lights-cyberstore
 name: Neon Lights CyberStore
 owner: 6p
@@ -23,8 +24,14 @@ updated: '2026-10-10'
 currency: diamond
 theme: crystal
 tags: [Lighting, Froglights]
-notes: Sea lanterns are coming after the announced guardian farm is ready.
-images: []
+notes: >-
+  The maintainer confirmed coordinates 45, 100, 327 and supplied the facade photo on October 10, 2026.
+  All three froglight types cost 1 diamond per 128 blocks; end rods cost 1 diamond per 64.
+  The original announcement lists sea lanterns as coming after the guardian farm is ready;
+  their arrival, price and sale quantity have not been confirmed. Availability is not tracked.
+images:
+  - src: assets/shops/neon-lights-cyberstore/front.png
+    alt: Neon Lights CyberStore facade in Ancient Alley.
 items:
   - id: verdant_froglight
     minecraftId: minecraft:verdant_froglight
@@ -32,7 +39,7 @@ items:
     price: 1
     quantity: 128
     unit: items
-    stock: in
+    stock: unknown
     icon: crystal
     aliases: [green froglight]
   - id: pearlescent_froglight
@@ -41,7 +48,7 @@ items:
     price: 1
     quantity: 128
     unit: items
-    stock: in
+    stock: unknown
     icon: crystal
     aliases: [purple froglight]
   - id: ochre_froglight
@@ -50,7 +57,7 @@ items:
     price: 1
     quantity: 128
     unit: items
-    stock: in
+    stock: unknown
     icon: crystal
     aliases: [yellow froglight]
   - id: end_rod
@@ -59,7 +66,7 @@ items:
     price: 1
     quantity: 64
     unit: items
-    stock: in
+    stock: unknown
     icon: crystal
     aliases: [end rods, lighting]
   - id: sea_lantern_coming_soon
@@ -68,6 +75,6 @@ items:
     price: null
     quantity: 1
     unit: batch (quantity not specified)
-    stock: out
+    stock: unknown
     icon: crystal
     aliases: [guardian farm, lighting]
