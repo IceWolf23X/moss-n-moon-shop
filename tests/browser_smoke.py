@@ -148,6 +148,8 @@ def main():
         page.locator('[data-action="open"][data-id="wolf-wears-wool"]').first.click()
         check(page.locator('#modal').evaluate('d=>d.open'),'Shop details open in a native dialog')
         check(page.locator('#detail-picture').is_visible(),'Shop details retain their preview image')
+        # Provenance remains in the catalog without being exposed as a Notes panel.
+        check(page.evaluate("Boolean(MMData.shops.find(shop=>shop.id==='wolf-wears-wool').notes)") and page.locator('#modal .shop-note').count()==0,'Shop details hide editor notes while retaining catalog metadata')
         check(page.locator('#inventory-rows tr').count()==17,'Full inventory is rendered')
         check(page.locator('[data-currency="diamond"]').count()==17,'All wool prices use diamonds')
         bulk_price=page.locator('[data-currency="diamond"][aria-label="23 diamonds"]')

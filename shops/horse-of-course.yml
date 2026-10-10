@@ -80,7 +80,7 @@ items:
     icon: cube
     aliases: []
   - id: horse
-    name: Thistle Town Horse — sold on the Nether roof
+    name: Thistle Town Horse — Nether roof (X 777, Z -257)
     price: 20
     quantity: 1
     unit: horse

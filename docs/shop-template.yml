@@ -61,7 +61,8 @@ currency: diamond
 # theme: illustration used when images is empty. Examples:
 # wool, pale, books, redstone, garden, food, builder, stone, ocean, crystal, travel, welcome.
 # tags: short labels; use [] for no labels.
-# notes: message from the shopkeeper; may be empty, e.g. notes: "".
+# notes: editor context/provenance; retained in the public YAML but not rendered in shop details.
+# Put customer-facing trading conditions in the item name/unit, description or directions instead.
 theme: welcome
 tags:
   - Building supplies

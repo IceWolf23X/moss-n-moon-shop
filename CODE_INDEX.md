@@ -16,7 +16,7 @@ This project is a static Minecraft shop directory. `index.html` loads local scri
 | `shops/gadgets-and-gizmos.yml` | 22 confirmed ocean trades: coral batches of 8/16, prismarine/lantern batches of 128/192, 20-diamond tridents and 32-sponges/day rental with conditional wet-return fee in notes; original facade, confirmed (-73, 78, 369), availability unknown. |
 | `shops/things-that-go-boom.yml` | Rocket/explosive shop with confirmed stack/container trades and 1-diamond-block refill kit containing 32 gunpowder + 32 paper; original facade and confirmed (89, 121, 401), availability unknown. |
 | `shops/horse-of-course.yml` | Horse equipment prices/batches and facade at (-114, 80, 400); 20-diamond horses sold at Thistle Town on the Nether roof (X 777, Z -257) disclosed in name/notes, future custom orders retained, availability unknown. |
-| `shops/enchanted-archives.yml` | 43 enchanted-book entries at 2 diamonds per book; explicit Knockback I/II and all other maximum levels checked against vanilla 1.21.11/26.3 data, stable IDs; free cookie/future labels retained, confirmed (-145, 80, 365), facade, availability unknown. |
+| `shops/enchanted-archives.yml` | 41 books at 2 diamonds each and 2 future books with unknown prices; explicit Knockback I/II and other verified maximum levels, stable IDs; free cookie/future labels retained, confirmed (-145, 80, 365), facade, availability unknown. |
 | `shops/neon-lights-cyberstore.yml` | Confirmed 1-diamond trades for all three froglights (128 each) and End Rods (64), original facade and (45, 100, 327); announced future Sea Lanterns remain unpriced, availability unknown. |
 | `docs/shop-template.yml` | Inactive commented authoring template, including nullable Y, price inheritance, units, stock and optional photos. Not listed by the manifest. |
 
@@ -32,7 +32,7 @@ All corresponding paths are `shops/<id>.yml`. Source-to-shop mapping and materia
 | --- | --- |
 | `js/core.js` | Pure `MMCore` engine: search/filter/sort, suggestions, escaping, URL/asset validation, catalog validation, currencies/price labels and `makeSubmission`. `coordinateValue` renders unknown Y explicitly; `coordinateCopyText` preserves known triplets and labels X/Z when Y is unknown. |
 | `js/data.js` | `MMDataSource`: strict YAML parsing, manifest validation, optional defaults, same-site HTTP fetching with timeout, complete catalog loading and proposal serialization. Depends on vendored YAML and `MMCore`. |
-| `js/app.js` | DOM entry point: directory cards, filters, inventory dialogs, saved shops, route/hash state, themes, coordinate copying, local proposal form and YAML downloads. Uses `MMCore`, `MMDataSource` and `MMArt`; localStorage stores browser preferences only. Blank form Y remains `null`. |
+| `js/app.js` | DOM entry point: directory cards, filters, inventory dialogs without editor Notes panels, saved shops, route/hash state, themes, coordinate copying, local proposal form and YAML downloads. Uses `MMCore`, `MMDataSource` and `MMArt`; localStorage stores browser preferences only. Blank form Y remains `null`. |
 | `js/theme.js` | Early browser theme restoration before application rendering. |
 | `js/art.js` | `MMArt.icon`, `scene` and `itemIcon`; original SVG artwork and preview fallback, not photographs of real shops. |
 | `js/minecraft.js` | `MMMinecraft.resolve`: validate Minecraft IDs, apply aliases, choose generated/native previews and fall back safely for unsupported items. |
@@ -69,7 +69,7 @@ All corresponding paths are `shops/<id>.yml`. Source-to-shop mapping and materia
 | Path | Role |
 | --- | --- |
 | `tests/validate-data.cjs` | CLI checks current production YAML, local asset paths, JS syntax and HTML dependencies using the same runtime loader. |
-| `tests/catalog.test.cjs` | Real-catalog regressions: 23 real shops, no residual demo files, corrected armor currency/per-piece pricing, wool estimates, cafe currencies, missing data and unknown stock for all listings, including coming-soon goods. |
+| `tests/catalog.test.cjs` | Real-catalog regressions: 23 real shops, no residual demos, source-specific currencies/batches, confirmed names, unknown stock and unannounced Swift Sneak/Soul Speed prices. |
 | `tests/core.test.cjs` | Pure-engine behavior against an isolated sample fixture, including validation/submission/copying with unknown Y. |
 | `tests/yaml.test.cjs` | YAML safety, bad fields/types, loader order/failures, defaults, currencies, nullable Y and round-trip proposals. |
 | `tests/http.test.cjs` | Real local Node HTTP loading under a repository subpath, request/manifest counts, 404s, timeouts and rejection of `file:` startup. |

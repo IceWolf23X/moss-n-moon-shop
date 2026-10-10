@@ -44,7 +44,7 @@ items:
   - {id: bubble_coral_fan, minecraftId: 'minecraft:bubble_coral_fan', name: 'Bubble Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [purple coral fan]}
   - {id: fire_coral_fan, minecraftId: 'minecraft:fire_coral_fan', name: 'Fire Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [red coral fan]}
   - {id: horn_coral_fan, minecraftId: 'minecraft:horn_coral_fan', name: 'Horn Coral Fan', price: 1, quantity: 16, unit: items, stock: unknown, icon: leaf, aliases: [yellow coral fan]}
-  - {id: sponge_rental, minecraftId: 'minecraft:sponge', name: 'Sponge Rental', price: 1, quantity: 32, unit: 'sponges per day', stock: unknown, icon: tools, aliases: [rent sponges, wet sponge]}
+  - {id: sponge_rental, minecraftId: 'minecraft:sponge', name: 'Sponge Rental — +1 diamond if returned wet', price: 1, quantity: 32, unit: 'sponges per day', stock: unknown, icon: tools, aliases: [rent sponges, wet sponge]}
   - {id: prismarine, minecraftId: 'minecraft:prismarine', name: 'Prismarine', price: 1, quantity: 192, unit: items, stock: unknown, icon: cube, aliases: []}
   - {id: prismarine_bricks, minecraftId: 'minecraft:prismarine_bricks', name: 'Prismarine Bricks', price: 1, quantity: 192, unit: items, stock: unknown, icon: cube, aliases: []}
   - {id: sea_lantern, minecraftId: 'minecraft:sea_lantern', name: 'Sea Lanterns', price: 1, quantity: 192, unit: items, stock: unknown, icon: crystal, aliases: [lighting]}

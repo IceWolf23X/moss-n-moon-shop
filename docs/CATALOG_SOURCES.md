@@ -77,15 +77,19 @@ The supplied book separately advertises Thistle Town horses at **20 diamonds per
 
 ### The Enchanted Archives of Clover Hollow — October 10, 2026
 
-The maintainer confirmed **-145, 80, 365** and supplied an original facade photo at `assets/shops/enchanted-archives/front.png`, then stated **all books cost 2 diamonds per book**. This uniform rate is recorded as `price: 2`, `quantity: 1`, `unit: book` on all 43 enchanted-book entries; the announcement-based free cookie remains unchanged.
+The maintainer confirmed **-145, 80, 365** and supplied an original facade photo at `assets/shops/enchanted-archives/front.png`, then stated current books cost **2 diamonds per book** and subsequently clarified that **Swift Sneak and Soul Speed have no announced prices**. The 41 other enchanted-book entries use `price: 2`, `quantity: 1`, `unit: book`; those two future entries use `price: null`. The announcement-based free cookie remains unchanged.
 
 Five supplied shelf-label screenshots confirm 33 enchantment labels, including the explicitly separate **Knockback I and Knockback II**. The maintainer subsequently confirmed that all other books have maximum enchantment levels. Numerical maxima were read directly from `data/minecraft/enchantment/*.json` in the installed vanilla **1.21.11 and 26.3 client JARs**; all maxima agree between the two versions, and the 1.21.11 client SHA-1 matches the repository's existing renderer provenance. Names now display the corresponding Roman-numeral levels, while stable item IDs and prices are preserved.
 
-The eight remaining ordinary book types come from the original announcement. Original Swift Sneak/Soul Speed coming-soon labels are retained: applying the maintainer's uniform price and maximum-level rule does not establish their arrival. Availability remains unknown.
+The eight remaining ordinary book types come from the original announcement. Original Swift Sneak/Soul Speed coming-soon labels are retained, at maximum level but with price unknown; they do not assert arrival. Availability remains unknown.
 
 ### Neon Lights CyberStore — October 10, 2026
 
 The maintainer confirmed **45, 100, 327**, supplied an original facade at `assets/shops/neon-lights-cyberstore/front.png` and confirmed **1 diamond per 128 froglights**, equally for Verdant, Pearlescent and Ochre, plus **1 diamond per 64 End Rods**. These match the four original priced entries. The Sea Lanterns coming-soon entry is retained from the original announcement; arrival, price and quantity remain unconfirmed. Availability stays unknown.
+
+## Presentation of editor metadata
+
+At the maintainer's request, the shared product-detail view omits the Notes panel for every shop. The `notes` field remains in YAML as editor provenance/context and is still publicly readable as file data. The sponge wet-return fee and Nether horse-sale coordinates are also placed in the respective item names so those trading terms remain visible without the editor panel.
 
 ## Data interpretation
 

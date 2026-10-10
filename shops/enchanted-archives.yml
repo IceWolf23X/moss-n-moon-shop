@@ -1,6 +1,6 @@
 # Source: Screenshot 2026-10-10 005916.png, checked 2026-10-10.
 # Maintainer confirmed coordinates and Y 80 and supplied the original facade on 2026-10-10.
-# Maintainer states all books cost 2 diamonds each; 33 labels are visible in the supplied signs.
+# Current books cost 2 diamonds each; Swift Sneak/Soul Speed prices are not announced.
 # All other books confirmed at maximum level; numeric maxima verified from vanilla 1.21.11 and 26.3.
 # Knockback I/II stay separate; availability is intentionally unverified.
 id: enchanted-archives
@@ -32,8 +32,9 @@ tags:
 notes: >-
   The maintainer confirmed coordinates -145, 80, 365 and supplied a facade photo on October 10, 2026.
   The maintainer confirmed a uniform price of 2 diamonds per book and supplied signs for 33 enchantment labels.
-  This uniform rate is applied to every listed enchanted book. The maintainer confirmed maximum
-  levels for all other enchantments; Knockback I and II remain separate. Numeric maxima were
+  Swift Sneak and Soul Speed do not yet have announced prices, so their price is left to ask the owner.
+  Other listed books cost 2 diamonds each. The maintainer confirmed maximum levels for all other
+  enchantments; Knockback I and II remain separate. Numeric maxima were
   verified from vanilla Minecraft 1.21.11 and 26.3 data. The original announcement
   lists Swift Sneak and Soul Speed as coming soon; their arrival was not confirmed by these signs.
   Availability is not tracked.
@@ -454,7 +455,7 @@ items:
   - id: swift_sneak
     minecraftId: minecraft:enchanted_book
     name: Swift Sneak III (coming soon)
-    price: 2
+    price: null
     quantity: 1
     unit: book
     stock: unknown
@@ -464,7 +465,7 @@ items:
   - id: soul_speed
     minecraftId: minecraft:enchanted_book
     name: Soul Speed III (coming soon)
-    price: 2
+    price: null
     quantity: 1
     unit: book
     stock: unknown

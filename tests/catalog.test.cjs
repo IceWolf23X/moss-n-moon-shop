@@ -103,3 +103,19 @@ test('catalog availability stays unverified, including coming-soon listings', as
   assert.ok(future.length >= 6);
   assert.ok(future.every(item => item.stock === 'unknown' && !context.MMCore.available(item)));
 });
+
+// An announced future book must not inherit the confirmed price of current book stock.
+test('Swift Sneak and Soul Speed keep their unannounced prices unknown', async () => {
+  const data = await catalog();
+  // Check the published bookshop rather than an isolated pricing fixture.
+  const shop = data.shops.find(shop => shop.id === 'enchanted-archives');
+  for (const id of ['swift_sneak', 'soul_speed']) {
+    // Locate each future offer without changing its stable item identity.
+    const item = shop.items.find(item => item.id === id);
+    assert.equal(item.price, null);
+    assert.equal(item.quantity, 1);
+    assert.equal(item.unit, 'book');
+    assert.match(item.name, /coming soon/);
+    assert.equal(item.stock, 'unknown');
+  }
+});

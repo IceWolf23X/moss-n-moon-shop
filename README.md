@@ -271,6 +271,8 @@ The catalog initially used owner announcements supplied as screenshots; it is no
 
 Stock and prices are not synchronized with Minecraft. The current directory does not track stock: keep `stock: unknown` for every item and ask the owner about availability. Coming-soon products retain that label in their names and notes. The logo is the supplied one; thumbnails use supplied shop photos when available and otherwise use illustrations. Shop-visit confirmations are recorded in `docs/CATALOG_SOURCES.md`. The address and links do not imply that server status has been verified.
 
+Shop details do not render the `notes` field. It remains editor metadata in the public YAML. Customer-facing rental conditions and remote purchase coordinates belong in the relevant item name/unit, description or directions so they stay visible without a Notes panel.
+
 **Every published file, even if not listed in the manifest, and all comments can be read publicly.** Do not put passwords, tokens, confidential drafts or private data in YAML or code. An unlisted file does not appear in search, but is not protected from direct access.
 
 Themes and favorites are local to the browser; no accounts, checkout, analytics or automatic Discord integration are included. Information about the local YAML library, the applied modification and the license is in `js/vendor/README.md` and `js/vendor/js-yaml.LICENSE.txt`.

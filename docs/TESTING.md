@@ -1,5 +1,11 @@
 # YAML version verification
 
+## Hidden editor notes and unannounced book prices — October 10, 2026
+
+The maintainer clarified that Swift Sneak/Soul Speed still have no announced prices and requested removal of every shop's visible Notes panel. Those two book prices are now `null`; the other 41 books retain 2-diamond unit prices and confirmed levels. The shared shop renderer no longer renders editor notes, and its unused CSS was removed without affecting description/directions whitespace. Editor provenance remains in YAML; essential sponge-rental and remote-horse terms are visible in their item names.
+
+The new price regression failed before correction and passed afterwards; the browser assertion for note hiding likewise failed before removal. The catalog validator and **7 catalog regressions** passed. Real local HTTP/Chromium checks covered **all 23 dialogs without Notes**, retained editor metadata, both future prices displayed as Ask owner, 41 two-diamond book prices, visible rental/Nether-location terms, mobile overflow and no JavaScript page errors. Desktop future-book and mobile rental captures were opened and inspected. Application JS syntax, Python smoke syntax and `git diff --check` passed; the Python Playwright suite itself remains unexecuted because its optional module is not installed.
+
 ## Neon Lights CyberStore visit — October 10, 2026
 
 The maintainer confirmed **45, 100, 327**, supplied the original facade, and confirmed **1 diamond per 128 froglights** for all three types plus **1 diamond per 64 End Rods**. Existing price fields already matched and were retained. The original future Sea Lanterns entry remains unpriced/unconfirmed; all stock stays unknown. The photo copy matches the source SHA-256.
